@@ -5,9 +5,7 @@ import Minfo from "../components/Outlets/Minfo";
 import Mslider from "../components/Outlets/Mslider";
 import MstartSaving from "../components/Outlets/MstartSaving";
 import { InsideScoop } from "../components/Searchpg/SearchComponents";
- 
 import "../../assets/css/outletspg.css";
-import SimilarPlaces from "../components/Outlets/SimilarPlaces";
 
 function Outlets() {
   const { location, city } = useParams();
@@ -33,7 +31,8 @@ function Outlets() {
             </Row>
             <Row>
               <Col md={12}>
-              <SimilarPlaces />
+              <br/><br/><br/>
+                Mcard slider
               </Col>
             </Row>
           </Container>
@@ -49,6 +48,7 @@ function Outlets() {
       {<Footer />}
       <Helmet>
         <body className={"pgoutlets " + location + " " + city} />
+        <meta name="description" content="outlet test meta" />
       </Helmet>
     </>
   );

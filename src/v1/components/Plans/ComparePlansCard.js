@@ -1,10 +1,10 @@
-import { React, useSelector } from "../../../services/centerServices";
-import ProductBtn from "./ProductBtn";
+
+
+
 function ComparePlansCard(props) {
   const {
     product,
     img,
-    badge,
     name,
     nametext,
     ptext,
@@ -15,9 +15,10 @@ function ComparePlansCard(props) {
     billed_annually,
     billed_annually_text,
     subscribClass,
-    subscribText
+    subscribText,
+
   } = props;
-  const isAuth = useSelector((state) => state.auth);
+
   return (
     <>
       <div className={"cpcbox " + product}>
@@ -43,14 +44,8 @@ function ComparePlansCard(props) {
             )}
 
             <div className="New_Product_Tiers_price">
-            {props.price < 1 ? "Free" : props.price}
-              {props.price > 0 ? (
-                <small> {props.currency_symbol}/{currency_period} </small>
-              ) : (
-                ""
-              )}
-              {/* {price}
-              <small> {currency_period}</small> */}
+              {price}
+              <small> {currency_period}</small>
             </div>
             <div className="New_Product_Tiers_priceannually">
               <strong>{billed_annually}</strong>
@@ -64,46 +59,37 @@ function ComparePlansCard(props) {
           </div>
         </div>
 
-        {/* <a href="#0" className={"btn btn-primary Buynow " + subscribClass}>
+        <a
+          href="#0"
+          className={"btn btn-primary Buynow " + subscribClass}
+        >
           {subscribText}
-        </a> */}
-         
-        <ProductBtn
-          price={props.price}
-          product_id={props.product_id}
-          isSubscribed={props.isSubscribed}
-          logedIn={isAuth?.isAuth}
-        />
+        </a>
+
         <div className="bao">
-          {props.BeneFitsData &&
-            Object.values(props.BeneFitsData).map((item, index) => {
-              return (
-                <div key={index}>
-                  <span>{item}</span>
-                  {["true"].includes(item) ? (
-                    <img
-                      src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-true.svg"
-                      alt=" "
-                    />
-                  ) : (
-                    <></>
-                  )}
-                  {["false"].includes(item) ? (
-                    <img
-                      src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-false.svg"
-                      alt=" "
-                    />
-                  ) : (
-                    <></>
-                  )}
-                  {!["null", "true", "", "false"].includes(item) ? (
-                    <p dangerouslySetInnerHTML={{__html:item}}></p>
-                  ) : (
-                    <></>
-                  )}
-                </div>
-              );
-            })}
+          {props?.BeneFitsData?.map((item, index) => {
+            return (
+              <div key={index}>
+                <span>{item.BFname}</span>
+                {[true].includes(item.BFvalue) ? 
+                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-true.svg" alt=" " />
+                : <></>
+                    }
+                {[false].includes(item.BFvalue) ? 
+                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-false.svg" alt=" " />
+                : <></>
+                    }
+                {![null,true,'',false].includes(item.BFvalue) ? <p>
+                {item.BFvalue}
+                {![null,'',undefined].includes(item.BFlinkText) ? <a href={item.BFlink}>
+                  {item.BFlinkText}
+                    </a> : <></>
+                    }
+                </p> : <></>
+                    }
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

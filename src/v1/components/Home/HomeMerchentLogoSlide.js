@@ -1,10 +1,16 @@
+import MerchentLogoSlide1 from "../../../assets/images/MerchentLogoSlide/MerchentLogoSlide1.png"
+import MerchentLogoSlide2 from "../../../assets/images/MerchentLogoSlide/MerchentLogoSlide2.png"
+import MerchentLogoSlide3 from "../../../assets/images/MerchentLogoSlide/MerchentLogoSlide3.png"
+import MerchentLogoSlide4 from "../../../assets/images/MerchentLogoSlide/MerchentLogoSlide4.png"
+import MerchentLogoSlide5 from "../../../assets/images/MerchentLogoSlide/MerchentLogoSlide5.png"
+// dummy data
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Pagination } from "swiper/modules";
 
 
-function MerchentLogoSlide({totalMerchant, link}) {
+function MerchentLogoSlide() {
   return (
     <>
       <Container>
@@ -36,27 +42,27 @@ function MerchentLogoSlide({totalMerchant, link}) {
             >
               <SwiperSlide>
                 <div className="cat_wrap">
-                  <img loading="lazy" src="https://b2cappassetscdn.theentertainerme.com/website_images/MerchentLogoSlide/MerchentLogoSlide1.png" alt=" " />
+                  <img loading="lazy" src={MerchentLogoSlide1} alt="  " />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cat_wrap">
-                  <img loading="lazy" src="https://b2cappassetscdn.theentertainerme.com/website_images/MerchentLogoSlide/MerchentLogoSlide2.png" alt=" " />
+                  <img loading="lazy" src={MerchentLogoSlide2} alt=" " />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cat_wrap">
-                  <img loading="lazy" src="https://b2cappassetscdn.theentertainerme.com/website_images/MerchentLogoSlide/MerchentLogoSlide3.png" alt=" " />
+                  <img loading="lazy" src={MerchentLogoSlide3} alt=" " />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cat_wrap">
-                  <img loading="lazy" src="https://b2cappassetscdn.theentertainerme.com/website_images/MerchentLogoSlide/MerchentLogoSlide4.png" alt=" " />
+                  <img loading="lazy" src={MerchentLogoSlide4} alt=" " />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="cat_wrap">
-                  <img loading="lazy" src="https://b2cappassetscdn.theentertainerme.com/website_images/MerchentLogoSlide/MerchentLogoSlide5.png" alt=" " />
+                  <img loading="lazy" src={MerchentLogoSlide5} alt=" " />
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -64,8 +70,8 @@ function MerchentLogoSlide({totalMerchant, link}) {
         </Row>
         <Row>
           <Col className="text-center">
-            <a className="btn btn-secondary" href={link}>
-              View all {totalMerchant} Merchants
+            <a className="btn btn-secondary" href=" ">
+              View all 3,459 Merchants{" "}
             </a>
           </Col>
         </Row>

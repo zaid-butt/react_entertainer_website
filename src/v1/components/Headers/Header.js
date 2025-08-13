@@ -1,14 +1,10 @@
 import {
   React,
-  useEffect,
   useState,
   useParams,
   useTranslation,
-  useDispatch,
-  useSelector,
-  siteUrl,
   setSiteUrl,
-  currentLocationId,
+  siteUrl,
 } from "../../../services/centerServices";
 import "./Header.css";
 
@@ -24,42 +20,14 @@ import LanguageSwitcher from "./LanguageSwitcher.js";
 import UserLoginReg from "../../components/Headers/User_LoginReg.js";
 import RegionsPopup from "../../components/Headers/RegionsPopup.js";
 
-import { isAuthorized } from "../../../redux/slices/Auth";
-import { language } from "../../../redux/languageReducers.js";
-import { fetchLoctions } from "../../../redux/slices/Locations";
-import { nodeApi } from "../../../services/apiServices";
-
 function TopHeader(props) {
   const { t } = useTranslation();
-  const { lang, location, city } = useParams();
+  const {lang, location, city } = useParams();
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const isAuth = useSelector((state) => state.auth);
-  const dispatch = useDispatch();
-  const location_name = localStorage.getItem("location_name") ?? t("toploc_dubai");
-  const logOut = () => {
-    localStorage.removeItem("auth");
-  };
-  let auth = JSON.parse(localStorage.getItem("auth"));
-  const token = auth ? auth.data?.data?.validation_params.auth_token : "";
-  const loc_id = localStorage.getItem("location_id") ?? 1;
-  const currentHomeUrl = localStorage.getItem("currentHomeUrl") ?? '/en-ae/dubai-n-emirates';
-  useEffect(() => {
-    nodeApi.defaults.headers.__location_id = loc_id;
-    nodeApi.defaults.headers.__language = lang;
-    nodeApi.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-    dispatch(isAuthorized(auth));
-  }, [loc_id]);
-  useEffect(() => {
-    dispatch(language(lang));
-  }, [lang]);
-  useEffect(() => {
-    dispatch(fetchLoctions());
-  }, []);
-  
+  const handleShow = () => setShow(true)
 
-  setSiteUrl("/" + lang + "-" + location + "/" + city);
+  setSiteUrl("/"+lang+"-"+location+"/"+city)
 
   return (
     <>
@@ -70,16 +38,18 @@ function TopHeader(props) {
           variant="dark"
           className="fixed-top"
         >
-          <a className="navbar-brand logo" onClick={currentLocationId(loc_id)} href={currentHomeUrl}> 
+          <a className="navbar-brand logo" href={siteUrl}>
             <img className="d-d" src={t("logo")} alt="logo" />
             <img className="d-mob" src={t("logomob")} alt="logo" />
           </a>
           <ul className="my-2 moblink d-mob">
+            {
               <li className="nav-item">
                 <a className="nav-link" href="#plans">
                   Buy Memberships
                 </a>
               </li>
+            }
           </ul>
 
           {<Search />}
@@ -100,7 +70,7 @@ function TopHeader(props) {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href={`/${lang}-${location}/how-it-works`}>
+                <a className="nav-link" href="#0">
                   {t("toplink_Howitworks")}
                 </a>
               </li>
@@ -110,22 +80,21 @@ function TopHeader(props) {
                 </a>
               </li>
             </ul>
-
+            
             <ul className="navbar-nav toplocflag">
               <li className="nav-item">
                 <a
                   className="nav-link locflag Dubai"
-                  href="javascript:;"
+                  href="#0"
                   onClick={handleShow}
                 >
-                  {/* {t("toploc_dubai")} */}
-                  {location_name}
+                  {t("toploc_dubai")}
                 </a>
               </li>
               {<LanguageSwitcher />}
             </ul>
 
-            <UserLoginReg logout={logOut} user={isAuth?.data} />
+            {<UserLoginReg />}
 
             <div className="dropdown downscan">
               <Dropdown>

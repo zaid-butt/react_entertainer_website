@@ -1,3 +1,11 @@
+import family_members_en from "../../../assets/images/family_members_en.png"
+import howork_1 from "../../../assets/images/howork_1.png"
+import howork_2 from "../../../assets/images/howork_2.png"
+import howork_3 from "../../../assets/images/howork_3.png"
+import howork_img1 from "../../../assets/images/howork_img1.png"
+import howork_img2 from "../../../assets/images/howork_img2.png"
+import howork_img3 from "../../../assets/images/howork_img3.png"
+// dummy data
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
@@ -16,7 +24,7 @@ function Famshar() {
 
           <div className="famshar_img1">
             <img
-              src="https://b2cappassetscdn.theentertainerme.com/website_images/family_members_en.png"
+              src={family_members_en}
               alt=" "
             />
           </div>
@@ -31,13 +39,13 @@ function Famshar() {
           <Col md={4} className="howork">
             <div className="howork_123">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_1.png"
+                src={howork_1}
                 alt="how work 1"
               />
             </div>
             <div className="howork_img">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_img1.png"
+                src={howork_img1}
                 alt="how work img 1"
               />
             </div>
@@ -51,13 +59,13 @@ function Famshar() {
           <Col md={4} className="howork">
             <div className="howork_123">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_2.png"
+                src={howork_2}
                 alt="how work 2"
               />
             </div>
             <div className="howork_img">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_img2.png"
+                src={howork_img2}
                 alt="how work img 2"
               />
             </div>
@@ -71,13 +79,13 @@ function Famshar() {
           <Col md={4} className="howork">
             <div className="howork_123">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_3.png"
+                src={howork_3}
                 alt="how work 3"
               />
             </div>
             <div className="howork_img">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/howork_img3.png"
+                src={howork_img3}
                 alt="how work img 3"
               />
             </div>
@@ -117,7 +125,7 @@ function Famshar() {
                 </a>
                 <a
                   className="offers_explore"
-                  href="https://appgallery.huawei.com/app/C101228549"
+                  href="https://www.theentertainerme.com/en-ae/dubai-n-emirates#entProductSection"
                 >
                   <img src="https://b2cappassetscdn.theentertainerme.com/website_images/playstore/huawei_btn.svg" alt="offers_explore" />
                 </a>

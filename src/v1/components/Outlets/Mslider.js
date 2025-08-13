@@ -1,3 +1,9 @@
+import img from "../../../../src/assets/images/heroimg.webp";
+import thumb_1 from "../../../../src/assets/images/thumb_1.png";
+import thumb_2 from "../../../../src/assets/images/thumb_2.png";
+import thumb_3 from "../../../../src/assets/images/thumb_3.png";
+import thumb_4 from "../../../../src/assets/images/thumb_4.png";
+
 import { React, useState } from "../../../services/centerServices";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -19,19 +25,19 @@ function Mslider() {
         className="heroimg"
       >
         <SwiperSlide>
-          <img src="https://b2cappassetscdn.theentertainerme.com/website_images/heroimg.png" alt=" " />
+          <img src={img} alt="img " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/heroimg.png" alt=" " />
+        <img src={img} alt="img " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/heroimg.png" alt=" " />
+        <img src={img} alt="img " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/heroimg.png" alt=" " />
+        <img src={img} alt="img " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/heroimg.png" alt=" " />
+        <img src={img} alt="img " />
         </SwiperSlide>
       </Swiper>
       <Swiper
@@ -44,19 +50,19 @@ function Mslider() {
         className="thumb_heroimg"
       >
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/thumb_4.png" alt=" " />
+        <img src={thumb_4} alt=" " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/thumb_1.png" alt=" " />
+        <img src={thumb_1} alt=" " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/thumb_2.png" alt=" " />
+        <img src={thumb_2} alt=" " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/thumb_3.png" alt=" " />
+        <img src={thumb_3} alt=" " />
         </SwiperSlide>
         <SwiperSlide>
-        <img src="https://b2cappassetscdn.theentertainerme.com/website_images/thumb_4.png" alt=" " />
+        <img src={thumb_4} alt=" " />
         </SwiperSlide>
       </Swiper>
     </>

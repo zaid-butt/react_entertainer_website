@@ -411,6 +411,9 @@ html[lang="ru"] #plans .probox .Buynow {
 	position: relative;
 	margin-top: 0;
 }
+#plans .probox .Includes.d-d {
+	display: block;
+}
 #plans .probox .Includes strong {
 	color: #484848;
 }

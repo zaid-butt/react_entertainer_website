@@ -1,16 +1,7 @@
-import {
-  React,
-  useSelector
-} from "../../../services/centerServices";
 import tempimg from "../../../assets/images/region_tick.png";
 import product from "../../../assets/images/DXB-Standard-359x404.webp";
- 
+// dummy data
 function Subscriptions() {
-
-  const isAuth = useSelector((state) => state.auth);
-  const stateSub = useSelector((state) => state.subscriptions);
-  const userId = isAuth.data?.data?.user?.user_id;
- 
   return (
     <>
       <div id="Subscriptions" className="contentWrap">

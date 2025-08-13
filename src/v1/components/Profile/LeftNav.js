@@ -12,55 +12,37 @@ import React from "react";
 import Nav from "react-bootstrap/Nav";
 import UserBadg from "./UserBadg";
 
-function LeftNav({ getData }) {
+function LeftNav() {
   return (
     <>
       <Nav variant="pills" className="flex-column">
-        <UserBadg />
-        <Nav.Item onClick={() => getData(1)}>
-          <Nav.Link eventKey="Profile">
-            <img src={Profile} alt=" " /> Profile
-          </Nav.Link>
+      <UserBadg />
+        <Nav.Item>
+          <Nav.Link eventKey="Profile"><img src={Profile} alt=" " /> Profile </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(2)}>
-          <Nav.Link eventKey="VIPKeyActivation">
-            <img src={VIPKeyActivation} alt=" " /> VIP Key Activation
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="VIPKeyActivation"><img src={VIPKeyActivation} alt=" " /> VIP Key Activation </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(3)}>
-          <Nav.Link eventKey="Leaderboard">
-            <img src={Leaderboard} alt=" " /> Leaderboard
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="Leaderboard"><img src={Leaderboard} alt=" " /> Leaderboard </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(4)}>
-          <Nav.Link eventKey="SavedCards">
-            <img src={SavedCards} alt=" " /> Saved Cards
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="SavedCards"><img src={SavedCards} alt=" " /> Saved Cards </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(5)}>
-          <Nav.Link eventKey="Subscriptions">
-            <img src={Subscriptions} alt=" " /> Subscriptions
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="Subscriptions"><img src={Subscriptions} alt=" " /> Subscriptions </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(6)}>
-          <Nav.Link eventKey="Family">
-            <img src={Family} alt=" " /> Family
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="Family"><img src={Family} alt=" " /> Family </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(7)}>
-          <Nav.Link eventKey="Notifications">
-            <img src={Notifications} alt=" " /> Notifications
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="Notifications"><img src={Notifications} alt=" " /> Notifications </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(8)}>
-          <Nav.Link eventKey="HelpSupport">
-            <img src={HelpSupport} alt=" " /> Help & Support
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="HelpSupport"><img src={HelpSupport} alt=" " /> Help & Support </Nav.Link>
         </Nav.Item>
-        <Nav.Item onClick={() => getData(9)}>
-          <Nav.Link eventKey="Preferences">
-            <img src={Preferences} alt=" " /> Preferences
-          </Nav.Link>
+        <Nav.Item>
+          <Nav.Link eventKey="Preferences"><img src={Preferences} alt=" " /> Preferences </Nav.Link>
         </Nav.Item>
       </Nav>
     </>

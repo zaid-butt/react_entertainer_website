@@ -9,7 +9,6 @@
     "i18next": "^23.2.3",
     "i18next-browser-languagedetector": "^7.1.0",
     "i18next-http-backend": "^2.2.1",
-    "lodash": "^4.17.21",
     "mdb-react-ui-kit": "^6.1.0",
     "moment": "2.29.4",
     "nouislider": "14.5.0",
@@ -17,7 +16,6 @@
     "react-bootstrap": "^2.7.4",
     "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
-    "react-google-recaptcha-v3": "^1.10.1",
     "react-helmet": "^6.1.0",
     "react-i18next": "^13.0.1",
     "react-password-checklist": "^1.4.3",
@@ -26,7 +24,6 @@
     "react-scripts": "^5.0.1",
     "reactstrap": "8.9.0",
     "redux": "^4.2.1",
-    "redux-logger": "^3.0.6",
     "sass": "1.53.0",
     "swiper": "^10.0.4",
     "validator": "^13.9.0"

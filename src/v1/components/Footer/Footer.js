@@ -1,10 +1,12 @@
+import GooglePlay from "../../../assets/images/GooglePlay.svg"
+import Appstore from "../../../assets/images/Appstore.svg"
+// dummy data
 import { Container, Row, Col } from "reactstrap";
 import FooterLinks from "../../components/Footer/FooterLinks.js";
 import "./Footer.css";
 
 
 function Footer() {
-  const currentHomeUrl = localStorage.getItem("currentHomeUrl") ?? '/en-ae/dubai-n-emirates';
   return (
     <>
       <div id="aly_have">
@@ -46,15 +48,15 @@ function Footer() {
 
             <Col md={2} className="storeicons">
               <h5 className="d-d">Download App</h5>
-              <a href="https://play.google.com/store/apps/details?id=com.theentertainerme.entertainer">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/GooglePlay.svg" alt="GooglePlay" />
+              <a href="#0">
+                <img src={GooglePlay} alt="GooglePlay" />
               </a>
-              <a href="https://itunes.apple.com/ae/app/the-entertainer/id702813714?mt=8">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/Appstore.svg" alt="Appstore" />
+              <a href="#0">
+                <img src={Appstore} alt="Appstore" />
               </a>
             </Col>
             <Col md={10} className="logobottom">
-              <a href={currentHomeUrl}>
+              <a href="index.html">
                 <img src="https://b2cappassetscdn.theentertainerme.com/website_images/Logo-bot.svg" alt="logobottom" />
               </a>
               <h5 className="copyrights">
@@ -64,16 +66,16 @@ function Footer() {
             <Col md={2} className="SMIcons">
               <ul>
                 <li>
-                  <a className="SMI_y" href="https://www.youtube.com/user/theentertainerme"> </a>
+                  <a className="SMI_y" href="#0"> </a>
                 </li>
                 <li>
-                  <a className="SMI_f" href="https://www.facebook.com/EntertainerApp"> </a>
+                  <a className="SMI_f" href="#0"> </a>
                 </li>
                 <li>
-                  <a className="SMI_i" href="https://instagram.com/entertainergcc"> </a>
+                  <a className="SMI_i" href="#0"> </a>
                 </li>
                 <li>
-                  <a className="SMI_t" href="https://twitter.com/entertainergcc"> </a>
+                  <a className="SMI_t" href="#0"> </a>
                 </li>
               </ul>
             </Col>

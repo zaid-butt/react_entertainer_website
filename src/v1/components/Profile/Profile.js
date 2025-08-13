@@ -2,21 +2,7 @@ import Savings from "../../../assets/images/ProSavings.svg";
 import Smiles from "../../../assets/images/ProSmiles.svg";
 import Gifts from "../../../assets/images/ProGifts.svg";
 // dummy data
-
 function Profile() {
-  const data= {
-    customer_profile: {
-        country_of_residence: "ET",
-        mobile_phone: "03124289936",
-        dob: null,
-        gender: "female",
-        firstname: "Bb",
-        lastname: "T",
-        nationality: "AF"
-    },
-    user_savings:{currency:"USD", value:"189.73"},
-    user_smile_summary: 13357
-  }
   return (
     <>
       <div className="profile_SSG">
@@ -24,8 +10,8 @@ function Profile() {
           <img src={Savings} alt=" " />
           <div>
             <p>Savings</p>
-            <span>{data.user_savings.currency} </span>
-            <strong>{data.user_savings.value}</strong>
+            <span>AED </span>
+            <strong>25,6789</strong>
           </div>
         </div>
         <div className="devider"></div>
@@ -33,7 +19,7 @@ function Profile() {
           <img src={Smiles} alt=" " />
           <div>
             <p>Smiles</p>
-            <strong>{data.user_smile_summary}</strong>
+            <strong>8,943</strong>
           </div>
         </div>
         <div className="devider"></div>
@@ -51,31 +37,31 @@ function Profile() {
           <tbody>
             <tr>
               <td>First Name:</td>
-              <th scope="row">{data.customer_profile.firstname}</th>
+              <th scope="row">Adam</th>
             </tr>
             <tr>
               <td>Last Name:</td>
-              <th scope="row">{data.customer_profile.lastname}</th>
+              <th scope="row">Lee</th>
             </tr>
             <tr>
               <td>DoB:</td>
-              <th scope="row">{data.customer_profile.dob}</th>
+              <th scope="row">23 April 1995</th>
             </tr>
             <tr>
               <td>Nationality</td>
-              <th scope="row">{data.customer_profile.nationality}</th>
+              <th scope="row">Azarbaijani</th>
             </tr>
             <tr>
               <td>Country of Residence</td>
-              <th scope="row">{data.customer_profile.country_of_residence}</th>
+              <th scope="row">Dubai</th>
             </tr>
             <tr>
               <td>Gender</td>
-              <th scope="row">{data.customer_profile.gender}</th>
+              <th scope="row">Male</th>
             </tr>
             <tr>
               <td>Mobile Number</td>
-              <th scope="row">{data.customer_profile.mobile_phone}</th>
+              <th scope="row">+9713464402545</th>
             </tr>
           </tbody>
         </table>

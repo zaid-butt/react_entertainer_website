@@ -1,3 +1,9 @@
+import entoffers_1 from "../../../assets/images/entoffers_1.svg"
+import entoffers_2 from "../../../assets/images/entoffers_2.svg"
+import entertainer_offers from "../../../assets/images/entertainer_offers.webp"
+import entoffers_3 from "../../../assets/images/entoffers_3.svg"
+import entoffers_4 from "../../../assets/images/entoffers_4.svg"
+// dummy data
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
@@ -16,7 +22,7 @@ function Offers() {
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
                   <img
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/entoffers_1.svg"
+                    src={entoffers_1}
                     alt="offer 1"
                   />
                 </div>
@@ -32,7 +38,7 @@ function Offers() {
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
                   <img
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/entoffers_2.svg"
+                    src={entoffers_2}
                     alt="offer 2"
                   />
                 </div>
@@ -48,7 +54,7 @@ function Offers() {
             </div>
             <div className="col-md-5 entoffers_img1">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/Cart2022EntertainerOffers/en/1/entertainer_offers.png"
+                src={entertainer_offers}
                 alt="entertainer_offers"
               />
             </div>
@@ -56,7 +62,7 @@ function Offers() {
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
                   <img
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/entoffers_3.svg"
+                    src={entoffers_3}
                     alt="offer 3"
                   />
                 </div>
@@ -71,7 +77,7 @@ function Offers() {
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
                   <img
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/entoffers_4.svg"
+                    src={entoffers_4}
                     alt="offer 4"
                   />
                 </div>
@@ -120,7 +126,7 @@ function Offers() {
                 </a>
                 <a
                   className="btn btn-secondary"
-                  href="#plans"
+                  href="http://awesomesite.loc:8888/en-ae/dubai-n-emirates#entProductSection"
                 >
                   Explore our memberships
                 </a>

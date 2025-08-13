@@ -1,10 +1,11 @@
+import img from "../../../../src/assets/images/SearchCard.png";
 
 function SearchSliderCard() {
   return (
     <>
       <div className="SearchSliderCard">
         <div className="SearchSliderCard-imgbox">
-          <img className="SearchSliderCard-img" src="https://b2cappassetscdn.theentertainerme.com/website_images/SearchCard.png" alt="SearchCard_img" />
+          <img className="SearchSliderCard-img" src={img} alt="SearchCard_img" />
           <div className="SearchSliderCard-contentbg">
             <div className="SearchSliderCard-content">
               <div className="ss-cont_left">

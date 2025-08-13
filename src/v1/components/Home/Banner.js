@@ -75,10 +75,10 @@ function Banner() {
                     You don't need a credit card to sign up
                   </span>
                   <div className="form-group submitting_text">
-                    By continuing you agree to{" "}
+                    By continuing you agree to
                     <a href="/end-user-license-agreement?v=full">
                       End user license agreement
-                    </a>{" "}
+                    </a>
                     &amp; <a href="/Privacy-Policy?v=full">Privacy policy</a>
                   </div>
                   <br />

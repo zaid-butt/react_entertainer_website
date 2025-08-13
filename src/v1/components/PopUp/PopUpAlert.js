@@ -1,41 +1,19 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function PoUpAlert({
-  btnType,
-  btnText,
-  btnClass,
-  poupSize,
-  popupClass,
-  popupTitle,
-  popupDesc,
-  btnTextClose,
-  noBtn,
-  setNoBtn,
-}) {
+function PoUpAlert({ btnType, btnText, btnClass, poupSize, popupClass,  popupTitle, popupDesc, btnTextClose }) {
   const [show, setShow] = useState(false);
-  const handleClose = () => {
-    setShow(false);
-    setNoBtn && setNoBtn(false);
-  };
+  const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   const getBtn = () => {
     if (btnType === "icon") {
-      return (
-        <span onClick={handleShow} className={btnClass}>
-          {btnText} <span className="iicon">i</span>
-        </span>
-      );
-    } else if (btnType === "btn") {
-      return <button onClick={handleShow}> {btnText} </button>;
+      return <span onClick={handleShow} className={btnClass}>{btnText} <span className="iicon">i</span> </span>;
     } else {
+      return <button onClick={handleShow}> {btnText} </button>;
     }
   };
-  useEffect(() => {
-    noBtn && handleShow();
-  }, [noBtn]);
 
   return (
     <>
@@ -48,9 +26,8 @@ function PoUpAlert({
         className={popupClass}
       >
         <Modal.Header>
-          <Modal.Title>
-            <span>{popupTitle}</span>
-            <i class="bi bi-x-lg" onClick={handleClose}></i>
+          <Modal.Title><span>{popupTitle}</span>
+          <i class="bi bi-x-lg" onClick={handleClose}></i>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>{popupDesc}</Modal.Body>

@@ -1,62 +1,38 @@
-import { React, useState, useSelector, useDispatch, useTranslation} from "../../../services/centerServices";
-
+import React, { useState } from "react";
 import validator from "validator";
 import SmLogin from "../LoginSignup/SmLogin.js";
-import { fetchEmail, fetchUser } from "../../../redux/slices/Auth";
-import { use } from "i18next";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
+function Loginleft({ emailExist, userSignin, isEmailExist }) {
 
-
-function Loginleft({setIsEmailExist}) {
-  const { t } = useTranslation();
-  const dispatch = useDispatch();
-  const { executeRecaptcha } = useGoogleReCaptcha();
-  const stateAuth = useSelector((state) => state.auth);
   const [inputPassword, setInputPassword] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [emailMessage, setEmailMessage] = useState("");
   const [passMessage, setPassMessage] = useState("");
-  const [disabledBtn, setDisabledBtn] = useState("disabled");
 
   const validateEmail = (e) => {
-    let eMail = e.target.value
-    setInputEmail(eMail)
-    if (validator.isEmail(eMail)) {
+    setInputEmail(e.target.value)
+    
+    if (validator.isEmail(e.target.value)) {
       setEmailMessage("");
-      setDisabledBtn("");
+      document.getElementById("signinsubmit").classList.remove("disabled");
     } else {
       setEmailMessage("Please enter valid Email!");
-      setDisabledBtn("disabled");
+      document.getElementById("signinsubmit").classList.add("disabled");
     }
   };
 
   const validatePass = (e) => {
-    let pass = e.target.value
-    setInputPassword(pass)
-    if (pass.length > 7) {
+    setInputPassword(e.target.value)
+    if (e.target.value.length > 1) {
       setPassMessage("");
-      setDisabledBtn("")
+      document.getElementById("signinsubmit").classList.remove("disabled");
     } else {
-      setPassMessage("Please enter valid password");
-      setDisabledBtn("disabled")
+      setPassMessage("Please enter password");
+      document.getElementById("signinsubmit").classList.add("disabled");
     }
 
   };
 
-  const continueBtn = async (e) => {
-    e.preventDefault();
-    if (inputEmail != "" && inputPassword == "" ) {
-      const captchaToken = await executeRecaptcha('emailexist');
-      setIsEmailExist(inputEmail)
-      dispatch(fetchEmail({inputEmail, captchaToken}))
-    } else if (inputEmail != "" && inputPassword != "" ) {
-      const captchaToken = await executeRecaptcha('login');
-      console.log(captchaToken)
-      dispatch(fetchUser({inputEmail, inputPassword, captchaToken}))
-    }
-  }
-   
   return (
     <>
       <div className="login_content">
@@ -78,24 +54,13 @@ function Loginleft({setIsEmailExist}) {
                     <div className="form-row">
                       <div className="form-group col-md-12">
                         <fieldset>
-                        <div className="signup-header">
-                            <label htmlFor="Emailaddress">Email address </label>
-                            { stateAuth.data?.success &&  
-                            <label>
-                              <a href={"/" + t("html_lang") + "/signin"}>
-                                Switch account
-                              </a>
-                            </label>
-                            }
-                          </div>
-
+                          <label htmlFor="Emailaddress">Email address </label>
                           <input
                             className="form-control"
                             type="text"
                             value={inputEmail}
                             onChange={(e) => validateEmail(e)}
                             placeholder="example@gmail.com"
-                            readOnly={stateAuth.data?.success && "readOnly"}
                           />
                           <div className="message-invalid">
                             {emailMessage}
@@ -104,7 +69,7 @@ function Loginleft({setIsEmailExist}) {
                         </fieldset>
                       </div>
                     </div>
-                    { stateAuth.data?.success && 
+                    {inputEmail === true ?
                       <div className="form-row">
                         <div className="form-group col-md-12">
                           <fieldset>
@@ -113,6 +78,7 @@ function Loginleft({setIsEmailExist}) {
                               className="form-control"
                               type="password"
                               maxLength={30}
+                              value={inputPassword}
                               onChange={(e) => validatePass(e)}
                               placeholder="password"
                             />
@@ -122,13 +88,11 @@ function Loginleft({setIsEmailExist}) {
                           </fieldset>
                         </div>
                       </div>
-                    }
-                       
+                      : ''}
                     <button
                       id="signinsubmit"
-                      className={"btn btn-primary btn-block "+disabledBtn}
-                      type="button"
-                      onClick={continueBtn}
+                      className="btn btn-primary btn-block disabled"
+                      type="submit"
                     >
                       Continue
                     </button>
@@ -139,7 +103,6 @@ function Loginleft({setIsEmailExist}) {
                       </u>
                       & Privacy Policy
                     </div>
-                    { stateAuth.data?.success && <div><a href="" className="">Forgot password</a></div>}
                   </form>
                 </div>
               </div>

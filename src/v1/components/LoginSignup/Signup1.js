@@ -1,72 +1,18 @@
-import {
-  React,
-  useState,
-  useEffect,
-  useSelector,
-  useDispatch,
-  useTranslation,
-} from "../../../services/centerServices";
-
-import validator from "validator";
+import React, { useState } from "react";
 import SmLogin from "../LoginSignup/SmLogin.js";
 import PasswordChecklist from "react-password-checklist";
+import { useTranslation } from "react-i18next";
 
-import { fetchRegister } from "../../../redux/slices/Auth";
-import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
-
-
-function Signup1({ isEmailExist }) {
+function Signup1() {
   const { t } = useTranslation();
-  const dispatch = useDispatch();
-  const { executeRecaptcha } = useGoogleReCaptcha();
 
-  const [disabledBtn, setDisabledBtn] = useState("disabled");
-  const [passwordCheck, setPasswordCheck] = useState("");
+  const [password, setPassword] = useState("");
+
   const [passwordShown, setPasswordShown] = useState(false);
-  
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
 
-  const [formData, setFormData] = useState({
-    email: isEmailExist,
-    firstName: "",
-    lastName: "",
-    password: "",
-    g_captcha: ""
-  });
-
-  const firstName = (e) => {
-    setFormData({ ...formData, firstName: e.target.value });
-  };
-
-  const lastName = (e) => {
-    setFormData({ ...formData, lastName: e.target.value });
-  };
-
-  const validatePass = (e) => {
-    let pass = e.target.value;
-    setPasswordCheck(pass);
-    setFormData({ ...formData, password: pass });
-    if (pass.length > 7) {
-      setDisabledBtn("");
-    } else {
-      setDisabledBtn("disabled");
-    }
-  };
-
-  const createNewBtn = () => {
-    console.log(formData)
-      dispatch(fetchRegister(formData));
-  };
-  const captchaTokenNew = async () => {
-      const capt = await executeRecaptcha('register');
-      console.log(capt)
-      setFormData({ ...formData, g_captcha: capt });
-  }
-  useEffect(() => {
-    captchaTokenNew();
-  }, []);
 
   return (
     <>
@@ -100,12 +46,11 @@ function Signup1({ isEmailExist }) {
                           <input
                             name="email"
                             id="Emailaddress"
-                            type="email"
+                            type="text"
                             placeholder="example@gmail.com"
                             className="form-control"
                             aria-required="true"
                             aria-invalid="false"
-                            value={isEmailExist}
                             readOnly="readOnly"
                           />
                           <span className="text-danger"></span>
@@ -124,7 +69,6 @@ function Signup1({ isEmailExist }) {
                           className="form-control"
                           aria-required="true"
                           aria-invalid="false"
-                          onChange={(e) => firstName(e)}
                           required
                         />
                         <span className="text-danger"></span>
@@ -142,7 +86,6 @@ function Signup1({ isEmailExist }) {
                           className="form-control"
                           aria-required="true"
                           aria-invalid="true"
-                          onChange={(e) => lastName(e)}
                           required
                         />
                         <span className="text-danger"></span>
@@ -160,13 +103,10 @@ function Signup1({ isEmailExist }) {
                           className="form-control"
                           aria-required="true"
                           aria-invalid="false"
-                          onChange={(e) => validatePass(e)}
+                          onChange={e => setPassword(e.target.value)}
                         />
                         <span>
-                          <i
-                            className="bi bi-eye-slash"
-                            onClick={togglePassword}
-                          ></i>
+                          <i className="bi bi-eye-slash" onClick={togglePassword}></i>
                         </span>
                       </div>
                       <PasswordChecklist
@@ -178,7 +118,7 @@ function Signup1({ isEmailExist }) {
                           "specialChar",
                         ]}
                         minLength={8}
-                        value={passwordCheck}
+                        value={password}
                         onChange={(isValid) => {}}
                         messages={{
                           minLength: "Must be 8 characters",
@@ -186,15 +126,14 @@ function Signup1({ isEmailExist }) {
                           capital: "Must contain a uppercase letter",
                           lowercase: "Must contain a lowercase letter",
                           specialChar: "Must contain a special character",
+                         
                         }}
                       />
                     </div>
                     <div className="form-group">
                       <button
-                        id="creatNewBtn"
                         type="button"
-                        className={"btn btn-primary btn-block " + disabledBtn}
-                        onClick={createNewBtn}
+                        className=" btn btn-primary btn-block disabled"
                       >
                         Create new account
                       </button>

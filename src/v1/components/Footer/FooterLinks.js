@@ -14,10 +14,10 @@ function FooterLinks() {
           <Accordion.Body>
             <ul className="footer_links">
               <li>
-                <a href="#plans">Memberships</a>
+                <a href="0#">Memberships</a>
               </li>
               <li>
-                <a href="https://ae.theentertainerme.com/">The Scoop</a>
+                <a href="0#">The Scoop</a>
               </li>
             </ul>
           </Accordion.Body>
@@ -33,10 +33,10 @@ function FooterLinks() {
                 <a href="0#">Become a partner</a>
               </li>
               <li>
-                <a href="https://business.theentertainerme.com/">Business</a>
+                <a href="0#">Business</a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/the-entertainer-/">Careers</a>
+                <a href="0#">Careers</a>
               </li>
             </ul>
           </Accordion.Body>
@@ -55,7 +55,7 @@ function FooterLinks() {
                 <a href="0#">Hotel rules of use</a>
               </li>
               <li>
-                <a href="https://hub.theentertainerme.com/en/article-categories/faqs">FAQs</a>
+                <a href="0#">FAQs</a>
               </li>
               <li>
                 <a href="0#">Contact us</a>

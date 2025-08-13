@@ -1,10 +1,11 @@
+import img from "../../../../src/assets/images/ScoopCard.png";
 import "./ScoopCard.css";
 function ScoopCard() {
   return (
     <>
       <div className="ScopCard">
         <div className="ScopCard-imgbox">
-          <img className="ScopCard-img" src="https://b2cappassetscdn.theentertainerme.com/website_images/ScoopCard.png"  alt=" " />
+          <img className="ScopCard-img" src={img}  alt="img" />
           <div className="ScopCard-tag">Travel</div>
         </div>
         <div className="ScopCard-content">

@@ -1,133 +1,39 @@
 import { React, useState } from "../../../services/centerServices.js";
 import Modal from "react-bootstrap/Modal";
 import ModalHeader from "react-bootstrap/ModalHeader";
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 import { ScrollingCarousel } from "@trendyol-js/react-carousel";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
-import { Fragment, useEffect } from "react";
-import { getFilterOptions } from "api/search/searchApi.js";
-import useDecryptUrlParams from "hooks/useDecryptUrlParams.js";
+import { SFcuisines } from "./filters/SF.js";
 
-function SearchFilters({
-  //filtersData,
-  setSelectedFilters,
-  selectedFilters,
-  resultCount,
-  resultCountLoading,
-  //handleFilterOpen,
-}) {
-  // getting query string and decoded data from  hook
-  const [queryString, decodedQueryString] = useDecryptUrlParams();
-  const [showModal, setShowModal] = useState(false);
-  const [filtersLoading, setFiltersLoading] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("");
+function SearchFilters() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  // setting filters empty when search field changes
-  useEffect(() => {
-    onFormReset();
-  }, [queryString]);
+  const [showsortby, setTopping] = useState("Top rated")
+  const onOptionChange = e => {
+    setTopping(e.target.value)
+  }
+  const onFormReset = showsortby => {
+    setTopping(showsortby="Top rated")
+  }
 
-  const handleFilterOpen = () => {
-    // handling filters on filter click from child component
-    if (selectedCategory !== decodedQueryString?.searchQuery) {
-      // clear previous filter
-      // calling the api only when the subcatogery is changed
-      getFilterOptions({
-        setLoading: setFiltersLoading,
-        params: {
-          ...decodedQueryString,
-        },
-      }).then((res) => {
-        setFilters(res?.data?.filters);
-        setSelectedCategory(decodedQueryString?.searchQuery);
-      });
-    }
 
-    //setSelectedFilters({});
-  };
-
-  // saving filters api res
-  const [filtersData, setFilters] = useState([]);
-  const handleShow = () => {
-    setShowModal(true);
-    handleFilterOpen();
-  };
-  const handleClose = () => {
-    //setFiltersLoading(true);
-    setShowModal(false);
-  };
-
-  const [selectedFilter, setSelectedFilter] = useState();
-  const [selectedSub, setSelectedSub] = useState();
-  const [checkboxCountData, setCheckboxCountData] = useState({});
-  const onFormReset = () => {
-    setSelectedFilters({});
-    setCheckboxCountData({});
-  };
-  const handleRadioInput = ({ optionData }) => {
-    setSelectedFilters((props) => ({
-      ...props,
-      [optionData.api_param_key]: optionData.api_param_value,
-    }));
-  };
-  const handleCheckboxInput = ({ subOptions, parent }) => {
-    setCheckboxCountData((prev) => {
-      if (
-        checkboxCountData[parent]?.includes(subOptions.analytics_param_value)
-      ) {
-        return {
-          ...prev,
-          [parent]: prev[parent]
-            ? [
-                ...prev[parent].filter(
-                  (item) => item !== subOptions.analytics_param_value
-                ),
-              ]
-            : [subOptions.analytics_param_value],
-        };
-      } else {
-        return {
-          ...prev,
-          [parent]: prev[parent]
-            ? [...prev[parent], subOptions.analytics_param_value]
-            : [subOptions.analytics_param_value],
-        };
-      }
-    });
-    setSelectedFilters((prev) => {
-      const updatedFilters = prev[subOptions.filter_api_param_key]
-        ? [...prev[subOptions.filter_api_param_key]]
-        : [];
-      const indexToRemove = updatedFilters.indexOf(
-        subOptions.filter_api_param_value
-      );
-      if (indexToRemove === -1) {
-        // If the value doesn't exist in the array, add it
-        updatedFilters.push(subOptions.filter_api_param_value);
-      } else {
-        // If the value exists in the array, remove it
-        updatedFilters.splice(indexToRemove, 1);
-      }
-      return {
-        ...prev,
-        [subOptions.filter_api_param_key]: updatedFilters,
-      };
-    });
-  };
-
+  
   return (
-    <Fragment>
+    <>
       <div className="SearchFilters">
         <ScrollingCarousel>
           <span onClick={handleShow} className="FilterBadge">
-            <span className="FilterBadge_content">
-              <img
-                alt="Filters"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_filter.svg"
-              />
-              Filters
-            </span>
+          <span className="FilterBadge_content">
+            <img
+              alt="Filters"
+              src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_filter.svg"
+            />
+            Filters
+          </span>
           </span>
           <label className="FilterBadge">
             <input type="checkbox" />
@@ -230,242 +136,107 @@ function SearchFilters({
           </label>
         </ScrollingCarousel>
       </div>
-      {showModal && (
-        <Modal
-          show={true}
-          backdrop="static"
-          keyboard
-          size="lg"
-          aria-labelledby="contained-modal-title-vcenter"
-          centered
-          scrollable
-          className="sfpopup"
-        >
-          {filtersLoading ? (
-            <div>Loading</div>
-          ) : (
-            <form>
-              <ModalHeader>
-                <h5 className="modal-title">Filters</h5>
-                <button type="button" className="close" onClick={handleClose}>
-                  <span>&times;</span>
-                </button>
-              </ModalHeader>
-              <Modal.Body>
-                <Tab.Container id="sfpopup" defaultActiveKey="cuisines">
-                  <div className="popup_left">
-                    <Nav variant="pills" className="flex-column">
-                      {/* main filters nav render */}
-                      {filtersData?.map((filter, index) => {
-                        return (
-                          <Fragment key={index}>
-                            <Nav.Item
-                              onClick={() => {
-                                filter?.sub_sections &&
-                                  setSelectedSub(
-                                    filter?.sub_sections[0].section_title
-                                  );
-                                setSelectedFilter(filter.section_title);
-                              }}
-                            >
-                              <Nav.Link eventKey={filter.section_title}>
-                                {filter?.sub_sections ? (
-                                  <strong style={{ background: "red" }}>
-                                    {filter.section_title}
-                                  </strong>
-                                ) : (
-                                  <span>{filter.section_title}</span>
-                                )}
-                                <span className="navlinkvelue">
-                                  {/* radio option selected render */}
-                                  {/* {filter?.options &&
-                                    selectedFilters[
-                                      filter?.options[0]?.api_param_key
-                                    ]?.title} */}
-                                  {filter?.options &&
-                                    filter?.options.map((filterOptionObj) => {
-                                      if (
-                                        filterOptionObj.filter_api_param_value ===
-                                        selectedFilters[
-                                          filter?.options &&
-                                            filter?.options[0]?.api_param_key
-                                        ]
-                                      ) {
-                                        return filterOptionObj.title;
-                                      }
-                                    })}
-
-                                  {/* checkbox count render */}
-                                  {checkboxCountData[filter?.section_title]
-                                    ?.length > 0 &&
-                                    `${
-                                      checkboxCountData[filter?.section_title]
-                                        ?.length
-                                    }  selected`}
-
-                                  {/* {view selected filter here} */}
-                                </span>
-                              </Nav.Link>
-                            </Nav.Item>
-                            {filter?.sub_sections?.map((subSection, index) => {
-                              return (
-                                <Nav.Item
-                                  key={index}
-                                  onClick={() => {
-                                    setSelectedFilter(filter.section_title);
-                                    setSelectedSub(subSection.section_title);
-                                  }}
-                                >
-                                  <Nav.Link
-                                    eventKey={
-                                      filter.section_title +
-                                      subSection.section_title
-                                    }
-                                  >
-                                    <span>{subSection.section_title}</span>{" "}
-                                    <span className="navlinkvelue">
-                                      {/* {view selected filter here} */}
-                                    </span>
-                                  </Nav.Link>
-                                </Nav.Item>
-                              );
-                            })}
-                          </Fragment>
-                        );
-                      })}
-                    </Nav>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        scrollable
+        className="sfpopup"
+      >
+        <form>
+        <ModalHeader>
+          <h5 className="modal-title">
+            Filters
+          </h5>
+          <button type="button" className="close" onClick={handleClose}>
+            <span>&times;</span>
+          </button>
+        </ModalHeader>
+        <Modal.Body>
+          <Tab.Container id="sfpopup" defaultActiveKey="cuisines">
+            <div className="popup_left">
+              <Nav variant="pills" className="flex-column">
+                <Nav.Item>
+                  <Nav.Link eventKey="sortby"><span>Sort by</span> <span className="navlinkvelue">{showsortby}</span></Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="offertype">Offer type </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="cuisines">Cuisines</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="subcategories">Sub categories </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="otherattributes">
+                    Other attributes
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="amenities">Amenities </Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </div>
+            <div className="popup_right">
+              <Tab.Content>
+                <Tab.Pane eventKey="sortby">
+                <div className="sfpopup_body">
+                    <label className="radio">
+                      Nearest
+                      <input
+                      type="radio"
+                      name="sortby"
+                      value="Nearest"
+                      onChange={onOptionChange}
+                      />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">
+                      Top rated
+                      <input
+                      defaultChecked="checked"
+                      type="radio"
+                      name="sortby"
+                      value="Top rated"
+                      onChange={onOptionChange}
+                      />
+                      <span className="checkmark"></span>
+                    </label>
+                    <label className="radio">
+                      New
+                      <input
+                      type="radio"
+                      name="sortby"
+                      value="New"
+                      onChange={onOptionChange}
+                      />
+                      <span className="checkmark"></span>
+                    </label>
                   </div>
-                  <div className="popup_right">
-                    <Tab.Content>
-                      {/* filter options render */}
-                      {filtersData?.map((filter, index) => {
-                        return (
-                          <Fragment key={index}>
-                            {filter?.options ? (
-                              <Fragment key={index}>
-                                {filter.section_title === selectedFilter && (
-                                  <div key={index}>
-                                    <div className="sfpopup_body">
-                                      {filter?.options?.map((option, index) => {
-                                        return (
-                                          <label className="radio" key={index}>
-                                            {option.title}®{" "}
-                                            <input
-                                            name="radioInput"
-                                              defaultChecked={
-                                                selectedFilters[
-                                                  option.api_param_key
-                                                ] === option.api_param_value
-                                              }
-                                              type="radio"
-                                              name="sortby"
-                                              value={
-                                                option.filter_api_param_value ||
-                                                ""
-                                              }
-                                              onChange={() =>
-                                                handleRadioInput({
-                                                  optionData: option,
-                                                })
-                                              }
-                                            />
-                                            <span className="checkmark"></span>
-                                          </label>
-                                        );
-                                      })}{" "}
-                                    </div>
-                                  </div>
-                                )}
-                              </Fragment>
-                            ) : (
-                              filter?.sub_sections?.map((subSection, index) => {
-                                return (
-                                  <Fragment key={index}>
-                                    {" "}
-                                    {selectedFilter === filter.section_title &&
-                                      selectedSub ===
-                                        subSection.section_title && (
-                                        <div key={index}>
-                                          <div className="sfpopup_body">
-                                            {subSection?.options?.map(
-                                              (subOptions, index) => {
-                                                return (
-                                                  <label
-                                                    className="checkbox"
-                                                    key={index}
-                                                  >
-                                                    {subOptions.title}
-                                                    <input
-                                                    name="checkboxInout"
-                                                      // value={
-                                                      //   subOptions.filter_api_param_value
-                                                      // }
-                                                      type="checkbox"
-                                                      checked={
-                                                        // selectedFilters[
-                                                        //   filter.section_title
-                                                        // ]?.[
-                                                        //   subOptions
-                                                        //     .filter_api_param_key
-                                                        // ]?.[
-                                                        //   subOptions
-                                                        //     .filter_api_param_value
-                                                        // ]
-                                                        selectedFilters[
-                                                          subOptions
-                                                            .api_param_key
-                                                        ]?.includes(
-                                                          subOptions.filter_api_param_value
-                                                        ) || false
-                                                      }
-                                                      onChange={() =>
-                                                        handleCheckboxInput({
-                                                          subOptions,
-                                                          parent:
-                                                            filter.section_title,
-                                                        })
-                                                      }
-                                                    />
-
-                                                    <span className="checkmark"></span>
-                                                  </label>
-                                                );
-                                              }
-                                            )}
-                                          </div>
-                                        </div>
-                                      )}
-                                  </Fragment>
-                                );
-                              })
-                            )}
-                          </Fragment>
-                        );
-                      })}
-                    </Tab.Content>
-                  </div>
-                </Tab.Container>
-              </Modal.Body>
-              <Modal.Footer>
-                <Button
-                  variant="link"
-                  type="reset"
-                  value="Reset Form"
-                  onClick={onFormReset}
-                >
-                  Clear all
-                </Button>
-                <Button variant="primary" onClick={handleClose}>
-                  {resultCountLoading
-                    ? "Loading"
-                    : `Show ${resultCount} result`}
-                </Button>
-              </Modal.Footer>
-            </form>
-          )}
-        </Modal>
-      )}
-    </Fragment>
+                </Tab.Pane>
+                <Tab.Pane eventKey="offertype"><div className="sfpopup_body">Offer type </div></Tab.Pane>
+                <Tab.Pane eventKey="cuisines">{<SFcuisines />} </Tab.Pane>
+                <Tab.Pane eventKey="subcategories"><div className="sfpopup_body">Sub categories </div></Tab.Pane>
+                <Tab.Pane eventKey="otherattributes"><div className="sfpopup_body">
+                  Other attributes</div>
+                </Tab.Pane>
+                <Tab.Pane eventKey="amenities"><div className="sfpopup_body">Amenities </div></Tab.Pane>
+              </Tab.Content>
+            </div>
+          </Tab.Container>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="link" type="reset" value="Reset Form" onClick={onFormReset}>Clear all</Button>
+          <Button variant="primary">Show 200 result</Button>
+        </Modal.Footer>
+        </form>
+      </Modal>
+    </>
   );
 }
 

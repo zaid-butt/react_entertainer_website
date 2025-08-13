@@ -76,7 +76,7 @@
 	position: absolute;
 	left: 0;
 	bottom: -60px;
-	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/Testi_quote.svg");
+	content: url("../../../assets/images/Testi_quote.svg");
 }
 
 #testi_swiper .swiper .swiper-img img {

@@ -1,74 +1,22 @@
-import {
-  React,
-  useState,
-  useEffect,
-  useSelector,
-  useDispatch,
-} from "../../../services/centerServices";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import TrendingPlacesWeekSlideSkel from "./TrendingPlacesWeekSlideSkel.js";
+import McardSkel from "../Outlets/McardSkel";
 import Mcard from "../Outlets/Mcard";
-//import  "../../../assets/css/_checkbox.css";
 
-function TrendingPlacesWeekSlide({
-  trending,
-  neighbors,
-  category,
-  filterNeighbourhood,
-}) {
-  const [result, setResult] = useState();
-
-  const [checked, setChecked] = useState([]);
-  const handleChecked = (event) => {
-    var checkedList = [...checked];
-    if (event.target.checked) {
-      checkedList = [...checked, event.target.value];
-    } else {
-      checkedList.splice(checked.indexOf(event.target.value), 1);
-    }
-    setChecked(checkedList);
-    filterNeighbourhood(category, checkedList);
-  };
-
-  const [selectedOption, setSelectedOption] = useState(null);
-
-  const handleCheckboxChange = (option) => {
-    setSelectedOption(option);
-    filterNeighbourhood(category, option);
-  };
-
-  useEffect(() => {
-    setResult(trending.data?.outlets);
-  }, [trending]);
-
-  const getNeighbours = () => {
-    return (
-      neighbors &&
-      neighbors.map((neb, k) => (
-        <label className="checkbox" key={neb}>
-          <input
-            name="neibs"
-            className="checked"
-            type="checkbox"
-            checked={selectedOption === neb}
-            value={neb}
-            onChange={() => handleCheckboxChange(neb)}
-            // onChange={handleChecked}
-          />
-          <span className="Mbadge">{neb}</span>
-          <span className="checkmark"></span>
-        </label>
-      ))
-    );
-  };
-
+function TrendingPlacesWeekSlide() {
   return (
     <>
       <div className="HomeMerchentSlides">
         <div className="Mbadgebox">
           Neighbourhood <i className="bi bi-chevron-right"></i>
-          {trending.isLoading ? "loading" : getNeighbours()}
+          <span className="Mbadge">Al Karama</span>
+          <span className="Mbadge">Business Bay</span>
+          <span className="Mbadge">Al Karama</span>
+          <span className="Mbadge">Marina</span>
+          <span className="Mbadge">Jumeirah</span>
+          <span className="Mbadge">Bur Dubai</span>
+          <span className="Mbadge">Deira</span>
         </div>
         <Swiper
           navigation
@@ -83,24 +31,36 @@ function TrendingPlacesWeekSlide({
           }}
           modules={[Navigation, Pagination]}
         >
-          {result &&
-            result.map((outlet, k) => (
-              <SwiperSlide key={outlet.id}>
-                {trending.isLoading || trending.isNeighbours ? (
-                  <TrendingPlacesWeekSlideSkel />
-                ) : (
-                  <Mcard
-                    name={outlet.merchant.name}
-                    img={outlet.merchant.photo_small_url}
-                    logo={outlet.merchant.logo_small_url}
-                    rating={"4.5"}
-                    price={"Est. Savings AED 100"}
-                    tags={outlet.tags}
-                    included={outlet.logical_products}
-                  />
-                )}
-              </SwiperSlide>
-            ))}
+          <SwiperSlide>
+            <McardSkel />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Mcard />
+          </SwiperSlide>
         </Swiper>
       </div>
     </>

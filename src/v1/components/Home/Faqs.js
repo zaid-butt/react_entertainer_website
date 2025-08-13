@@ -70,7 +70,7 @@ function Faqs() {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <a className="btn btn-light faqbtn" href="https://hub.theentertainerme.com/article-categories/faqs">
+        <a className="btn btn-light faqbtn" href="#0">
           {t("faq.view_all")}
         </a>
       </div>

@@ -1,78 +1,39 @@
-import {
-  React,
-  useParams,
-  useDispatch,
-  useSelector,
-} from "../../../services/centerServices";
- 
- 
-function RegionsPopup() {
-  const { lang } = useParams();
-  const dispatch = useDispatch();
-  const stateLocations = useSelector((state) => state.locations);
-  const locations = stateLocations.data?.data?.locations;
 
+import React from "react";
 
-  const regions = locations
-    .map((item) => item.region_name)
-    .filter((value, index, self) => self.indexOf(value) === index);
-
-
-  const getLocation = (locId, locName) => {
-    localStorage.setItem("location_id", locId);
-    localStorage.setItem("location_name", locName);
-    
-  };
-
-  const generateSlug = (country_code, location_name) => {
-    let cntry = country_code.toLowerCase();
-    if (location_name == "Dubai") {
-      location_name = "dubai-n-emirates";
-    } else if (location_name == "Abu Dhabi") {
-      location_name = "abu-dhabi-al-ain";
-    }
-    let loc = location_name.toLowerCase().replace(" ", "-");
-    return "/" + lang + "-" + cntry + "/" + loc;
-  };
-
-
-  return (
+function RegionsPopup () {
+    return (
     <>
-      <div className="region-menu">
-        <ul className="list-unstyled mb-0 region_list">
-          {regions &&
-            regions.map((region, k) => (
-              <li className="Column" key={k}>
-                <span className="listHead">{region}</span>
-                <ul className="list-unstyled mb-0 list">
-                  {locations &&
-                    locations.map((item, i) =>
-                      item.region_name === region ? (
-                        <li
-                          className={item.default_location_name + " "}
-                          key={i}
-                          onClick={() => getLocation(item.location_id, item.location_name)}
-                        >
-                          <a
-                            href={generateSlug(
-                              item.country_code,
-                              item.default_location_name
-                            )}
-                          >
-                            {item.location_name}
-                          </a>
-                           
-                        </li>
-                      ) : (
-                        ""
-                      )
-                    )}
-                </ul>
-              </li>
-            ))}
-        </ul>
-      </div>
+            <div className="region-menu">
+              <ul className="list-unstyled mb-0 region_list">
+                <li className="Column"> <span className="listHead">Middle East</span>
+                  <ul className="list-unstyled mb-0 list">
+                    <li className="Dubai active"> <a href="en-ae/dubai-n-emirates"> Dubai &amp; N. Emirates </a> </li>
+                    <li className="Dubai"> <a href="en-ae/abu-dhabi-al-ain"> Abu Dhabi &amp; Al Ain </a> </li>
+                    <li className="Bahrain"> <a href="en-bh/bahrain"> Bahrain </a> </li>
+                    <li className="Kuwait"> <a href="en-kw/kuwait"> Kuwait </a> </li>
+                    <li className="Oman"> <a href="en-om/oman"> Oman </a> </li>
+                    <li className="Qatar"> <a href="en-qa/qatar"> Qatar </a> </li>
+                    <li className="Riyadh"> <a href="en-sa/riyadh"> Riyadh </a> </li>
+                    <li className="Riyadh"> <a href="en-sa/jeddah"> Jeddah </a> </li>
+                    <li className="Riyadh"> <a href="en-sa/eastern-province"> Eastern Province </a> </li>
+                  </ul>
+                </li>
+                <li className="Column"> <span className="listHead">Africa</span>
+                  <ul className="list-unstyled mb-0 list">
+                    <li className="Cape-Town"> <a href="en-za/cape-town"> Cape Town </a> </li>
+                    <li className="Cape-Town"> <a href="en-za/johannesburg-pretoria"> Johannesburg &amp; Pretoria </a> </li>
+                    <li className="Cape-Town"> <a href="en-za/durban"> Durban </a> </li>
+                  </ul>
+                </li>
+                <li className="Column"> <span className="listHead">Asia</span>
+                  <ul className="list-unstyled mb-0 list">
+                    <li className="Singapore"> <a href="en-sg/singapore"> Singapore </a> </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
     </>
-  );
+    );
 }
 export default RegionsPopup;
