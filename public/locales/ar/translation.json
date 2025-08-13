@@ -1,8 +1,8 @@
 {
   "ztest": "test arar",
   "html_lang": "ar",
-  "logo": "https://entcartut.theentertainerme.com/revamp22/images/Logo_ar.svg",
-  "logomob": "https://entcartut.theentertainerme.com/revamp22/images/Logo-mob_ar.svg",
+  "logo": "/images/Logo_ar.svg",
+  "logomob": "/images/Logo-mob_ar.svg",
   "toplink_memberships": "أنواع العضويّة",
   "toplink_Howitworks": "كيفيّة عمل التطبيق",
   "toplink_BecomePartner": "الشراكة معنا",

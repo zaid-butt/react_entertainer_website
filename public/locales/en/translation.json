@@ -1,8 +1,8 @@
 {
   "ztest": "test enen",
   "html_lang": "en",
-  "logo": "https://entcartut.theentertainerme.com/revamp22/images/Logo.svg",
-  "logomob": "https://entcartut.theentertainerme.com/revamp22/images/Logo-mob.svg",
+  "logo": "/images/Logo.svg",
+  "logomob": "/images/Logo-mob.svg",
   "toplink_memberships": "Memberships",
   "toplink_Howitworks": "How it works?",
   "toplink_BecomePartner": "Become a Partner",

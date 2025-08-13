@@ -1,3 +1,4 @@
+import Logobot from "assets/images/Logo-bot.svg"
 import GooglePlay from "assets/images/GooglePlay.svg"
 import Appstore from "assets/images/Appstore.svg"
 // dummy data
@@ -57,7 +58,7 @@ function Footer() {
             </Col>
             <Col md={10} className="logobottom">
               <a href="index.html">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/Logo-bot.svg" alt="logobottom" />
+                <img src={Logobot} alt="logobottom" />
               </a>
               <h5 className="copyrights">
                 © theentertainer, All rights reserved 2022

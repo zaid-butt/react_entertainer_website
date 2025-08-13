@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logobot from "assets/images/Logo-bot.svg"
 import validator from "validator";
 import SmLogin from "../LoginSignup/SmLogin.js";
 
@@ -40,7 +41,7 @@ function Loginleft({ emailExist, userSignin, isEmailExist }) {
           <div className="login_logo">
             <a className="btn btn-block" href="index.html">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/Logo-bot.svg"
+                src={Logobot}
                 alt=" "
               />
             </a>

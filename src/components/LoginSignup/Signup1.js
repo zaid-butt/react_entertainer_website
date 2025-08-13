@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Logobot from "assets/images/Logo-bot.svg"
 import SmLogin from "../LoginSignup/SmLogin.js";
 import PasswordChecklist from "react-password-checklist";
 import { useTranslation } from "react-i18next";
@@ -21,7 +22,7 @@ function Signup1() {
           <div className="login_logo">
             <a className="btn btn-block" href="index.html">
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/Logo-bot.svg"
+                src={Logobot}
                 alt=" "
               />
             </a>

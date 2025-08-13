@@ -22,6 +22,7 @@ import RegionsPopup from "components/Headers/RegionsPopup.js";
 
 function TopHeader(props) {
   const { t } = useTranslation();
+  
   const {lang, location, city } = useParams();
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -52,7 +53,7 @@ function TopHeader(props) {
             }
           </ul>
 
-          {<Search />}
+          <Search />
 
           <NavbarToggle>
             <span className="navbar-toggler-icon"></span>
@@ -94,7 +95,7 @@ function TopHeader(props) {
               {<LanguageSwitcher />}
             </ul>
 
-            {<UserLoginReg />}
+            <UserLoginReg />
 
             <div className="dropdown downscan">
               <Dropdown>
