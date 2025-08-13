@@ -1,0 +1,151 @@
+/*************************** Merchant_Card Start ***************************/
+.MCard {
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.MCard .MCard-imgbox {
+	position: relative;
+	height: 150px;
+	overflow: hidden;
+	background: #EDEDED;
+}
+
+.MCard .MCard-img {
+	width: 100%;
+	/* height: 200px; */
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.MCard .MCard-logobox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+	width: 94px;
+	height: 94px;
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.MCard .MCard-logobox img {
+	max-width: 90%;
+}
+
+.MCard .MCard-content {
+	position: relative;
+	height: 140px;
+	padding: 10px;
+	border: 0px solid red;
+	background-color: #fff;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.MCard.MCard .MCard-title,
+.MCard .MCard-price,
+.MCard .MCard-tags,
+.MCard .MCard-included {
+	margin-top: 8px;
+	margin-bottom: 0;
+	color: #484848;
+}
+
+.MCard .MCard-rating {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	font-size: 12px;
+	font-weight: 400;
+}
+html[lang="ar"] .MCard .MCard-rating {
+	left: 10px;
+	right: auto;
+}
+.MCard .MCard-rating::before {
+	position: absolute;
+	top: 1px;
+    right: 20px;
+    display: block;
+	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/Star.svg");
+}
+
+html[lang="ar"] .MCard .MCard-rating::before {
+	left: 20px;
+	right: auto;
+}
+
+.MCard .MCard-title {
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.MCard .MCard-price {
+	width: 90%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.MCard .MCard-tags .tags {
+	display: none;
+}
+
+.MCard .MCard-tags .tags:nth-child(1),
+.MCard .MCard-tags .tags:nth-child(2) {
+	display: inline-block;
+}
+
+.MCard .MCard-included {
+	font-size: 11px;
+	font-weight: 400;
+}
+.MCard .MCard-included ul,
+.MCard .MCard-included li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.MCard .MCard-included li::after {
+	content: "|";
+	color: #EDEDED;
+}
+.MCard .MCard-included li:last-child:after {
+	display: none;
+}
+.MCard .MCard-included li a {
+	padding: 5px 5px;
+	color: #3E91CA;
+}
+
+@media screen and (max-width: 767px) {
+	/* html[lang="ar"] #TrendingPlacesWeek .TrendingPlacesWeek_title {
+    text-align: right;
+  } */
+}
+
+/****************************** Merchant_Card End ******************************/

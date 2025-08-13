@@ -1,0 +1,67 @@
+/********* InsideScoop Start *********/
+#InsideScoop {
+	position: relative;
+	margin-top: 160px;
+}
+
+.InsideScoop_title {
+	text-align: center;
+}
+
+#InsideScoop .swiper {
+	margin-top: -38px;
+}
+
+#InsideScoop .swiper-button-prev,
+#InsideScoop .swiper-button-next {
+	top: 14px;
+	right: 14px;
+}
+
+#InsideScoop .swiper-button-prev {
+	left: auto;
+	right: 56px;
+}
+
+#InsideScoop .swiper-button-prev.swiper-button-disabled,
+#InsideScoop .swiper-button-next.swiper-button-disabled {
+	display: block;
+}
+
+.InsideScoop_btns .btn {
+	margin-top: 48px;
+}
+
+/********* Responsive *********/
+@media screen and (max-width: 767px) {
+	#InsideScoop_wrapper {
+		padding: 6px;
+	}
+
+	#InsideScoop {
+		width: 90%;
+		margin-top: 40px;
+		overflow: hidden;
+	}
+
+	#InsideScoop .swiper {
+		overflow: visible;
+	}
+
+	#InsideScoop .swiper-button-prev,
+	#InsideScoop .swiper-button-next {
+		display: none !important;
+	}
+
+	.InsideScoop_title {
+		padding: 0 16px;
+		text-align: left;
+	}
+
+	html[lang=ar] .InsideScoop_title {
+		text-align: right;
+	}
+}
+
+
+/********* InsideScoop end *********/

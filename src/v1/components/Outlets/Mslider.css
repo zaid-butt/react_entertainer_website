@@ -1,0 +1,24 @@
+/********* Mslider Start *********/
+.heroimg .swiper-slide,
+.thumb_heroimg .swiper-slide {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.heroimg .swiper-slide img {
+    max-height: 370px;
+}
+
+.thumb_heroimg {
+    margin-top: 15px;
+}
+.thumb_heroimg img {
+    cursor: pointer;
+}
+/* .thumb_heroimg .swiper-slide-active img {
+    cursor: grab;
+} */
+
+/********* Mslider End *********/

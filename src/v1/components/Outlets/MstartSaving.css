@@ -1,0 +1,199 @@
+/********* MstartSaving Start *********/
+.MstartSaving {
+    margin-top: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.MstartSaving:last-child {
+    border-bottom: 0;
+}
+
+.SSCard {
+    width: 90%;
+    position: relative;
+    padding-top: 90px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.SSCard_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    border-top: 1px solid #F8F8F8;
+}
+
+.SSCard_left {
+    width: 40%;
+    text-align: center;
+    border-right: 1px solid #F8F8F8;
+}
+html[lang="ar"] .SSCard_left {
+    border-left: 1px solid #F8F8F8;
+    border-right: 0;
+}
+
+.SSCard_left img {
+    max-width: 125px;
+}
+
+.SSCard_right {
+    width: 60%;
+    padding-left: 10%;
+}
+
+html[lang="ar"] .SSCard_right {
+    padding-left: 0;
+    padding-right: 10%;
+}
+
+.SSCard_name {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+}
+
+html[lang="ar"] .SSCard_name {
+    left: auto;
+    right: 24px;
+}
+
+.SSCard_name .SSCard_title {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.SSCard_name .SSCard_subtitle {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.SSCard .New_Product_Tiers_pricebox {
+    margin-top: 14px;
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+    color: #282828;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 12px
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_price small {
+    font-size: 17px
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_price small span {
+    font-size: 13px
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually {
+    margin-top: 8px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually::after {
+    content: "";
+    clear: both;
+    display: table
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually strong {
+    font-weight: 500
+}
+
+.SSCard .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually span {
+    font-size: 11px;
+    font-weight: 400
+}
+
+.SSCard .SSCard_plugin {
+    position: relative;
+}
+.SSCard .SSCard_plugin hr {
+    margin: 24px 0;
+    border-color: #F1F1F1;
+}
+
+.SSCard .SSCard_plugin hr::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background: #F6AB34;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.SSCard .SSCard_plugin_devider {
+    position: absolute;
+    top: -7px;
+    left: 3px;
+    z-index: 5;
+    color: #fff;
+    font-size: 9px;
+}
+
+.SSCard_bottom {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 24px 24px 24px;
+}
+
+.SSCard_bottom a {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.card_offers {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card_offers img {
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+    .SSCard {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #MstartSaving {
+        margin-top: 48px;
+    }
+
+    .MstartSaving {
+        margin-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    .SSCard,
+    .card_offers {
+        margin-bottom: 24px;
+    }
+
+    .SSCard_left,
+    html[lang="ar"] .SSCard_left {
+        border-left: 0;
+        border-right: 0;
+    }
+}
+
+/********* MstartSaving End *********/

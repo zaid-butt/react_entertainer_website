@@ -1,0 +1,89 @@
+/********* ScoopCard Start *********/
+.ScopCard {
+	position: relative;
+	padding: 76px 12px 20px 12px;
+}
+
+.ScopCard .ScopCard-imgbox {
+	position: relative;
+	background: #EDEDED;
+}
+
+.ScopCard .ScopCard-img {
+	width: 100%;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.ScopCard .ScopCard-tag {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+	padding: 3px 13px;
+	font-size: 10px;
+	font-weight: 600;
+	background: #fff;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.ScopCard .ScopCard-content {
+	position: relative;
+	height: 140px;
+	padding: 10px;
+	border: 0px solid red;
+	background-color: #fff;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.ScopCard .ScopCard-title {
+	margin-top: 8px;
+	margin-bottom: 0;
+	color: #484848;
+}
+
+.ScopCard .ScopCard-title {
+	width: 90%;
+	/* white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;*/
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.ScopCard .ScopCard-date {
+	position: absolute;
+	left: 24px;
+	bottom: 40px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+html[lang=ar] .ScopCard .ScopCard-date {
+	left: auto;
+	right: 24px;
+}
+
+/********* Responsive *********/
+@media screen and (max-width: 767px) {
+	
+}
+
+
+/********* ScoopCard end *********/

@@ -1,0 +1,117 @@
+html[lang="ar"] header .searchbox .search {
+    direction: ltr;
+
+}
+#search_suggestion {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 400px;
+    max-height: 50vh;
+    overflow-x: scroll;
+    background: #fff;
+    border: 1px solid #E3E3E3;
+}
+
+html[lang="ar"] #search_suggestion {
+    left: auto;
+    right: 0;
+}
+
+#search_suggestion #sugges_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#search_suggestion #sugges_wrap .sugges_wraptop {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 5px 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#search_suggestion #sugges_wrap .sugges_wraptop a {
+    color: #2F85FE;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#search_suggestion #sugges_wrap .loading img  {
+    height: 50px;
+}
+
+#search_suggestion .sugges_wrap {
+    display: flex;
+    align-items: center;
+    padding: 16px 4px;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+#search_suggestion .imgbox {
+    min-width: 60px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 12px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#search_suggestion .imgbox img {
+    height: 100%;
+}
+
+#search_suggestion .content {
+    position: relative;
+    width: 100%;
+}
+
+#search_suggestion .content .title {
+    font-size: 13px;
+    color: #282828;
+    font-weight: 300;
+    line-height: 14px;
+}
+
+#search_suggestion .content strong {
+    font-weight: 500;
+}
+
+#search_suggestion .content .title p {
+    font-size: 12px;
+    color: #484848;
+    font-weight: 300;
+    margin-bottom: 0;
+    line-height: 23px;
+}
+
+#search_suggestion .content .stags {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 60px);
+}
+
+#search_suggestion .content .distance {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: 300;
+    border: 1px solid #F1F1F1;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    #search_suggestion {
+        position: fixed;
+        top: 70px;
+        width: 350px;
+    }
+}

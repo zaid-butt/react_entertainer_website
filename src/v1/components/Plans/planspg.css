@@ -1,0 +1,625 @@
+/*************************** Plans page Start ***************************/
+#planspg #plans {
+    background: rgb(253, 250, 242);
+    background: -moz-linear-gradient(90deg, rgba(253, 250, 242, 0) 0%, rgba(243, 249, 253, 0) 0%);
+    background: -webkit-linear-gradient(90deg, rgba(253, 250, 242, 0) 0%, rgba(243, 249, 253, 0) 0%);
+    background: linear-gradient(90deg, rgba(253, 250, 242, 0) 0%, rgba(243, 249, 253, 0) 0%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfaf2", endColorstr="#f3f9fd", GradientType=1);
+}
+
+#planspg #plans .nav-tabs {
+    border-bottom: 1px solid #a3a2a2;
+}
+
+#planspg .planspg_warp {
+    display: flex;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/***************************
+CPCbox Start
+***************************/
+#planspg .cpcbox {
+    position: relative;
+    width: 100%;
+    min-width: 222px;
+    padding: 0 17px;
+    margin-left: -1px;
+    margin-right: -1px;
+    border-left: 2px solid #F1F1F1;
+    border-right: 2px solid #F1F1F1;
+    border-bottom: 2px solid #F1F1F1;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+#planspg .cpcbox .product_img {
+    padding-top: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#planspg .cpcbox .product_img img {
+    display: block;
+    height: 150px;
+    margin: 0 auto;
+}
+
+#planspg .cpcbox .colorbox {
+    /* position: relative; */
+    height: 214px;
+    margin: 0 -17px;
+    padding: 5px 17px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+#planspg [product_location="Johannesburg"].cpcbox .colorbox {
+    height: 250px;
+}
+
+html[lang="ru"] #planspg .cpcbox .colorbox {
+    height: 240px;
+}
+
+#planspg .cpcbox .colorbox h3 {
+    color: #282828;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#planspg .cpcbox .colorbox h3 span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#planspg .cpcbox.popular .popular_tag {
+    display: none;
+}
+
+#planspg .cpcbox .colorbox .Earlybird_badge {
+    margin-top: 10px;
+    padding: 6px 10px 6px 7px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    vertical-align: middle;
+    background-color: #CC2727;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#planspg .cpcbox .colorbox .Earlybird_badge svg {
+    vertical-align: text-top;
+    margin-top: -2px;
+}
+
+#planspg .cpcbox .colorbox .Earlybird_price {
+    position: absolute;
+    top: -35px;
+    color: #CC2727;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#planspg .cpcbox .colorbox .Earlybird_price span {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 3px 10px;
+    background-color: #CC2727;
+    color: #fff;
+    font-size: 11px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox {
+    position: relative;
+    margin-top: 35px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox,
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+    display: block
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+    color: #282828;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 12px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price small {
+    font-size: 17px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price small span {
+    font-size: 13px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually {
+    margin-top: 8px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually strong {
+    font-weight: 500;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually span {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually a .store_icons {
+    width: 47%;
+    margin-bottom: 15px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually a:last-child .store_icons {
+    float: right;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox {
+    position: relative;
+    font-size: 13px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox .or {
+    position: absolute;
+    top: -10px;
+    left: 7px;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    font-size: 10px;
+    font-weight: 400;
+    background-color: #e6f4fa;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#planspg .cpcbox.popular .colorbox .New_Product_Tiers_pricebox .orbox .or {
+    background-color: #fefbf5;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox p {
+    float: left;
+    width: calc(100% - 60px);
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#planspg .cpcbox .iicon,
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox p .btn {
+    margin-top: -5px;
+    color: #2f85fe;
+    border-color: #2f85fe;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox a {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .orbox a.postpay {
+    float: right;
+    padding: 5px;
+    background-color: #6cc3d8;
+    border-color: #6cc3d8;
+}
+
+#planspg .cpcbox .colorbox .New_Product_Tiers_pricebox .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(100 200 200 / 50%);
+}
+
+#planspg .cpcbox .Buynow {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    background-color: #fff;
+    border-color: #484848;
+    font-size: 15px;
+    color: #484848;
+    font-weight: 600;
+}
+
+html[lang="ru"] #planspg .cpcbox .Buynow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+}
+
+#planspg .cpcbox .Buynow.subscribedProductsBtn,
+#planspg .cpcbox.lite .Buynow.subscribedProductsBtn,
+#planspg .cpcbox.popular .Buynow.subscribedProductsBtn {
+    background-color: #F1F1F1;
+    border-color: #F1F1F1;
+    color: #8F8F8F;
+    font-weight: 300;
+}
+
+#planspg .cpcbox .Buynow.subscribedProductsBtn::before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    width: 8px;
+    height: 8px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 2px;
+    background-color: #4EA11E;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#planspg .cpcbox .colorbox .Buynow.btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgb(0 150 200 / 50%);
+}
+
+#planspg .cpcbox.lite .Buynow {
+    background-color: #282828;
+    border-color: #282828;
+    color: #fff;
+}
+
+
+#planspg .cpcbox .colorbox .member_learnmore {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 60px);
+    position: absolute;
+    bottom: 20px;
+    color: #2f85fe;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#planspg .cpcbox .colorbox .member_learnmore .MembershipTerms {
+    margin-top: 3px;
+}
+
+/***************************
+CPCbox End
+***************************/
+
+#planspg .baobox {
+    min-width: 260px;
+    max-width: 260px;
+    border-top: 2px solid #F1F1F1;
+    border-left: 2px solid #F1F1F1;
+    border-bottom: 2px solid #F1F1F1;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+html[lang="ar"] #planspg .baobox {
+    border-left: 0 solid #F1F1F1;
+    border-right: 2px solid #F1F1F1;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+#planspg .baobox .baoboxtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 484px;
+    margin: 0;
+    padding: 0 24px;
+}
+
+#planspg .baobox .baoboxtext h2 {
+    font-size: 30px;
+}
+
+#planspg .baobox .bao {
+    margin: 0;
+}
+
+#planspg .baobox .bao div,
+#planspg .baobox .bao div:first-child {
+    align-items: flex-start;
+    padding: 0 24px;
+    border-top: 1px solid #fff;
+}
+
+#planspg .baobox .bao div:first-child {
+    background: #fff;
+}
+
+#planspg #plans .probox .colorbox {
+    padding-bottom: 24px;
+    border: 0;
+}
+
+#planspg #plans .probox .colorbox h3 {
+    margin-top: 0;
+}
+
+#planspg .TPP_plugin {
+    position: relative;
+    font-size: 13px;
+}
+
+#planspg .TPP_plugin hr {
+    margin: 24px 0;
+    border-color: #F1F1F1;
+}
+
+#planspg .TPP_plugin hr::before {
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: 6px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background: #F6AB34;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#planspg .TPP_plugin_devider {
+    position: absolute;
+    top: -7px;
+    left: 9px;
+    z-index: 5;
+    color: #fff;
+    font-size: 9px;
+}
+
+#planspg .bao {
+    display: flex;
+    flex-direction: column;
+    margin: 22px -17px 0 -17px;
+}
+
+#planspg .bao div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    padding: 0 10px;
+    border-top: 1px solid #F1F1F1;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#planspg .bao div a {
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#planspg .bao div span {
+    display: none;
+}
+
+#planspg .bao div p {
+    margin-bottom: 0;
+}
+
+#planspg .bao div:first-child {
+    background: #EAF3FF;
+}
+
+.mobtab {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+    width: 100%;
+    background-color: #F0F0F0;
+}
+
+.mobtab .mobtab_item {
+    width: 100%;
+    margin: 2px 1px 0;
+    padding: 40px 0;
+    background: #FAFAFA;
+    font-size: 17px;
+    font-weight: 300;
+    text-align: center;
+    cursor: pointer;
+}
+.mobtab .mobtab_item.active {
+    color: #fff;
+    background: #5ba1d8;
+}
+
+/********* Plans page Responsive star *********/
+@media (min-width: 1550px) {
+    .pgplans .container {
+        max-width: 1290px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #planspg .planspg_warp {
+        margin-top: 150px;
+    }
+    #planspg .cpcbox .colorbox h3 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        position: absolute;
+        top: -78px;
+        left: 0;
+        width: calc(100% + 2px);
+        height: 78px;
+        padding-left: 20px;
+        border-right: 2px solid #F1F1F1;
+        background-color: #fafafa;
+    }
+
+    html[lang="ar"] #planspg .cpcbox .colorbox h3 {
+        left: auto;
+        right: 0;
+        padding-left: 0;
+        padding-right: 20px;
+        border-left: 2px solid #F1F1F1;
+        border-right: 0 solid #F1F1F1;
+    }
+
+    #planspg .planspg_warp .cpcbox:nth-child(2) h3 {
+        -webkit-border-top-left-radius: 6px;
+        -moz-border-radius-topleft: 6px;
+        border-top-left-radius: 6px;
+
+    }
+
+    html[lang="ar"] #planspg .planspg_warp .cpcbox:nth-child(2) h3 {
+        -webkit-border-top-left-radius: 0;
+        -moz-border-radius-topleft: 0;
+        border-top-left-radius: 0;
+        -webkit-border-top-right-radius: 6px;
+        -moz-border-radius-topright: 6px;
+        border-top-right-radius: 6px;
+
+    }
+
+    #planspg .planspg_warp .cpcbox:last-child h3 {
+        border-right: 0;
+        -webkit-border-top-right-radius: 6px;
+        -moz-border-radius-topright: 6px;
+        border-top-right-radius: 6px;
+    }
+
+    html[lang="ar"] #planspg .planspg_warp .cpcbox:last-child h3 {
+        border-left: 0 solid #F1F1F1;
+        border-right: 0 solid #F1F1F1;
+        -webkit-border-top-right-radius: 0;
+        -moz-border-radius-topright: 0;
+        border-top-right-radius: 0;
+        -webkit-border-top-left-radius: 6px;
+        -moz-border-radius-topleft: 6px;
+        border-top-left-radius: 6px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    
+    /***************************
+CPCbox Start
+***************************/
+    #planspg .baobox,
+    #planspg .cpcbox {
+        display: none;
+    }
+
+    #planspg .cpcbox.active {
+        display: block;
+        border-left: 0 solid #F1F1F1;
+        border-right: 0 solid #F1F1F1;
+    }
+
+    #planspg .cpcbox .colorbox {
+        height: auto;
+    }
+
+    #planspg .cpcbox .colorbox .New_Product_Tiers_pricebox {
+        margin-top: 0;
+    }
+
+    #planspg .cpcbox .colorbox .Earlybird_price {
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    /***************************
+CPCbox End
+***************************/
+    #planspg .bao div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #planspg .bao div:last-child {
+        border-bottom: 1px solid #F1F1F1;
+    }
+
+    #planspg .bao div span {
+        display: block;
+    }
+
+    #planspg .bao div p {
+        text-align: right;
+    }
+
+    html[lang=ar] #planspg .bao div p {
+        text-align: left;
+    }
+    .mobtab {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pgplans .container {
+        max-width: 100%;
+    }
+
+    #planspg #plans .nav-tabs {
+        margin: 0 -15px;
+    }
+
+    #planspg .planspg_warp {
+        margin: 16px -15px;
+        border: 0 solid #F1F1F1;
+    }
+}
+
+/********* Plans page Responsive end *********/
+
+/****************************** Plans page End ******************************/

@@ -1,0 +1,272 @@
+/****************************** Footer Start ******************************/
+footer {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background: rgb(253,250,242);
+	background: -moz-linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+	background: linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfaf2", endColorstr="#f3f9fd", GradientType=1);
+}
+.accordion_arrow {
+	position: absolute;
+	top: 26px;
+	right: 3px;
+	color: #282828;
+	font-size: 20px;
+}
+footer .collapsed .accordion_arrow.bi-chevron-up, footer .accordion_arrow.bi-chevron-down {
+	display: none;
+}
+footer .collapsed .accordion_arrow.bi-chevron-down, footer .accordion_arrow.bi-chevron-up {
+	display: block;
+}
+footer .accordion_arrow.bi-chevron-up {
+	color: #4E98D1;
+}
+footer .accordion-header,
+footer .accordion-header .accordion-button,
+footer .card-header {
+	padding: 0;
+	background-color: transparent;
+}
+
+
+footer .accordion-header .accordion-button {
+	border: 0;
+}
+
+footer .collapse.show .accordion-body,
+footer .accordion-item .btn.collapsed {
+	border-bottom: 1px solid #e3e3e3;
+}
+footer .accordion .btn {
+	padding: 24px 0;
+}
+footer .card {
+	background-color: transparent;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+}
+footer .accordion > .card > .card-header {
+	margin-bottom: 0px;
+}
+footer .btn:focus,
+footer.btn.focus {
+	box-shadow: none;
+}
+footer .card-body {
+	padding: 0;
+	padding-bottom: 24px;
+}
+#footeraccordion .btn,
+#footeraccordion .btn.collapsed {
+	position: relative;
+	color: #484848;
+	font-size: 17px;
+	font-weight: 600;
+	background-color: transparent;
+	text-align: left;
+}
+html[lang="ar"] #footeraccordion .btn {
+	text-align: right;
+}
+#footeraccordion .btn {
+	color: #4E98D1;
+}
+.footer_links, .footer_links li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.footer_links li {
+	display: table;
+	margin-bottom: 10px;
+}
+.footer_links li a {
+	color: #484848;
+	font-size: 15px;
+	font-weight: 300;
+}
+.logobottom {
+	display: flex;
+	align-items: center;
+}
+/*
+.logobottom a img {
+	-webkit-transition: all .2s ease-in;
+	-moz-transition: all .2s ease-in;
+	-ms-transition: all .2s ease-in;
+	-o-transition: all .2s ease-in;
+	transition: all .2s ease-in;
+}
+.logobottom a:hover img {
+	margin-top: -30px;
+}
+*/
+.copyrights {
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 83px;
+	color: #737373;
+	font-size: 15px;
+	font-weight: 300;
+}
+.storeicons a {
+	display: block;
+	margin: 0 auto;
+}
+.storeicons img {
+	margin-top: 12px;
+}
+.SMIcons {
+	margin-top: 10px;;
+}
+.SMIcons ul, .SMIcons li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.SMIcons li {
+	display: inline-block;
+}
+.SMIcons li a {
+	display: block;
+	width: 36px;
+	height: 40px;
+	overflow: hidden;
+	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/SMIcons.svg);
+	background-repeat: no-repeat;
+}
+.SMIcons li a.SMI_y {
+	background-position: 0 -12px;
+}
+.SMIcons li a.SMI_y:hover {
+	background-position: 0 -59px;
+}
+.SMIcons li a.SMI_f {
+	background-position: -47px -12px;
+}
+.SMIcons li a.SMI_f:hover {
+	background-position: -47px -59px;
+}
+.SMIcons li a.SMI_i {
+	background-position: -94px -12px;
+}
+.SMIcons li a.SMI_i:hover {
+	background-position: -94px -59px;
+}
+.SMIcons li a.SMI_t {
+	background-position: -141px -12px;
+}
+.SMIcons li a.SMI_t:hover {
+	background-position: -141px -59px;
+}
+#aly_have {
+	padding-top: 35px;
+	padding-bottom: 20px;
+	background-color: #17C5FE;
+}
+#aly_have .aly_have_title {
+	color: #fff;
+}
+#aly_have .aly_have_p {
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+#aly_have form {
+	margin-top: 10px;
+}
+#aly_have #activationcodehere {
+	height: 38px;
+	margin-right: 10px;
+}
+#aly_have #activationcodehere::placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+#aly_have #activationcodehere:-ms-input-placeholder {
+ color: #bfbfbf;
+}
+#aly_have #activationcodehere::-ms-input-placeholder {
+ color: #bfbfbf;
+}
+#aly_have .btn {
+	width: 100%;
+}
+/********* Footer Responsive start *********/
+@media screen and (min-width: 767px) {
+footer #footeraccordion {
+	display: inline-block;
+	width: 100%;
+}
+footer .collapse:not(.show) {
+	display: block;
+}
+footer .collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	transition: height 0s ease;
+}
+footer .accordion > .accordion-item {
+	overflow: visible;
+}
+footer .card-header {
+	border-bottom: 0px solid #e3e3e3;
+}
+footer .collapsed .accordion_arrow.bi-chevron-down, footer .accordion_arrow.bi-chevron-up {
+	display: none;
+}
+footer .accordion .btn {
+	padding: 0 0 15px 0;
+}
+footer .collapse.show .accordion-body,
+footer .accordion-item .btn.collapsed {
+	border-bottom: 0;
+}
+footer .accordion-item,
+footer .card {
+	position: relative;
+	display: block;
+	float: left;
+	width: calc(25% - 10px);
+	margin-right: 10px;
+}
+#footeraccordion .btn, #footeraccordion .btn.collapsed {
+	color: #484848;
+}
+#footeraccordion .btn {
+	color: #484848;
+}
+}
+
+@media screen and (max-width: 767px) {
+footer {
+	padding-top: 20px;
+    padding-bottom: 0;
+	}
+	.logobottom {
+	display: block;
+}
+.storeicons, .logobottom, .SMIcons {
+	margin: 10px 0;
+	text-align: center;
+}
+	.copyrights {
+		display: block;
+	margin-left: 0;
+}
+}
+/********* Footer Responsive end *********/
+/********* Footer Arabic start *********/
+html[lang=ar] .accordion_arrow {
+    right: auto;
+    left: 3px;
+}
+html[lang=ar] .copyrights {
+    margin-left: 0;
+	margin-right: 83px;
+}
+/********* Footer Arabic end *********/
+/****************************** Footer End ******************************/

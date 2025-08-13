@@ -1,0 +1,133 @@
+/********* FAQ start *********/
+#FAQ h2 {
+	margin-bottom: 40px;
+}
+
+#FAQ .collapsed .accordion_arrow.bi-chevron-up,
+#FAQ .accordion_arrow.bi-chevron-down {
+	display: none;
+}
+
+#FAQ .collapsed .accordion_arrow.bi-chevron-down,
+#FAQ .accordion_arrow.bi-chevron-up {
+	display: block;
+}
+
+#FAQ .accordion_arrow.bi-chevron-up {
+	color: #4e98d1;
+}
+
+#FAQ .accordion-item {
+	padding: 0;
+	background-color: transparent;
+}
+
+#FAQ .accordion-item,
+#FAQ .accordion-item .btn {
+	border-bottom: 0px;
+}
+
+#FAQ .collapse.show .accordion-body,
+#FAQ .accordion-item .btn.collapsed {
+	border-bottom: 1px dashed #a3a2a2;
+}
+
+#FAQ .accordion .btn {
+	position: relative;
+	padding: 24px 0;
+	text-align: left;
+}
+
+html[lang="ar"] #FAQ .accordion .btn {
+	text-align: right;
+}
+
+/* #FAQ .card {
+	background-color: transparent;
+	border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+#FAQ .accordion>.card>.card-header {
+	margin-bottom: 0px;
+} */
+
+#FAQ .btn:focus,
+#FAQ .btn.focus {
+	box-shadow: none;
+}
+
+#FAQ .accordion-body {
+	padding: 0;
+	padding-bottom: 24px;
+}
+
+.faqbtn {
+	display: block;
+	position: relative;
+	width: 230px;
+	margin: 64px auto 0 auto;
+	color: #282828;
+	font-size: 15px;
+	font-weight: 600;
+	background-color: #fff;
+	border-color: #484848;
+}
+
+.faqbtn:hover {
+	color: #282828;
+	background-color: #f8f9f7;
+	border-color: #484848;
+}
+
+.faqbtn:focus,
+.faqbtn.focus {
+	color: #282828;
+	background-color: #f8f9f7;
+	border-color: #484848;
+	box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+}
+
+html[lang="en"] #faqaccordion .btn {
+	padding-right: 24px !important;
+}
+
+html[lang="ar"] #faqaccordion .btn {
+	padding-left: 25px !important;
+}
+
+#faqaccordion .btn,
+#faqaccordion .btn.collapsed {
+	color: #484848;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+#faqaccordion .btn,
+#faqaccordion .btn:hover {
+	color: #4e98d1;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+/* #faqaccordion .card-header .btn.collapsed:hover {
+	padding-left: 15px;
+} */
+
+@media screen and (max-width: 767px) {
+	.faqbtn {
+		width: 100%;
+	}
+
+	#FAQ .text-center {
+		text-align: left !important;
+	}
+
+	html[lang="ar"] #FAQ .text-center {
+		text-align: right !important;
+	}
+}
+
+/********* FAQ end *********/

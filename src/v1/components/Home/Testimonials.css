@@ -1,0 +1,197 @@
+/********* Testimonials start *********/
+#testimonials {
+    border-bottom: 1px solid #f1f1f1;
+}
+#testimonials h2 {
+	padding: 0 16px;
+	margin-bottom: 64px;
+}
+
+#testi_swiper_wrap {
+	width: 100%;
+	/* height: 500px; */
+	overflow: hidden;
+}
+
+#testi_swiper {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#testi_swiper .swiper {
+	width: 100%;
+	height: 100%;
+	cursor: grab;
+}
+
+#testi_swiper .swiper .swiper-slide {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+#testi_swiper .swiper .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#testi_swiper .swiper .swiper-slide .swiper-box {
+	position: relative;
+	width: 100%;
+	/*min-height: 400px;*/
+	margin: 20px 10px 50px 10px;
+	padding: 10px;
+	border: 0px solid red;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.10);
+	background-color: #fff;
+}
+
+#testi_swiper .swiper .swiper-img {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+#testi_swiper .swiper .swiper-img::after {
+	position: absolute;
+	left: 0;
+	bottom: -60px;
+	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/Testi_quote.svg");
+}
+
+#testi_swiper .swiper .swiper-img img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#testi_swiper .swiper .swiper-p {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 100%;
+	height: 103px;
+	margin-bottom: 80px;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+}
+
+#testi_swiper .swiper .swiper-pro {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+#testi_swiper .swiper .swiper-proimg {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin-right: 8px;
+	margin-bottom: 6px;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	border-radius: 16px;
+}
+
+#testi_swiper .swiper .swiper-protitle {
+	display: inline-block;
+}
+
+#testi_swiper .swiper .swiper-proname {
+	display: block;
+	color: #000;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+#testi_swiper .swiper .swiper-prodes {
+	display: block;
+	color: #737373;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#testi_swiper .swiper .swiper-proname,
+#testi_swiper .swiper .swiper-prodes {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 190px;
+	white-space: nowrap;
+}
+#testi_swiper .swiper-button-prev,
+#testi_swiper .swiper-button-next {
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	#testi_swiper .swiper .swiper-p {
+		margin-bottom: 100px;
+	}
+}
+/* @media screen and (max-width: 635px) {
+	#testi_swiper .swiper {
+		overflow: visible;
+	}
+	} */
+@media screen and (max-width: 639px) {
+	/* #testi_swiper_wrap {
+		height: 450px;
+	} */
+
+	#testi_swiper {
+		width: 90%;
+		margin: 0 0;
+	}
+	#testi_swiper .swiper {
+		overflow: visible;
+	}
+	#testi_swiper .swiper-pagination {
+		width: 120% !important;
+	}
+
+	#testi_swiper .swiper .swiper-p {
+		height: 63px;
+		margin-bottom: 60px;
+		-webkit-line-clamp: 3;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	/* #testi_swiper_wrap {
+		height: 400px;
+	} */
+}
+@media screen and (max-width: 999px) {
+	#categories .container {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#testimonials.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+/********* Testimonials end *********/

@@ -1,0 +1,481 @@
+/*************************** Profile Start ***************************/
+#Profile {
+	display: flex;
+}
+
+#Profile .nav {
+	width: 270px;
+}
+
+#Profile .nav-link {
+	display: flex;
+	padding: 15px 0;
+	align-items: center;
+}
+
+#Profile .nav-link img {
+	margin: 0 15px 0 0;
+}
+
+html[lang="ar"] #Profile .nav-link img {
+	margin: 0 0 0 15px;
+}
+
+#Profile .nav-pills .nav-link {
+	color: #282828;
+	font-size: 15px;
+	font-weight: 400;
+	background: none;
+	border-radius: 0;
+	border: 0;
+}
+
+#Profile .nav-pills .nav-link:hover,
+#Profile .nav-pills .nav-link.active,
+#Profile .nav-pills .show>.nav-link {
+	color: #4e99d1;
+	background-color: transparent;
+}
+
+#Profile .nav-pills .nav-link {
+	background: none;
+	border: 0;
+	border-radius: 0;
+}
+
+#Profile .tab-content {
+	width: 100%;
+}
+
+#Profile .tab-content>div {
+	height: 100%;
+}
+
+#Profile .tab-content .contentWrap {
+	padding: 24px;
+	height: 100%;
+	border: 1px solid #D3D3D3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+}
+
+#Profile .table td {
+	border-top: 1px solid #F1F1F1;
+}
+
+.PGproImg {
+	position: relative;
+	width: 170px;
+	height: 170px;
+	margin-bottom: 20px;
+	border: 2px solid #F8A121;
+	border-radius: 170px;
+}
+
+.PGproImg .pro_img {
+	width: 166px;
+	height: 166px;
+	border: 2px solid #fff;
+}
+
+.PGproImg span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	margin: 0 45px;
+	padding: 3px 10px;
+	border-radius: 20px;
+	background-color: #F8A121;
+	color: #FFF;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.PGproName {
+	font-size: 26px;
+	font-weight: 100;
+	line-height: 32px;
+}
+
+.PGproName span {
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.PGproName p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#Profile h4 {
+	margin-bottom: 24px;
+}
+
+/********* Profile *********/
+.profile_SSG {
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.profile_SSG>div {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+.profile_SSG img {
+	margin: 0 20px;
+}
+
+.profile_SSG p {
+	font-size: 20px;
+	font-weight: 300;
+	margin-bottom: 1px;
+}
+
+.profile_SSG span {
+	font-size: 32px;
+	font-weight: 100;
+}
+
+.profile_SSG strong {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.profile_SSG .ProSavings {
+	color: #005CA8;
+}
+
+.profile_SSG .ProSmiles {
+	color: #F8A121;
+}
+
+.profile_SSG .ProGifts {
+	color: #333;
+}
+
+.profile_SSG .devider {
+	height: 40px;
+	border-left: 1px solid #e6e6e6;
+}
+
+#Profile_contentWrap.contentWrap {
+	height: 85% !important;
+}
+
+#Profile_contentWrap table {
+	width: 75%;
+}
+
+#Profile_contentWrap table th,
+#Profile_contentWrap table td {
+	padding: 10px 0;
+}
+
+
+/********* VIPKeyActivation *********/
+#VIPKeyActivation .form-inline div {
+	flex: 1 1 auto;
+}
+
+#VIPKeyActivation .form-inline input {
+	width: 100%;
+	margin-right: 16px;
+}
+
+#VIPKeyActivation .form-inline input {
+	width: 100%;
+	margin-right: 16px;
+}
+
+html[lang="ar"] #VIPKeyActivation .form-inline input {
+	margin-left: 16px;
+	margin-right: auto;
+}
+
+#VIPKeyActivation .form-inline button {
+	width: 200px;
+}
+
+/********* Leaderboard *********/
+#Leaderboard table {
+	margin: -75px -24px 0 -24px;
+	width: calc(100% + 48px);
+}
+
+#Leaderboard table td:first-child {
+	width: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#Leaderboard table td:nth-child(2) {
+	width: 70px;
+}
+
+#Leaderboard table tr:nth-child(even) {
+	background-color: #f4faff;
+}
+
+#Leaderboard .table tr.tableheader td {
+	border-top: 0 solid #dee2e6;
+}
+
+#Leaderboard .table tr.tableheader td.Savings,
+#Leaderboard .table tr.tableheader td.Smiles {
+	width: 150px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#Leaderboard .table tr.tableheader td.Savings div,
+#Leaderboard .table tr.tableheader td.Smiles div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#Leaderboard .pro_img {
+	width: 32px;
+	height: 32px;
+}
+
+#Leaderboard .tableheader img {
+	width: 25px;
+	margin: 12px 10px;
+}
+
+#Leaderboard .Savings {
+	color: #005CA8;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#Leaderboard .Smiles {
+	color: #F8A121;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#Leaderboard .you {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 1px 10px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: 700;
+	background: #C7DCED;
+	border-radius: 83px;
+}
+
+/********* SavedCards *********/
+#SavedCards table {
+	margin: 0 -24px 0 -24px;
+	width: calc(100% + 48px);
+}
+
+#SavedCards table td:first-child {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#SavedCards table td.price {
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: right;
+}
+
+#SavedCards .tableheader {
+	color: #282828;
+	font-size: 16px;
+	font-weight: 600;
+	background: #f4faff;
+}
+
+#SavedCards table tr:nth-child(1) td,
+#SavedCards table tr:nth-child(2) td {
+	border: 0;
+}
+
+#SavedCards .CardsHistory {
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+#SavedCards .CardsHistory span {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 17px;
+	font-weight: 500;
+}
+
+/********* Subscriptions *********/
+#Subscriptions .ProfileCard {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -24px;
+	padding: 27px 25px;
+	background: rgb(253, 250, 242);
+	background: -moz-linear-gradient(90deg, rgba(253, 250, 242, 1) 0%, rgba(243, 249, 253, 1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(253, 250, 242, 1) 0%, rgba(243, 249, 253, 1) 100%);
+	background: linear-gradient(90deg, rgba(253, 250, 242, 1) 0%, rgba(243, 249, 253, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfaf2", endColorstr="#f3f9fd", GradientType=1);
+}
+
+#Subscriptions .ProfileCard span {
+	color: #737373;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+#Subscriptions .ProfileCard a {
+	margin-top: 12px;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+#Subscriptions .ProfileCard img {
+	max-width: 100px;
+}
+
+#Subscriptions table {
+	margin: 0 -24px 0 -24px;
+	width: calc(100% + 48px);
+}
+
+#Subscriptions table td {
+	height: 70px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 15px;
+	font-weight: 600;
+	vertical-align: middle;
+}
+
+#Subscriptions table td:last-child {
+	text-align: right;
+}
+
+html[lang="ar"] #Subscriptions table td:last-child {
+	text-align: left;
+}
+
+#Subscriptions table td a,
+#Subscriptions table td span {
+	font-weight: 400;
+}
+
+#Subscriptions table td a {
+	font-size: 11px;
+}
+
+#Subscriptions table td span {
+	font-size: 15px;
+}
+
+/********* Family *********/
+#Leaderboard.Family table {
+	margin-top: 0;
+}
+
+.Family small {
+	display: block;
+	color: #737373;
+	font-size: 13px;
+	font-weight: 300;
+}
+
+.Family table td {
+	border: 0;
+}
+
+.Family .status-active {
+	width: 150px;
+	color: #4EA11E;
+	font-size: 15px;
+	font-weight: 400;
+	text-align: center;
+}
+
+/********* Notifications *********/
+#Notifications table {
+	margin: 0 -24px 0 -24px;
+	width: calc(100% + 48px);
+}
+
+#Notifications table td:first-child {
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#Notifications table td {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#Notifications table .unread td {
+	font-weight: 600;
+	background: #f4faff;
+}
+
+/********* Preferences *********/
+#Preferences table {
+	margin: 0 -24px 0 -24px;
+	width: calc(100% + 48px);
+}
+
+#Preferences table td {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 25px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#Preferences .custom-control-label {
+	cursor: pointer;
+}
+
+#Preferences .custom-control-label::before {
+	height: 4px;
+	background-color: #adb5bd;
+}
+
+#Preferences .custom-switch .custom-control-label::after {
+	top: 0;
+}
+
+#Preferences .custom-control-input:checked~.custom-control-label::before {
+	border-color: #c2e2b2;
+	background-color: #c2e2b2;
+}
+
+#Preferences .custom-switch .custom-control-input:checked~.custom-control-label::after {
+	background-color: #89c766;
+}
+
+@media screen and (max-width: 1000px) {
+	#Profile.container {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {}
+
+/********* Profile Responsive end *********/
+
+/****************************** Profile End ******************************/

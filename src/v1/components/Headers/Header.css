@@ -1,0 +1,1158 @@
+/****************************** Header Start ******************************/
+header .logo {
+    width: 144px
+}
+
+header .navbar {
+    padding: 15px 12px
+}
+
+header .navbar-brand {
+    margin-right: 0
+}
+
+@media screen and (max-width: 1070px) {
+    .modal-dialog {
+        max-width:90%
+    }
+}
+
+.navbar-nav {
+    align-items: center
+}
+
+nav .nav-link {
+    padding: 0 8px!important;
+    color: #fff!important;
+    font-size: 15px
+}
+
+@media screen and (min-width: 769px) and (max-width:1365px) {
+    nav .nav-link {
+        font-size:13px
+    }
+}
+
+.navbar-nav::after {
+    content: "|";
+    display: inline-block;
+    position: relative;
+    margin-left: 6px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 2.3;
+    opacity: .4
+}
+
+.navbar-nav.logreg:after,.navbar-nav.toplocflag:after {
+    content: " "
+}
+
+.navbar-nav.logreg .nav-item:nth-child(2) .nav-link {
+    padding: 0!important
+}
+
+html[lang=ru] .navbar-nav.logreg .nav-item {
+    display: none
+}
+
+html[lang=ru] .navbar-nav.logreg .nav-item:first-child {
+    display: inline-block
+}
+
+.navbar-expand-md .navbar-nav .logreg_proile {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    padding: 0!important;
+    cursor: pointer;
+    background-color: gray;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px
+}
+
+.langdropdown .btn {
+    padding: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+	/* line-height: 0;
+	vertical-align: top; */
+}
+
+#head_white .langdropdown .btn {
+    color: #484848!important
+}
+
+.langdropdown .btn:focus,
+.langdropdown .btn:active,
+.langdropdown .btn:hover {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none
+}
+
+.langdropdown .btn::after {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 15px;
+	border: 0;
+    flex: 0 0 auto;
+    margin: 0 5px -4px 5px;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow.svg) no-repeat;
+    background-position: right bottom;
+    background-size: 15px;
+}
+
+#head_white .langdropdown .btn::after {
+    filter: brightness(.3) sepia(1) hue-rotate(-70deg) saturate(0)
+}
+
+.langdropdown .dropdown-menu {
+    min-width: 230px;
+    padding: 0 16px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px
+}
+
+.langdropdown .dropdown-menu-right {
+    border: 0
+}
+
+html[lang=ar] .langdropdown .dropdown-menu-right {
+    left: 0;
+    right: auto
+}
+
+.langdropdown .dropdown-menu2 {
+    display: block
+}
+
+.langdropdown .dropdown-lang {
+    display: block;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 15px;
+    color: #282828;
+    font-weight: 400;
+    text-decoration: none;
+    direction: ltr
+}
+
+.langdropdown .dropdown-lang:last-child {
+    border-bottom: 0
+}
+
+.langdropdown .dropdown-lang.active {
+    background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/region_tick.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    font-weight: 500
+}
+
+.langdropdown .dropdown-lang img {
+    width: 22px
+}
+
+.langdropdown .dropdown-lang span {
+    display: inline-block;
+    margin: 0 12px
+}
+
+.navbar-nav.logreg .dropdown-menu {
+    left: auto;
+    right: 0
+}
+
+.moblink {
+    position: absolute;
+    right: 93px
+}
+
+.moblink,.moblink .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 700;
+    margin: 0!important
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/navbar-toggler-icon.svg) 100%/auto auto no-repeat
+}
+
+html[lang=ar] .navbar-dark .navbar-toggler-icon {
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/navbar-toggler-icon_ar.svg) 100%/auto auto no-repeat
+}
+
+.toprt_downapp {
+    padding: 10px;
+}
+
+.downscan .dropdown-menu {
+    min-width: 375px;
+    padding: 10px;
+    left: auto;
+    right: 0
+}
+
+html[lang=ar] .downscan .dropdown-menu {
+    left: 3%;
+    right: auto
+}
+
+.downscan .downscan_img {
+    width: 106px;
+    vertical-align: top
+}
+
+.downscan .downscan_cont {
+    vertical-align: top
+}
+
+.downscan .downscan_cont h4 {
+    margin-bottom: 10px
+}
+
+.downscan .downscan_cont p {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: #737373
+}
+
+.logreg_proile img {
+    width: 100%;
+}
+
+.top_userpro {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.top_userpro:hover {
+    text-decoration: none;
+}
+.top_userpro::after {
+    display: none;
+}
+.logreg_proilename {
+    margin: 0 5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #484848;
+}
+
+header .navbar-collapse {
+    flex-grow: 0
+}
+
+header .searchbox {
+    position: relative;
+    flex-grow: 1;
+    margin-right: 16px;
+}
+
+html[lang=ar] header .searchbox {
+    margin-left: 16px;
+    margin-right: 0;
+}
+
+header .searchbox .searchboxwrap {
+    position: relative;
+    width: 204px;
+    margin-left: auto;
+}
+html[lang=ar] header .searchbox .searchboxwrap {
+    margin-left: 0;
+    margin-right: auto;
+}
+header .searchbox .search {
+    display: block;
+    height: 38px;
+    padding-left: 35px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: 0!important;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 300;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon1.svg) no-repeat;
+    background-position: 8px 10px;
+    background-color: #70addb;
+    border-color: #70addb
+}
+
+/* html[lang=ar] header .searchbox .search {
+    padding-left: 25px;
+    padding-right: 35px;
+    background-position: 173px 10px !important
+} */
+
+header .searchbox .search::placeholder {
+    color: #a3a2a2;
+    font-size: 13px
+}
+
+header .searchbox .search_close {
+    display: none;
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    border: 0;
+    background-color: transparent
+}
+
+/* html[lang=ar] header .searchbox .search_close {
+    left: 5px;
+    right: auto
+} */
+
+header .searchbox .search:valid~.search_close {
+    display: block
+}
+
+header .searchbox .search_close svg {
+    width: 10px;
+    height: 10px;
+    fill: #fff
+}
+
+header .searchbox .search {
+    color: #696969;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon3.svg) no-repeat;
+    background-position: 10px 10px;
+    background-color: #fff;
+    border-color: #e3e3e3
+}
+
+header .searchbox .search_close svg {
+    fill: #696969
+}
+
+.toplocflag {
+    position: relative;
+    margin-left: 35px!important;
+    cursor: pointer
+}
+
+.toplocflag .locflag::after {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 17px;
+    margin: 0 5px;
+    flex: 0 0 auto;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow.svg) no-repeat;
+    background-position: right bottom;
+    background-size: 15px
+}
+
+@media screen and (min-width: 768px) and (max-width:1210px) {
+    .toplocflag .locflag {
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        width: 70px;
+        overflow: hidden;
+        margin-right: 10px
+    }
+
+    .toplocflag .locflag::after {
+        position: absolute;
+        top: -4px;
+        left: 55px
+    }
+}
+
+#regions .modal-header {
+    border-bottom: 0
+}
+
+#regions .modal-content {
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/map.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #fff
+}
+
+.region_list {
+    overflow: hidden;
+    display: flex
+}
+
+.region-menu .Column {
+    width: 100%;
+    margin-right: 20px
+}
+
+.region-menu .Column .listHead {
+    position: relative
+}
+
+.region-menu .listHead {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.31;
+    color: #606d7a;
+    padding-bottom: 10px
+}
+
+.region-menu .Column li {
+    position: relative;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5
+}
+
+.toplocflag .locflag::before,.region-menu .Column li::before {
+    content: '';
+    display: inline-block;
+    height: 22px;
+    width: 20px;
+    flex: 0 0 auto;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/maps_sprites.svg) no-repeat;
+    background-position: center -6px;
+    margin-right: 8px
+}
+
+.toplocflag .locflag {
+    margin-top: -2px
+}
+
+.toplocflag .locflag::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 24px;
+    margin-right: 5px
+}
+
+.region-menu .Column li.active::after {
+    content: '';
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/region_tick.svg) no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 5px
+}
+
+.toplocflag .Dubai::before,.region-menu .Column li.Dubai::before,.region-menu .Column li.Abu-Dhabi::before {
+    background-position: -365px center
+}
+
+.toplocflag .Qatar::before,.region-menu .Column li.Qatar::before {
+    background-position: -245px center
+}
+
+.toplocflag .Bahrain::before,.region-menu .Column li.Bahrain::before {
+    background-position: -7px center
+}
+
+.toplocflag .Oman::before,.region-menu .Column li.Oman::before {
+    background-position: -215px center
+}
+
+.toplocflag .Riyadh::before,.region-menu .Column li.Riyadh::before,.region-menu .Column li.Jeddah::before,.region-menu .Column li.Eastern-Province::before {
+    background-position: -275px center
+}
+
+.toplocflag .Kuwait::before,.region-menu .Column li.Kuwait::before {
+    background-position: -126px center
+}
+
+.toplocflag .Singapore::before,.region-menu .Column li.Singapore::before {
+    background-position: -305px center
+}
+
+.toplocflag .Malaysia::before,.region-menu .Column li.Malaysia::before {
+    background-position: -156px center
+}
+
+.toplocflag .Hong-Kong::before,.region-menu .Column li.Hong-Kong::before {
+    background-position: -67px center
+}
+
+.toplocflag .Bali::before,.region-menu .Column li.Bali::before {
+    background-position: -97px center
+}
+
+.toplocflag .Cape-Town::before,.region-menu .Column li.Cape-Town::before {
+    background-position: -335px center
+}
+
+.toplocflag .Malta::before,.region-menu .Column li.Malta::before {
+    background-position: -185px center
+}
+
+.toplocflag .Cyprus::before,.region-menu .Column li.Cyprus::before {
+    background-position: -37px center
+}
+
+.region-menu .Column a {
+    color: #606d7a
+}
+
+.region-menu .Column a:hover {
+    text-decoration: underline
+}
+
+header .modal {
+    z-index: 99999
+}
+/********* Header Responsive start *********/
+@media screen and (max-width: 767px) {
+    header .logo {
+        width:110px
+    }
+
+    .navbar-brand.logo {
+        margin-left: 20px
+    }
+
+    header .searchbox {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        width: auto;
+    }
+
+    html[lang=ar] header .searchbox {
+        left: 35px;
+        right: auto;
+        direction: ltr;
+    }
+
+    html[lang=ar] header .searchbox form {
+        width: 35px
+    }
+
+    header .searchbox .searchboxwrap {
+        width: 25px;
+        overflow: hidden;
+    }
+
+    header .searchbox .search {
+        padding-left: 20px;
+        color: #000;
+        background-position: 1px 10px;
+        background-color: #fff;
+        border-color: #fff;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        box-shadow: none !important
+    }
+
+    html[lang=ar] header .searchbox .search {
+        direction: ltr;
+    }
+
+    header .searchbox .search:focus {
+        padding-left: 35px
+    }
+
+    header .searchbox .search::placeholder {
+        color: #aeaeae
+    }
+
+    header .searchbox .search:focus {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 65px;
+        padding-right: 50px;
+        background-position: 8px 20px
+    }
+
+    header .searchbox .search_close {
+        right: -250px
+    }
+
+    header .searchbox .search:focus+.search_close {
+        position: fixed;
+        top: 17px;
+        right: 10px
+    }
+
+    /* html[lang=ar] header .searchbox .search_close {
+        left: -250px;
+        right: auto
+    } */
+
+    /* html[lang=ar] header .searchbox .search:focus+.search_close {
+        position: fixed;
+        top: 17px;
+        left: 10px;
+        right: auto
+    } */
+
+    header .searchbox .search_close svg {
+        width: 10px;
+        height: 10px;
+        fill: #000
+    }
+
+    header .searchbox .search:focus+.search_close svg {
+        fill: #000
+    }
+
+    nav.navbar {
+        height: 70px;
+        padding: 0;
+        z-index: 900;
+        justify-content: space-between;
+        background-color: #fff;
+        border-bottom: 1px solid #e5e5e5
+    }
+
+    nav .d-mob .nav-item {
+        width: 100%!important;
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+
+    nav #navbarCollapse .nav-item {
+        width: 100%!important;
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+
+    nav .nav-link {
+        color: #484848!important;
+        text-align: left!important
+    }
+
+    nav .moblink .nav-link,#head_white nav .moblink .nav-link {
+        color: #2f85fe!important
+    }
+
+    .navbar-nav.logreg .nav-item:nth-child(2) .nav-link {
+        padding: 15px 0 15px 5px!important
+    }
+
+    html[lang=ar] .navbar-nav.logreg .nav-item:nth-child(2) .nav-link {
+        padding: 15px 15px 15px 0!important
+    }
+
+    nav .collapse {
+        display: flex!important;
+        align-items: stretch;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        height: 100vh;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        background-color: #fff;
+        transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -webkit-transition: all 0s ease-in;
+        -moz-transition: all 0s ease-in;
+        -ms-transition: all 0s ease-in;
+        -o-transition: all 0s ease-in;
+        transition: all 0s ease-in
+    }
+
+    nav .navbar-collapse.show {
+        opacity: 1;
+        background-color: #fff;
+        pointer-events: inherit;
+        transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -webkit-transform: translate(0,0)
+    }
+
+    nav .collapsing {
+        top: 0;
+        height: 100vh;
+        transition: height 0s ease!important
+    }
+
+    nav .navbar-collapse .navbar-toggler {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        color: #000
+    }
+
+    nav .navbar-nav {
+        order: 2;
+        margin-left: 0!important;
+        padding-left: 10px
+    }
+
+    nav .navbar-nav.logreg {
+        order: 1;
+        border-bottom: 1px solid #eee
+    }
+
+    nav .navbar-nav .logreg_proile {
+        margin: 10px 0 2px 12px
+    }
+
+    nav .navbar-nav.logreg .dropdown-menu {
+        position: absolute;
+        left: 0;
+        right: auto
+    }
+
+    nav .navbar-nav.toplocflag {
+        order: 3
+    }
+
+    nav .navbar-nav::after {
+        content: " ";
+        display: none
+    }
+
+    nav .nav-link {
+        padding: 15px 0 15px 5px!important
+    }
+
+    nav .ml-md-auto .nav-link {
+        border-bottom: 1px solid #eee
+    }
+
+    nav .navbar .navbar-toggler {
+        margin-right: 20px;
+        padding: 0;
+        border: 0 solid transparent
+    }
+
+    .toplocflag {
+        margin-left: 5px!important
+    }
+
+    .locflag {
+        margin-left: 25px!important
+    }
+
+    .toplocflag .locflag::before {
+        top: 15px;
+        left: 13px
+    }
+
+    .langtitle {
+        position: absolute;
+        top: 4px;
+        right: 10px
+    }
+
+    .navbar-nav.toplocflag,.navbar-nav.logreg {
+        display: table;
+        width: 100%
+    }
+
+    #navbarCollapse .navbar-nav.logreg .nav-item {
+        display: inline-block;
+        width: auto!important
+    }
+
+    .langdropdown .btn::after,
+	.toplocflag .locflag::after {
+        height: 18px;
+        width: 18px;
+        background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow2.svg) no-repeat;
+        background-size: 70%;
+        background-position: center bottom
+    }
+
+    #navbarCollapse .navbar-nav.toplocflag .nav-item {
+        display: block!important;
+        border-bottom: 1px solid #eee
+    }
+
+    .langdropdown {
+        position: relative
+    }
+
+    .langdropdown .btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        color: #484848!important;
+        text-align: right
+    }
+
+    html[lang=ar] .langdropdown .btn {
+        text-align: left
+    }
+
+    .langdropdown .dropdown {
+        display: block;
+        width: 100%
+    }
+
+    .langdropdown>.d-mob {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 15px;
+        color: #484848
+    }
+
+    html[lang=ar] .langdropdown>.d-mob {
+        left: auto;
+        right: 5px
+    }
+
+    .langdropdownbg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.65);
+        z-index: 900
+    }
+
+    .langdropdown .dropdown-menu {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px
+    }
+
+    .langdropdown .dropdown-menu2 {
+        display: block;
+        position: fixed;
+        top: auto;
+        left: -1px;
+        right: -1px;
+        bottom: -20px;
+        z-index: 990;
+        padding-bottom: 20px
+    }
+
+    .langdropdown .dropdown-menu2 .d-mob {
+        position: relative;
+        margin: 24px 0 12px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000
+    }
+    .langdropdown .d-mob .dropdown-toggle.btn::after {
+        display: none;
+    }
+
+    .langdropdown .dropdown-menu2 .d-mob .dropdown-toggle,
+    .langdropdown .dropdown-menu2 .d-mob i {
+        position: absolute;
+        top: -5px;
+        right: 0;
+        font-size: 18px;
+    }
+
+    .toprt_downapp {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 27px;
+        padding: 10px;
+        font-size: 15px!important;
+        font-weight: 600
+    }
+
+    .btn.toprt_downapp {
+        color: #fff;
+        background-color: #2f85fe;
+        border-color: #2f85fe
+    }
+
+    .btn-light.toprt_downapp:hover {
+        color: #fff;
+        background-color: #2f85fe;
+        border-color: #2f85fe
+    }
+
+    #head_white .btn-light:hover,
+    .btn-light.toprt_downapp:focus,
+    .btn-light.toprt_downapp.focus {
+        color: #fff!important;
+        background-color: #2f85fe!important;
+        border-color: #2f85fe!important;
+        box-shadow: 0 0 0 .2rem rgba(216,217,219,.5)
+    }
+
+    .downscan {
+        position: static
+    }
+
+    .downscan .dropdown-menu {
+        width: calc(100% - 40px);
+        min-width: 200px;
+        top: 355px;
+        left: 20px;
+        right: 20px
+    }
+}
+
+@media screen and (max-width: 645px) {
+    .modal-dialog {
+        max-width:100%
+    }
+
+    .region-menu .listHead {
+        padding-top: 15px;
+        padding-bottom: 5px
+    }
+
+    .region_list {
+        display: block
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .merchant-wrapper::after {
+        display:none;
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        background: #fff
+    }
+}
+/********* Header Responsive end *********/
+/********* Header Arabic start *********/
+html[lang=ar] header .navbar-brand {
+    margin-left: 14px;
+    margin-right: 0
+}
+
+html[lang=ar] .navbar-nav {
+    margin-left: 0!important
+}
+
+html[lang=ar] nav .navbar-nav {
+    padding-left: 0;
+    padding-right: 40px
+}
+
+html[lang=ar] .navbar-nav.ml-md-auto {
+    margin-left: 0!important;
+    margin-right: auto!important
+}
+
+html[lang=ar] .toplocflag {
+    margin-left: 15px!important
+}
+
+html[lang=ar] .navbar-nav.logreg {
+    margin-right: -60px
+}
+
+html[lang=ar] .navbar-nav.logreg .dropdown-menu {
+    left: 0;
+    right: auto
+}
+
+html[lang=ar] .downscan .dropdown-menu {
+    text-align: right
+}
+
+html[lang=ar] nav .nav-link {
+    text-align: right!important
+}
+
+html[lang=ar] .navbar-nav::after {
+    margin-left: 0;
+    margin-right: 15px
+}
+
+html[lang=ar] .toplocflag .locflag::before {
+    left: auto;
+    right: 10px
+}
+
+html[lang=ar] .toplocflag .locflag::before,html[lang=ar] .region-menu .Column li::before {
+    margin-left: 8px;
+    margin-right: 0
+}
+
+html[lang=ar] .region-menu .Column li.active::after {
+    left: 5px;
+    right: auto
+}
+
+html[lang=ar] .region-menu .Column {
+    margin-left: 20px;
+    margin-right: 0
+}
+
+html[lang=ar] nav .navbar-collapse .navbar-toggler {
+    left: 0;
+    right: auto
+}
+
+html[lang=ar] .langtitle {
+    left: 10px;
+    right: auto
+}
+
+html[lang=ar] .merchant-wrapper .merhcants-list li .text {
+    margin-left: 0;
+    margin-right: 15px
+}
+
+@media screen and (max-width: 1510px) {
+    html[lang=ar] .toplocflag {
+        margin-left:10px!important
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html[lang=ar] header .navbar-brand {
+        margin-left:0;
+        margin-right: 20px
+    }
+
+    html[lang=ar] .navbar-nav.ml-md-auto {
+        margin-right: -10px!important
+    }
+
+    html[lang=ar] nav .navbar-nav {
+        padding-right: 10px
+    }
+
+    html[lang=ar] .moblink {
+        left: 100px;
+        right: auto
+    }
+
+    html[lang=ar] .navbar-nav.ml-md-auto .nav-link {
+        padding: 15px 15px 15px 0!important
+    }
+
+    html[lang=ar] .navbar-nav.logreg .nav-item:nth-child(2) .nav-link {
+        padding: 15px 5px 15px 0!important
+    }
+
+    html[lang=ar] nav .nav-link {
+        padding: 15px 5px 15px 0!important
+    }
+
+    html[lang=ar] nav .toplocflag .nav-link {
+        padding: 15px 35px 15px 0!important
+    }
+
+    html[lang=ar] .navbar-nav.logreg {
+        margin-right: 0;
+        padding-right: 10px
+    }
+
+    html[lang=ar] .navbar-nav.logreg .dropdown-menu {
+        left: auto;
+        right: 0
+    }
+}
+/********* Header Arabic end *********/
+/********* Header White start *********/
+#head_white .wrapper {
+    height: 100vh
+}
+
+#head_white nav {
+    background-color: #fff;
+    box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 3px 11px 0 rgba(0,0,0,.1);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+#head_white nav .logo .d-d {
+    display: none
+}
+
+#head_white nav .logo .d-mob {
+    display: block;
+    width: 144px
+}
+
+#head_white nav .nav-link {
+    color: #484848!important
+}
+
+#head_white .navbar-nav::after {
+    color: #484848
+}
+
+#head_white .btn-light {
+    color: #212529;
+    background-color: #fff;
+    border-color: #484848
+}
+
+#head_white .btn-light:hover {
+    color: #212529;
+    background-color: #fff;
+    border-color: #484848
+}
+
+#head_white .searchbox .search {
+    border-color: #e3e3e3
+}
+
+#head_white .searchbox .search::placeholder {
+    color: #a3a2a2
+}
+
+#head_white .searchbox .search_close svg {
+    fill: #696969
+}
+
+#head_white .toplocflag .locflag::after {
+    filter: brightness(.3) sepia(1) hue-rotate(-70deg) saturate(0)
+}
+
+@media(max-width: 768px) {
+    #head_white .searchbox .search {
+        border-color:#fff
+    }
+
+    #head_white .searchbox .search:focus {
+        background-position: 10px 23px
+    }
+}
+/********* Header White end *********/
+@media screen and (min-width: 768px) and (max-width:900px) {
+    header nav {
+        background-color:#fff
+    }
+
+    header nav .logo .d-d {
+        display: none
+    }
+
+    header nav .logo .d-mob {
+        display: block
+    }
+
+    header .collapse:not(.show) {
+        display: none!important
+    }
+
+    .pghome .wrapper {
+        margin-top: 175px
+    }
+}
+/****************************** Header End ******************************/

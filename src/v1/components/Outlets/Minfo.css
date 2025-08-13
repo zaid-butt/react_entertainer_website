@@ -1,0 +1,112 @@
+/********* Minfo Start *********/
+.Minfo ul {
+    margin: 12px 0 0 0;
+    padding: 0;
+}
+
+.Minfo li {
+    display: inline-block;
+    margin: 12px 0 0 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 300;
+    list-style: circle;
+}
+
+.Minfo li::after {
+    content: " ";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 2px 5px;
+    background: #C4C4C4;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.Minfo li:last-child:after {
+    display: none;
+}
+
+.Minfo .Minfo_p {
+    min-height: 135px;
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.Minfo .Minfo_contact {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.Minfo_contact .Minfo_contact_hd {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Minfo_contact .Minfo_contact_hd .col-md-6 {
+    display: flex;
+    align-items: center;
+    padding: 16px 15px;
+    border-top: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+}
+.Minfo_contact .Minfo_contact_hd .col-md-6.Minfo_contact_hdstar {
+    padding-left: 0;
+}
+.Minfo_contact .Minfo_contact_hd .col-md-6.Minfo_contact_hdmap {
+    padding-right: 0;
+    border-left: 1px solid #EEE;
+}
+html[lang="ar"] .Minfo_contact .Minfo_contact_hd .col-md-6.Minfo_contact_hdstar {
+    padding-left: 15px;
+    padding-right: 0;
+}
+html[lang="ar"] .Minfo_contact .Minfo_contact_hd .col-md-6.Minfo_contact_hdmap {
+    padding-left: 0;
+    padding-right: 15px;
+    border-left: 0 solid #EEE;
+    border-right: 1px solid #EEE;
+}
+
+.Minfo_contact .Minfo_contact_hd img {
+    margin-right: 10px;
+}
+
+html[lang="ar"] .Minfo_contact .Minfo_contact_hd img {
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.Minfo_contact .Minfo_contact_hd a {
+    margin-left: auto;
+    text-decoration: underline;
+}
+
+html[lang="ar"] .Minfo_contact .Minfo_contact_hd a {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+.Minfo_contact .Minfo_contact_body img {
+    margin: 0 10px;
+}
+
+.Minfo_contact .Minfo_contact_body div {
+    padding: 0;
+}
+
+.Minfo_contact .Minfo_contact_body div {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+/********* Minfo End *********/

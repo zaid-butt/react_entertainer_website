@@ -1,0 +1,33 @@
+{
+  "ztest": "test enen",
+  "html_lang": "en",
+  "logo": "https://entcartut.theentertainerme.com/revamp22/images/Logo.svg",
+  "logomob": "https://entcartut.theentertainerme.com/revamp22/images/Logo-mob.svg",
+  "toplink_memberships": "Memberships",
+  "toplink_Howitworks": "How it works?",
+  "toplink_BecomePartner": "Become a Partner",
+  "toploc_dubai": "Dubai & N. Emirates",
+  "selact_lang": "English",
+  "top_login": "Login ",
+  "top_register": "Register",
+  "Download_app": "Download app",
+  "banner_title_text1": "Buy 1 Get 1 Free ",
+  "header_desktop_n": "https://b2cappassetscdn.theentertainerme.com/Cart2022Header/en/1/header_desktop_n.png",
+  "test": "Demo for <1>Phrase blog</1> article. <5/>Created with React, i18next, and Bulma.",
+ 
+  "testimonial": {
+    "what_members_saying": "What our members are saying"
+  },
+  "faq": {
+    "heading_faq": "Frequently Asked Questions",
+    "what_entertainer": "What is the ENTERTAINER?",
+    "what_entertainer_ans": "The Buy One Get One Free and discount app with over 3 million members globally. We're here to help people experience more and pay less. Thanks to awesome offers at high-quality restaurants, bars, spas, attractions, activities, salons, sports and fitness venues everywhere!",
+    "where_save": "So, where can I save?",
+    "where_save_ans": "Choose your ENTERTAINER on our search page to see all brands and places along with the available offers",
+    "how_offer": "How do I use an offer?",
+    "how_offer_ans": "Tap the offer you want to use and ask the venue to enter their pin. Voilà - somebody just made a saving! Need more info? Take a look here:",
+    "what_entertainer_lite": "What is ENTERTAINER lite and how does it work?",
+    "what_entertainer_lite_ans": "ENTERTAINER lite is an exciting, lite version of our Memberships available on the ENTERTAINER App that anyone who registers on the ENTERTAINER App can use – for free! This means registered users get immediate access to hundreds of great offers with no membership costs! To unlock all offers and get the maximum benefit of what is available on the ENTERTAINER App, simply upgrade to a Standard/Premium/Global membership.",
+    "view_all": "View All"
+  }
+}

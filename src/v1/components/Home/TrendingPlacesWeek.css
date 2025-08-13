@@ -1,0 +1,301 @@
+/*************************** TrendingPlacesWeek Start ***************************/
+#TrendingPlacesWeek .TrendingPlacesWeek_title h2 {
+	padding-bottom: 42px;
+	text-align: center;
+}
+
+#TrendingPlacesWeek .nav {
+	position: relative;
+	display: block;
+	padding-left: 10px;
+}
+
+#TrendingPlacesWeek .nav-item .nav-link {
+	position: relative;
+	/* min-width: 220px;
+	min-height: 60px; */
+	padding: 13px 15px 10px 15px;
+	color: #282828;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	background-color: transparent;
+	border-top: 0px solid #F1F1F1;
+	border-left: 0px solid #F1F1F1;
+	border-right: 0px solid #F1F1F1;
+	border-bottom: 1px solid #a3a2a2;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+#TrendingPlacesWeek .nav-item .nav-link .tabimg {
+	display: block;
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	margin: 0 auto 16px auto;
+}
+
+#TrendingPlacesWeek .nav-item .nav-link.active .tabimg img {
+	margin-top: -62px;
+}
+
+
+
+#TrendingPlacesWeek .nav-item .nav-link.active {
+	padding: 12px 14px 10px 14px;
+	color: #2f85fe;
+	border-bottom: 2px solid #2f85fe;
+}
+
+#TrendingPlacesWeek .nav,
+#TrendingPlacesWeek .HomeMerchentSlides,
+#TrendingPlacesWeek #MerchentLogoSlide {
+	overflow: hidden;
+}
+
+.HomeMerchentSlides .swiper {
+	width: 90%;
+	margin-left: 0;
+	margin-right: 0;
+	overflow: visible;
+	padding-bottom: 24px;
+}
+
+@media screen and (max-width: 990px) {
+	#TrendingPlacesWeek .swiper {
+		width: 90%;
+		margin-left: 0;
+		margin-right: 0;
+		overflow: visible;
+	}
+
+	.HomeMerchentSlides .swiper {
+		width: 100%;
+	}
+}
+
+#TrendingPlacesWeek .MCard {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+	.Mbadgebox {
+		display: flex !important;
+	}
+}
+
+.Mbadgebox {
+	display: none;
+	align-items: center;
+	margin-bottom: 32px;
+	margin-left: 10px;
+	overflow: hidden;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+
+
+.Mbadgebox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.Mbadgebox .checkmark {
+	display: none;
+	position: absolute;
+	top: 5px;
+    right: 8px;
+	height: 12px;
+	width: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.Mbadgebox input:checked~.checkmark {
+	display: inline-block;
+}
+.Mbadgebox .Mbadge {
+	position: relative;
+	display: inline-block;
+	/* min-width: 130px; */
+	margin: 0 8px;
+	padding: 5px 16px;
+	font-size: 15px;
+	font-weight: 300;
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.Mbadgebox input:checked~.Mbadge {
+	background: #282828;
+	color: #fff;
+}
+
+
+/* .Mbadge .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+} */
+
+/* .Mbadge input:checked~.checkmark:after {
+	display: block;
+} */
+
+/* .Mbadge .checkmark:after {
+	content: "\00d7";
+	cursor: pointer;
+	color: #fff;
+} */
+
+.HomeMerchentSlides {
+	margin-top: 32px;
+}
+
+#MerchentLogoSlide .swiper-wrapper {
+	display: flex;
+	margin: 0 0 24px 0;
+	align-items: center;
+}
+
+#TrendingPlacesWeek .swiper-button-prev,
+#TrendingPlacesWeek .swiper-button-next {
+	top: 0;
+	width: 115px;
+	height: 100%;
+}
+
+#TrendingPlacesWeek .swiper-button-prev {
+	left: 0;
+}
+
+#TrendingPlacesWeek .swiper-button-prev::after {
+	left: 0;
+}
+
+#TrendingPlacesWeek .swiper-button-next {
+	right: -115px;
+}
+
+#TrendingPlacesWeek .swiper-button-next::after {
+	left: 0;
+}
+
+
+
+#TrendingPlacesWeek .swiper-button-prev {
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+#TrendingPlacesWeek .swiper-button-next {
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+#TrendingPlacesWeek .swiper-pagination {
+	display: none;
+}
+
+#TrendingPlacesWeek .MCard .MCard-imgbox {
+	height: 190px;
+}
+
+@media screen and (max-width: 1199px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 990px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 170px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#TrendingPlacesWeek .TrendingPlacesWeek_title h2 {
+		padding: 0 10px 10px 10px;
+		text-align: left;
+	}
+
+	#TrendingPlacesWeek .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 270px;
+	}
+
+	html[lang="ar"] #TrendingPlacesWeek .TrendingPlacesWeek_title h2 {
+		text-align: right;
+	}
+
+	#TrendingPlacesWeek .swiper-slide {
+		/* width: auto !important; */
+	}
+
+	#TrendingPlacesWeek .nav-item .nav-link::before {
+		margin: 0 0 16px 0;
+	}
+
+	#TrendingPlacesWeek .swiper-button-prev,
+	#TrendingPlacesWeek .swiper-button-next {
+		display: none;
+	}
+
+	#TrendingPlacesWeek .swiper-pagination {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 525px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 230px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 175px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	#TrendingPlacesWeek .MCard .MCard-imgbox {
+		height: 160px;
+	}
+}
+
+/****************************** TrendingPlacesWeek End ******************************/

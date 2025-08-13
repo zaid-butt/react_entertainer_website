@@ -1,0 +1,870 @@
+/*************************** Plans Start ***************************/
+#plans {
+	background: rgb(253,250,242);
+	background: -moz-linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+	background: linear-gradient(90deg, rgba(253,250,242,1) 0%, rgba(243,249,253,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfaf2", endColorstr="#f3f9fd", GradientType=1);
+}
+#plans .New_Product_Tiers_title {
+	padding-bottom: 42px;
+	text-align: center;
+}
+#plans .nav-tabs {
+	padding: 0;
+	justify-content: center;
+	border-bottom: 0px solid #2f85fe;
+}
+#plans .nav-tabs .nav-item {
+	position: relative;
+}
+#plans .nav-tabs .nav-link {
+	position: relative;
+	min-width: 220px;
+	min-height: 60px;
+	padding: 13px 15px 10px 15px;
+	color: #282828;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	background-color: transparent;
+	border-top: 0px solid #F1F1F1;
+	border-left: 0px solid #F1F1F1;
+	border-right: 0px solid #F1F1F1;
+	border-bottom: 1px solid #a3a2a2;
+}
+#plans .nav-tabs .nav-link.active {
+	padding: 12px 14px 10px 14px;
+	color: #2f85fe;
+	border-bottom: 2px solid #2f85fe;
+}
+#plans .nav-tabs .nav-link .badge {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	padding: 6px 8px;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	vertical-align: middle;
+	background-color: #4E98D1;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+#plans .nav-tabs .nav-link::before {
+	display: block;
+	content:" ";
+	width: 40px;
+	height: 40px;
+	margin: 10px auto;
+	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/planstabs_icons.svg");
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+#plans .nav-tabs #planstabs-tab-tourist.nav-link::before {
+	background-position: -44px 0;
+}
+#plans .nav-tabs #planstabs-tab-soleil.nav-link::before {
+	background-position: -89px 0;
+}
+#plans .nav-tabs #planstabs-tab-entertainer.nav-link.active::before {
+	background-position: 0 -44px;
+}
+#plans .nav-tabs #planstabs-tab-tourist.nav-link.active::before {
+	background-position: -44px -44px;
+}
+#plans .nav-tabs #planstabs-tab-soleil.nav-link.active::before {
+	background-position: -89px -44px;
+}
+#plans .cardrow {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 10%);
+    -webkit-box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.10);
+}
+@media (max-width: 767px){
+	#plans .cardrow {
+		display: block;
+		background-color: transparent;
+		box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 0%);
+    -webkit-box-shadow: 0px 3px 11px 0px rgb(0 0 0 / 0%);
+    -moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.0);
+	}
+}
+#plans .probox {
+	position: relative;
+	/* width: 100%; */
+	/* max-width: calc(25% - 0px); */
+	min-width: 290px;
+	max-width: 290px;
+	padding: 0 30px 20px 30px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#plans .probox.collapse:not(.show) {
+	display: block;
+}
+#plans .probox.collapse .Show_benefits, #plans .probox.collapse .hide_benefits {
+	display: none;
+}
+#plans .probox .product_img {
+	padding-top: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+#plans .probox .product_img img {
+	display: block;
+	height: 150px;
+	margin: 0 auto;
+}
+#plans .probox .colorbox {
+	position: relative;
+	height: 214px;
+	margin: 0 -30px;
+	padding: 5px 30px 35px 30px;
+	border-bottom: 1px solid #e3e3e3;
+	-webkit-border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-moz-border-radius-topright: 8px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#plans [product_location="Johannesburg"].probox .colorbox {
+	height: 250px;
+}
+html[lang="ru"] #plans .probox .colorbox {
+	height: 240px;
+}
+#plans .probox .colorbox h3 {
+	margin-top: 50px;
+	color: #282828;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+}
+#plans .probox .colorbox h3 span {
+	font-size: 20px;
+	font-weight: 400;
+}
+#plans .probox .colorbox .badge {
+	position: absolute;
+	top: 20px;
+	max-width: 225px;
+	padding: 6px 10px;
+	color: #4E98D1;
+	font-size: 10px;
+	font-weight: 600;
+	line-height: normal;
+	vertical-align: middle;
+	white-space: break-spaces;
+	background-color: #EAF3FF;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+#plans .probox.popular .badge {
+	color: #F58423;
+	background-color: #FCF1DD;
+}
+#plans .probox.popular .popular_tag {
+	display: none;
+}
+#plans .probox .colorbox .Earlybird_badge {
+	margin-top: 10px;
+	padding: 6px 10px 6px 7px;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	vertical-align: middle;
+	background-color: #CC2727;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+#plans .probox .colorbox .Earlybird_badge svg {
+	vertical-align: text-top;
+	margin-top: -2px;
+}
+#plans .probox .colorbox .Earlybird_price {
+	position: absolute;
+	top: -35px;
+	color: #CC2727;
+	font-size: 13px;
+	font-weight: 600;
+}
+#plans .probox .colorbox .Earlybird_price span {
+	display: inline-block;
+	margin: 0 5px;
+	padding: 3px 10px;
+	background-color: #CC2727;
+	color: #fff;
+	font-size: 11px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox {
+	position: relative;
+	margin-top: 35px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox, #plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+	display: block
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+	color: #282828;
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 12px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price small {
+	font-size: 17px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price small span {
+	font-size: 13px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually {
+	margin-top: 8px;
+	color: #737373;
+	font-size: 12px;
+	font-weight: 400;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually strong {
+	font-weight: 500;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually span {
+	font-size: 11px;
+	font-weight: 400;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually a .store_icons {
+	width: 47%;
+	margin-bottom: 15px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually a:last-child .store_icons {
+	float: right;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox {
+	position: relative;
+	font-size: 13px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox .or {
+	position: absolute;
+	top: -10px;
+	left: 7px;
+	width: 20px;
+	height: 20px;
+	padding: 3px;
+	font-size: 10px;
+	font-weight: 400;
+	background-color: #e6f4fa;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+#plans .probox.popular .colorbox .New_Product_Tiers_pricebox .orbox .or {
+	background-color: #fefbf5;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox p {
+	float: left;
+	width: calc(100% - 60px);
+	font-size: 13px;
+	font-weight: 500;
+	margin-bottom: 0;
+}
+#plans .probox .iicon, 
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox p .btn {
+	margin-top: -5px;
+	color: #2f85fe;
+	border-color: #2f85fe;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox a {
+	/* float: right;
+    padding: 5px;
+    background-color: #6cc3d8;
+    border-color: #6cc3d8; */
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .orbox a.postpay {
+	float: right;
+	padding: 5px;
+	background-color: #6cc3d8;
+	border-color: #6cc3d8;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .btn-primary:not(:disabled):not(.disabled):active:focus {
+	box-shadow: 0 0 0 0.2rem rgb(100 200 200 / 50%);
+}
+#plans .probox .Buynow {
+	display: inline-block;
+	width: 100%;
+	margin: 5px 0;
+	padding: 10px 0;
+	background-color: #fff;
+	border-color: #484848;
+	font-size: 15px;
+	color: #484848;
+	font-weight: 600;
+}
+html[lang="ru"] #plans .probox .Buynow {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+}
+#plans .probox .Buynow.subscribedProductsBtn,
+#plans .probox.lite .Buynow.subscribedProductsBtn,
+#plans .probox.popular .Buynow.subscribedProductsBtn {
+	background-color: #F1F1F1;
+	border-color: #F1F1F1;
+	color: #8F8F8F;
+	font-weight: 300;
+}
+#plans .probox .Buynow.subscribedProductsBtn::before {
+	content: " ";
+	display: inline-block;
+	position: relative;
+	width: 8px;
+	height: 8px;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-bottom: 2px;
+	background-color: #4EA11E;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#plans .probox .colorbox .Buynow.btn-primary:not(:disabled):not(.disabled):active:focus {
+	box-shadow: 0 0 0 0.2rem rgb(0 150 200 / 50%);
+}
+#plans .probox.lite .Buynow {
+	background-color: #282828;
+	border-color: #282828;
+	color: #fff;
+}
+
+.LearnMoreAbout_afterbuynow {
+	display: none;
+	margin-top: 10px;
+	color: #2f85fe;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#plans .probox .colorbox .member_learnmore {
+	display: flex;
+	justify-content: space-between;
+	width: calc(100% - 60px);
+	position: absolute;
+	bottom: 20px;
+	color: #2f85fe;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: underline;
+}
+#plans .probox .colorbox .member_learnmore .MembershipTerms {
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.icon_refcode {
+	position: relative;
+	float: right;
+	margin-top: 10px;
+}
+.icon_refcode .box_refcode {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 230px;
+	padding: 7px;
+	font-size: 12px;
+	background-color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.icon_refcode:hover .box_refcode {
+	display: block;
+}
+#plans .probox .Includes {
+	position: relative;
+	margin-top: 0;
+}
+#plans .probox .Includes strong {
+	color: #484848;
+}
+#plans .probox .Includes ul {
+	margin: 0;
+	padding: 0;
+}
+#plans .probox .Includes li {
+	position: relative;
+	margin: 0;
+	padding: 15px 0;
+	list-style: none;
+	font-size: 13px;
+	color: #484848;
+	font-weight: 400;
+	border-bottom: 1px solid #f1f1f1;
+}
+#plans .probox .Includes li:last-child {
+	border-bottom: 0;
+}
+#plans .probox .Includes li span {
+	position: absolute;
+	top: 16px;
+	right: 0;
+	text-align: right;
+	font-size: 13px;
+	font-weight: 600;
+}
+#plans .probox .MembershipTerms {
+	font-size: 10px;
+	color: #484848;
+	font-weight: 400;
+}
+#plans .probox .MembershipTerms .iicon {
+	color: #2F85FE;
+}
+.text-red {
+	color: #CC2727;
+}
+
+#planstabs-tabpane-soleil .colorbox p,
+#planstabs-tabpane-tourist .colorbox p {
+	margin-bottom: 8px;
+	line-height: normal;
+}
+#planstabs-tabpane-soleil .colorbox p,
+#planstabs-tabpane-tourist .Earlybird_badge_tourist {
+	color: #737373;
+    font-size: 13px;
+	font-weight: 400;
+}
+#plans .justify .swiper-wrapper {
+    justify-content: center !important;
+}
+#plans .justify .swiper-button-next,
+#plans .justify .swiper-button-prev {
+    display: none;
+}
+#plans .swiper-button-next,
+#plans .swiper-button-prev {
+    background-color: #2F85FE;
+}
+#plans .swiper-button-next:after, #plans .swiper-button-prev:after {
+    font-size: 20px;
+	color: #fff;
+}
+#plans .swiper-button-prev, #plans .swiper-rtl .swiper-button-next {
+    left: -3px;
+    right: auto;
+	-webkit-border-top-right-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+-moz-border-radius-bottomright: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+#plans .swiper-button-next, #plans .swiper-rtl .swiper-button-prev {
+    right: -3px;
+    left: auto;
+	-webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+#soleil_videocontent {
+	position: relative;
+	margin: 32px auto 0 auto;
+	max-width: 660px;
+	font-weight: 400;
+	font-size: 15px;
+	color: #000000;
+	text-align: center;
+}
+#soleil_videocontent p {
+	margin-bottom: 32px;
+}
+#soleil_videocontent video {
+	max-width: 100%;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+#soleil_videocontent .btn {
+	min-width: 238px;
+	margin-top: 32px;
+}
+.ComparePlans {
+	text-align: center;
+}
+.ComparePlans .btn {
+	margin: 48px auto 0 auto;
+}
+/********* Plans Responsive start *********/
+@media (min-width:1021px) {
+#plans .probox .Includes::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: -30px;
+	width: 1px;
+	/* height: 225px; */
+	height: calc(100% + 75px);
+	background-color: #e3e3e3;
+}
+html[lang=ar] #plans .probox .Includes::after {
+	right: auto;
+	left: -30px;
+}
+#plans .probox:last-child .Includes::after {
+	display: none;
+}
+#plans .probox.popular {
+	border: 2px solid #F58423;
+}
+#plans .probox.popular .Buynow {
+	background-color: #2F85FE;
+	border-color: #2F85FE;
+	color: #fff;
+}
+#plans .probox.popular .colorbox {
+	height: 212px;
+}
+#plans [product_location="Johannesburg"].probox.popular .colorbox {
+	height: 248px;
+}
+html[lang="ru"] #plans .probox.popular .colorbox {
+	height: 238px;
+}
+#plans .probox.popular {
+	padding: 0 26px 20px 30px;
+}
+#plans .probox.popular .popular_tag {
+	display: block;
+	position: absolute;
+	top: -28px;
+	left: -2px;
+	width: calc(100% + 4px);
+	padding: 7px 0;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 700;
+	text-align: center;
+	background-color: #F58423;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#plans .probox.popular .popular_tag img {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	width: 14px;
+}
+}
+
+@media (min-width: 1020px) and (max-width: 1199px) {
+#plans .container {
+	max-width: 98%;
+}
+}
+
+@media (max-width: 1020px) {
+/* #plans .nav-tabs .nav-link {
+	min-width: 250px;
+} */
+#plans .nav-tabs .nav-link .badge span {
+	display: none;
+}
+#plans .nav-tabs .nav-link svg {
+	position: static;
+	float: left;
+}
+}
+
+@media (min-width: 767px) and (max-width: 1020px) {
+	#plans .container {
+		max-width: 98%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+#plans .probox {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#plans .New_Product_Tiers_title {
+	padding-bottom: 10px;
+	text-align: left;
+}
+html[lang=ar] #plans .New_Product_Tiers_title {
+	text-align: right;
+}
+#plans .nav-tabs {
+	border-bottom: 0px solid #2f85fe;
+}
+#plans .nav-tabs .nav-item {
+	width: 33.333%;
+	margin-bottom: 0;
+}
+#plans .nav-tabs .nav-link {
+	min-width: 100%;
+	min-height: 75px;
+	padding: 13px 1px 10px 1px;
+	font-size: 13px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid #F1F1F1;
+}
+#plans .nav-tabs .nav-link.active {
+	padding: 13px 1px 10px 1px;
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px solid #2f85fe;
+}
+#plans .nav-tabs .nav-item:first-child .nav-link {
+	border-top-left-radius: 0;
+}
+#plans .nav-tabs .nav-item:last-child .nav-link {
+	border-top-right-radius: 0;
+}
+.nav-link.active #svg_soleil, .nav-link.active #svg_tourist, .nav-link.active #svg_Buyonegetone {
+	fill: #F9FBFB;
+}
+#plans .nav-tabs .nav-link svg {
+	position: static;
+	display: block;
+	width: 100%;
+}
+#plans .nav-tabs .nav-link .badge {
+	top: 5px;
+	right: 5px;
+	padding: 5px 6px;
+}
+
+#plans .swiper-wrapper {
+	display: block;
+	transform: none !important;
+}
+#plans .swiper-button-prev,
+#plans .swiper-button-next {
+	display: none;
+}
+#plans .probox {
+	display: inline-block;
+	max-width: calc(100% - 0px);
+	padding: 0 16px 50px 16px;
+	margin: 16px 0 0 0;
+	background-color: #fff;
+	box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.10);
+	-webkit-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.10);
+	-moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.10);
+}
+
+#plans .probox .colorbox {
+	float: left;
+}
+#plans .probox .product_img {
+	float: right;
+	padding: 16px 0;
+	vertical-align: top;
+}
+
+#plans .probox .product_img img {
+	width: 115px;
+	height: auto;
+}
+
+#plans .probox .colorbox,
+html[lang="ru"] #plans .probox .colorbox {
+	position: static;
+	width: calc(100% - 70px);
+	min-height: 100px;
+	height: auto;
+	padding: 16px 16px 16px 32px;
+	border-bottom: 0;
+}
+#plans .probox .colorbox .badge {
+	position: static;
+	font-size: 9px;
+}
+#plans .probox .colorbox h3 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+html[lang="ru"] #plans .probox .colorbox h3 {
+    margin-bottom: 16px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox {
+	margin-top: 0;
+}
+#plans .probox .colorbox .Earlybird_price {
+	position: static;
+	margin-bottom: 8px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+	line-height: normal;
+}
+html[lang="ru"] #plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price {
+	line-height: 15px;
+}
+html[lang="ru"] #plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_price small {
+	display: block;
+    margin-top: 15px;
+}
+#plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually span {
+	display: block;
+}
+#plans .probox .colorbox .member_learnmore {
+    width: calc(100% - 40px);
+    left: 20px;
+    bottom: 18px;
+}
+#plans .probox .Buynow {
+	background-color: #007bff;
+	border-color: #007bff;
+	color: #fff;
+}
+#plans .probox .Includes.d-d {
+	display: inline-block;
+	width: 100%;
+}
+#plans .probox .Includes ul {
+	display: table;
+	width: 100%;
+	padding-top: 16px;
+	border-top: 1px solid #f1f1f1;
+}
+#plans .probox .Includes li {
+	display: none;
+}
+#plans .probox .Includes li:nth-child(1),
+#plans .probox .Includes li:nth-child(2) {
+	display: table-cell;
+    width: 50%;
+	padding: 0;
+	border-bottom: 0 solid #f1f1f1;
+}
+#plans .probox .Includes li:nth-child(2) {
+	padding-left: 16px;
+	border-left: 1px solid #f1f1f1;
+}
+#plans .probox .Includes li span {
+    display: block;
+    position: static;
+    text-align: left;
+}
+}
+
+@media screen and (max-width: 370px) {
+#plans .nav-tabs .nav-link {
+    font-size: 11px;
+	}
+}
+/********* Plans Responsive end *********/
+/********* Plans Arabic Start *********/
+html[lang="ar"] #plans {
+	text-align: right;
+}
+/*
+html[lang="ar"] #plans .probox .colorbox {
+	padding: 15px 45px 15px 0;
+}
+*/
+html[lang="ar"] #plans .probox .colorbox .New_Product_Tiers_pricebox .orbox .or {
+	left: auto;
+	right: 7px;
+}
+html[lang="ar"] #plans .probox .colorbox .New_Product_Tiers_pricebox .New_Product_Tiers_priceannually a:last-child .store_icons {
+	float: left;
+}
+html[lang="ar"] #plans .probox .Includes li {
+	padding: 15px 0;
+}
+html[lang="ar"] #plans .probox .Includes li::before {
+	left: auto;
+	right: 0;
+}
+html[lang="ar"] #plans .probox.collapse .Show_benefits {
+	background-position: left 115px, top;
+}
+html[lang="ar"] #plans .probox.collapse.show .hide_benefits {
+	background-position: left 22px;
+}
+html[lang="ar"] #plans .nav-tabs .nav-item:first-child .nav-link {
+	border-top-left-radius: 0px;
+	border-top-right-radius: 10px;
+}
+html[lang="ar"] #plans .nav-tabs .nav-item:last-child .nav-link {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 10px;
+}
+html[lang=ar] #plans .probox .Includes li span {
+	left: 0;
+	right: auto;
+	text-align: right;
+}
+
+@media (max-width: 767px) {
+html[lang="ar"] #plans .probox .product_img,
+html[lang="ar"] #plans .probox .colorbox {
+	float: right;
+}
+html[lang="ar"] #plans .probox .colorbox {
+	padding: 15px 45px 15px 0;
+}
+html[lang="ar"] #plans .probox .Includes li:nth-child(2) {
+	padding-left: 0px;
+	border-left: 0px solid #f1f1f1;
+	padding-right: 16px;
+	border-right: 1px solid #f1f1f1;
+}
+}
+
+/********* Plans Arabic end *********/
+/****************************** Plans End ******************************/
+/********* Tourist only start *********/
+#plans #planstabs-tabpane-tourist .probox .colorbox {
+    min-height: 325px !important;
+}
+html[lang="ar"] #plans #planstabs-tabpane-tourist .probox .colorbox {
+    min-height: 295px !important;
+}
+@media (max-width: 767px) {
+#plans #planstabs-tabpane-tourist .probox .colorbox,
+html[lang="ar"] #plans #planstabs-tabpane-tourist .probox .colorbox{
+    height: auto !important;
+	min-height: auto !important;
+}
+}
+/********* Tourist only end *********/

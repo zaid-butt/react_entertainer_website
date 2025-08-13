@@ -1,0 +1,556 @@
+/****************************** Search Start ******************************/
+#SearchListing {
+	position: relative;
+	margin-top: 48px;
+}
+
+/********* #SearchTopheader *********/
+#SearchTopheader .SearchTopheader {
+	display: flex;
+	align-self: center;
+}
+
+.SearchTopheader .STH-cat {
+	display: flex;
+	justify-content: space-between;
+	min-width: 300px;
+	font-size: 34px;
+	font-weight: 600;
+}
+
+.SearchTopheader .STH-PlacesOffers {
+	display: flex;
+	align-self: center;
+	margin-left: 50px;
+}
+
+html[lang=ar] .SearchTopheader .STH-PlacesOffers {
+	margin-left: 0;
+	margin-right: 50px;
+}
+
+.SearchTopheader .STH-Places,
+.SearchTopheader .STH-Offers {
+	margin-right: 20px;
+	border-left: 1px solid #A3A2A2;
+}
+
+html[lang=ar] .SearchTopheader .STH-Places,
+html[lang=ar] .SearchTopheader .STH-Offers {
+	border-left: 0;
+	border-right: 1px solid #A3A2A2;
+}
+
+.SearchTopheader .STH-PlacesOffers img {
+	margin: 0 12px;
+}
+
+.SearchTopheader .STH-PlacesOffers span {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.SearchTopheader .STH-devider {
+	display: none;
+}
+
+.SearchTopheader .STH-map {
+	margin-left: auto;
+}
+
+html[lang=ar] .SearchTopheader .STH-map {
+	margin-left: 0;
+	margin-right: auto;
+}
+
+.SearchTopheader .STH-map a {
+	display: inline-block;
+	min-width: 112px;
+	padding: 6px 10px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	text-decoration: none;
+	border: 2px solid #005CA8;
+	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/search_icon_map.svg");
+	background-size: cover;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+/********* #SearchFilters *********/
+#SearchFilters {
+	margin-top: 48px;
+}
+
+.FilterBadge {
+	display: inline-block;
+	margin: 5px;
+}
+.FilterBadge_content {
+	display: inline-block;
+	padding: 5px 7px;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+.FilterBadge img {
+	margin-right: 5px;
+}
+
+html[lang=ar] .FilterBadge img {
+	margin-left: 5px;
+	margin-right: 0;
+}
+
+.FilterBadge {
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.FilterBadge input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.FilterBadge .checkmark {
+	display: none;
+	position: absolute;
+	top: 5px;
+    right: 8px;
+	height: 12px;
+	width: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+html[lang=ar] .FilterBadge .checkmark {
+	left: 8px;
+	right: auto;
+}
+
+.FilterBadge input:checked~.checkmark {
+	display: inline-block;
+}
+
+.FilterBadge input:checked~.FilterBadge_content {
+	padding: 5px 25px 5px 7px;
+	background: #282828;
+	color: #fff;
+}
+
+html[lang=ar] .FilterBadge input:checked~.FilterBadge_content {
+	padding: 5px 7px 5px 25px;
+}
+
+.FilterBadge input:checked~.FilterBadge_content img {
+	filter: invert(100%);
+}
+
+.FilterBadge .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.FilterBadge input:checked~.checkmark:after {
+	display: block;
+}
+
+.FilterBadge .checkmark:after {
+	content: "\00d7";
+	cursor: pointer;
+	color: #fff;
+}
+
+/********* #SearchSlider *********/
+#SearchSlider {
+	margin: 48px -46px 0 -46px;
+	padding: 0 46px;
+	overflow: hidden;
+}
+
+#SearchSlider .swiper {
+	overflow: visible;
+}
+
+#SearchSlider .swiper-button-prev,
+#SearchSlider .swiper-button-next {
+	top: 0;
+	width: 125px;
+	height: 210px;
+	background: #fff;
+}
+
+html[lang=ar] #SearchSlider .swiper-button-prev,
+html[lang=ar] #SearchSlider .swiper-button-next {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#SearchSlider .swiper-button-prev {
+	left: -46px;
+	right: auto;
+	justify-content: left;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+html[lang=ar] #SearchSlider .swiper-button-prev {
+	left: auto;
+	right: -46px;
+}
+
+#SearchSlider .swiper-button-next {
+	padding-right: 5px;
+	/* right: calc(-30% - 75px); */
+	right: -46px;
+	justify-content: right;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
+}
+
+html[lang=ar] #SearchSlider .swiper-button-next {
+	left: -46px;
+	right: auto;
+}
+
+#SearchSlider .swiper-button-prev.swiper-button-disabled,
+#SearchSlider .swiper-button-next.swiper-button-disabled {
+	display: flex;
+	width: 58px;
+}
+
+.SearchSliderCard {
+	position: relative;
+	padding: 0 12px;
+}
+
+.SearchSliderCard .SearchSliderCard-imgbox {
+	position: relative;
+}
+
+.SearchSliderCard .SearchSliderCard-img {
+	width: 100%;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.SearchSliderCard .SearchSliderCard-contentbg {
+	display: flex;
+	align-items: flex-end;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 140px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+}
+
+.SearchSliderCard .SearchSliderCard-content {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 24px;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.SearchSliderCard .ss-cont_left h3 {
+	margin-bottom: 0;
+}
+
+.SearchSliderCard .ss-cont_right div {
+	position: relative;
+	margin-top: 10px;
+}
+
+.SearchSliderCard .ss-cont_right div::before {
+	position: absolute;
+	top: 5px;
+	left: -27px;
+	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/icon-tag.svg");
+}
+
+html[lang=ar] .SearchSliderCard .ss-cont_right div::before {
+	left: auto;
+	right: -27px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+/********* #SearchListing *********/
+#SearchListing .MCard {
+	display: inline-block;
+	width: calc(25% - 24px);
+	margin: 0 12px 24px 12px;
+}
+
+#SearchListing .MCard-price,
+#SearchListing .MCard-rating {
+	display: none;
+}
+
+#SearchListing .MCard-content {
+	height: 110px;
+}
+
+/********* #InsideScoop *********/
+/* #InsideScoop {
+	position: relative;
+	margin-top: 160px;
+} */
+
+
+
+/********* SearchPopup *********/
+.sfpopup .modal-body {
+	display: flex;
+	padding: 0;
+}
+
+.sfpopup .popup_left {
+	width: 30%;
+	min-width: 160px;
+	margin: 0;
+	border-right: 1px solid #F4F4F4;
+}
+
+html[lang=ar] .sfpopup .popup_left {
+	border-right: 0 solid #F4F4F4;
+	border-left: 1px solid #F4F4F4;
+}
+
+.sfpopup .nav-pills .nav-link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #737373;
+	font-size: 15px;
+    font-weight: 300;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.sfpopup .nav-pills .nav-link.active,
+.sfpopup .nav-pills .show > .nav-link {
+	color: #282828;
+	font-weight: 500;
+	background-color: #EAF3FF;
+}
+.sfpopup .popup_right {
+	width: 70%;
+	margin: 16px;
+}
+.sfpopup_body {
+	position: relative;
+	max-height: 250px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.sfpopup_body .radio,
+.sfpopup_body .checkbox {
+    margin-bottom: 16px;
+}
+
+.sfpopup .navlinkvelue {
+	color: #2F85FE;
+	font-size: 12px;
+    font-weight: 300;
+}
+
+.sfpopup .modal-footer .btn-link {
+	color: #484848;
+	text-decoration: underline;
+}
+
+#sfpopup-tabpane-cuisines #cuisines_searchbox {
+	position: sticky;
+	padding-bottom: 10px;
+}
+#sfpopup-tabpane-cuisines #cuisines_searchbox input {
+	height: auto;
+    padding: 10px 10px 10px 35px;
+	color: #696969;
+    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon3.svg);
+	background-repeat: no-repeat;
+    background-position: 10px 11px;
+    background-color: transparent !important;
+    border-color: #e3e3e3
+}
+
+html[lang=ar] #sfpopup-tabpane-cuisines #cuisines_searchbox input {
+    direction: ltr;
+}
+
+/********* Search Responsive start *********/
+@media screen and (max-width: 1199px) {
+	#SearchListing .MCard {
+		width: calc(33.333% - 24px);
+	}
+
+	#SearchListing .MCard-imgbox {
+		height: 165px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.container {
+		max-width: 100%;
+	}
+
+	#SearchSlider .swiper-button-prev,
+	#SearchSlider .swiper-button-next {
+		display: none !important;
+	}
+
+	#SearchListing .MCard {
+		width: calc(50% - 24px);
+	}
+
+	#SearchListing .MCard-imgbox {
+		height: 185px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	#SearchTopheader .SearchTopheader {
+		flex-wrap: wrap;
+	}
+
+	.SearchTopheader .STH-cat {
+		order: 1;
+		min-width: 180px;
+		font-size: 20px;
+	}
+
+	.SearchTopheader .STH-PlacesOffers {
+		order: 3;
+		justify-content: space-between;
+		width: 100%;
+		margin-top: 24px;
+		margin-left: 0;
+	}
+
+	html[lang=ar] .SearchTopheader .STH-PlacesOffers {
+		margin-right: 0;
+	}
+
+	.SearchTopheader .STH-Places,
+	.SearchTopheader .STH-Offers {
+		margin-right: 0;
+		border-left: 0 solid #A3A2A2;
+	}
+
+	html[lang=ar] .SearchTopheader .STH-Places,
+	html[lang=ar] .SearchTopheader .STH-Offers {
+		border-left: 0;
+		border-right: 0 solid #A3A2A2;
+	}
+
+	.SearchTopheader .STH-PlacesOffers img {
+		margin-left: 0;
+	}
+
+	html[lang=ar] .SearchTopheader .STH-PlacesOffers img {
+		margin-left: 12px;
+		margin-right: 0;
+	}
+
+	.SearchTopheader .STH-devider {
+		display: block;
+		color: #fff;
+		border-right: 1px solid #A3A2A2;
+	}
+
+
+	.SearchTopheader .STH-map {
+		order: 2;
+	}
+
+	#SearchFilters,
+	#SearchSlider,
+	#SearchListing {
+		margin-top: 24px;
+	}
+
+	#SearchFilters_wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#SearchFilters_wrapper .styles-module_slider__o0fqa {
+		padding: 0 8px;
+	}
+
+	#SearchSlider_wrapper {
+		padding: 0;
+	}
+
+	#SearchSlider {
+		margin: 24px -12px 0 -12px;
+		padding: 0 12px;
+	}
+
+	#SearchSlider .swiper-button-prev,
+	#SearchSlider .swiper-button-next {
+		display: none !important;
+	}
+
+	#SearchListing .MCard {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	#SearchListing .MCard-imgbox {
+		height: auto;
+	}
+
+	.sfpopup .modal-footer {
+		display: flex;
+		justify-content: space-between;
+	}
+	.sfpopup .modal-footer .btn-link {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+
+/********* Search Responsive end *********/
+/****************************** Search End ******************************/
