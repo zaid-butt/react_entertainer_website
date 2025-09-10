@@ -30,7 +30,7 @@ function User_LoginReg() {
             aria-expanded="false"
           >
             <a href=" " className="nav-link logreg_proile">
-              <img src="https://b2cappassetscdn.theentertainerme.com/website_images/Testi_pro_img1.png" alt="Testi_pro_img1" />
+              <img src="/public/images/Testi_pro_img1.png" alt="Testi_pro_img1" />
             </a>
             <div className="logreg_proilename">Ztest</div>
             <div className="dropdown-menu" aria-labelledby="logproile">

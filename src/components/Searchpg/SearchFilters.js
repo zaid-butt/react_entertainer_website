@@ -30,7 +30,7 @@ function SearchFilters() {
           <span className="FilterBadge_content">
             <img
               alt="Filters"
-              src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_filter.svg"
+              src="/images/icon-s_filter.svg"
             />
             Filters
           </span>
@@ -40,7 +40,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Takeaway"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_takeaway.svg"
+                src="/images/icon-s_takeaway.svg"
               />
               Takeaway
             </span>
@@ -51,7 +51,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="New"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_new.svg"
+                src="/images/icon-s_new.svg"
               />
               New
             </span>
@@ -62,7 +62,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Lite"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_lite.svg"
+                src="/images/icon-s_lite.svg"
               />
               Lite
             </span>
@@ -73,7 +73,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Dine-in"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_dine.svg"
+                src="/images/icon-s_dine.svg"
               />
               Dine-in
             </span>
@@ -84,7 +84,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Delivery"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_delivery.svg"
+                src="/images/icon-s_delivery.svg"
               />
               Delivery
             </span>
@@ -95,7 +95,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Top rated"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_toprated.svg"
+                src="/images/icon-s_toprated.svg"
               />
               Top rated
             </span>
@@ -106,7 +106,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Best reviewed"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_best.svg"
+                src="/images/icon-s_best.svg"
               />
               Best reviewed
             </span>
@@ -117,7 +117,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="25% OFF"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_percent.svg"
+                src="/images/icon-s_percent.svg"
               />
               25% OFF
             </span>
@@ -128,7 +128,7 @@ function SearchFilters() {
             <span className="FilterBadge_content">
               <img
                 alt="Buy one get one free"
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon-s_tag.svg"
+                src="/images/icon-s_tag.svg"
               />
               Buy one get one free
             </span>

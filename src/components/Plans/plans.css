@@ -58,7 +58,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fdfaf2", endC
 	width: 40px;
 	height: 40px;
 	margin: 10px auto;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/planstabs_icons.svg");
+	background-image: url("/public/images/planstabs_icons.svg");
 	background-repeat: no-repeat;
 	background-position: 0px 0px;
 }

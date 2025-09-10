@@ -46,7 +46,7 @@ function Plans() {
                                 subscribText={"Active"}
                                 subscribClass={"subscribedProductsBtn"}
                                 img={
-                                  "https://b2cappassetscdn.theentertainerme.com/v7/lite/DXB-Lite--359x404.png"
+                                  "/images/DXB-Lite--359x404.png"
                                 }
                                 LearnMoreAbout_text={"Learn more"}
                                 LearnMoreAbout_link={"#0"}
@@ -67,7 +67,7 @@ function Plans() {
                                 subscribText={"Buy Now"}
                                 subscribClass={""}
                                 img={
-                                  "https://b2cappassetscdn.theentertainerme.com/v7/standard/DXB-Standard-359x404.png"
+                                  "/images/DXB-Standard-359x404.png"
                                 }
                                 LearnMoreAbout_text={"Learn more"}
                                 LearnMoreAbout_link={"#0"}
@@ -89,7 +89,7 @@ function Plans() {
                                 subscribText={"Buy Now"}
                                 subscribClass={""}
                                 img={
-                                  "https://b2cappassetscdn.theentertainerme.com/v7/premium/DXB-Premium--359x404.png"
+                                  "/images/DXB-Premium--359x404.png"
                                 }
                                 LearnMoreAbout_text={"Learn more"}
                                 LearnMoreAbout_link={"#0"}
@@ -108,7 +108,7 @@ function Plans() {
                                 subscribText={"Buy Now"}
                                 subscribClass={""}
                                 img={
-                                  "https://b2cappassetscdn.theentertainerme.com/v7/Global/Global-359x404.png"
+                                  "/images/Global-359x404.png"
                                 }
                                 LearnMoreAbout_text={"Learn more"}
                                 LearnMoreAbout_link={"#0"}
@@ -149,7 +149,7 @@ function Plans() {
                                 subscribText={"Buy Now"}
                                 subscribClass={""}
                                 img={
-                                  "https://s3-us-west-2.amazonaws.com/etsitecdn.theentertainerme.com/gallery/product2021/Tourist_Product_Details.png"
+                                  "/images/Tourist_Product_Details.png"
                                 }
                                 ptext={
                                   "Note: Some ENTERTAINER offers are not available in the ENTERTAINER tourist - UAE."
@@ -175,7 +175,7 @@ function Plans() {
                                 subscribText={"Buy Now"}
                                 subscribClass={""}
                                 img={
-                                  "https://s3-us-west-2.amazonaws.com/etsitecdn.theentertainerme.com/gallery/product2021/Tourist_Product_Details.png"
+                                  "/images/Tourist_Product_Details.png"
                                 }
                                 ptext={
                                   "Note: Some ENTERTAINER offers are not available in the ENTERTAINER tourist - UAE."
@@ -207,7 +207,7 @@ function Plans() {
                           className="video-js desktop-video"
                         >
                           <source
-                            src="https://b2cappassetscdn.theentertainerme.com/Cart2022Videos/Soleil+Video.mp4"
+                            src="/images/Soleil+Video.mp4"
                             type="video/mp4"
                           />
                         </video>

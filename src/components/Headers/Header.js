@@ -113,7 +113,7 @@ function TopHeader(props) {
                       <tr>
                         <td className="downscan_img">
                           <img
-                            src="https://b2cappassetscdn.theentertainerme.com/website_images/downscan.png"
+                            src="/public/images/downscan.png"
                             alt="downscan"
                           />
                         </td>

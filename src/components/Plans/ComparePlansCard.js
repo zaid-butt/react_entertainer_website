@@ -72,11 +72,11 @@ function ComparePlansCard(props) {
               <div key={index}>
                 <span>{item.BFname}</span>
                 {[true].includes(item.BFvalue) ? 
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-true.svg" alt=" " />
+                <img src="/images/bao-true.svg" alt=" " />
                 : <></>
                     }
                 {[false].includes(item.BFvalue) ? 
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/bao-false.svg" alt=" " />
+                <img src="/images/bao-false.svg" alt=" " />
                 : <></>
                     }
                 {![null,true,'',false].includes(item.BFvalue) ? <p>

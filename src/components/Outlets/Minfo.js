@@ -24,7 +24,7 @@ function Minfo() {
           <Col md={6} className="Minfo_contact_hdstar">
             <span>
             <img
-              src="https://b2cappassetscdn.theentertainerme.com/website_images/Star.svg"
+              src="/images/Star.svg"
               alt=" "
             />
             </span>
@@ -33,7 +33,7 @@ function Minfo() {
           <Col md={6} className="Minfo_contact_hdmap">
             <span>
               <img
-              src="https://b2cappassetscdn.theentertainerme.com/website_images/icon_mmap.svg"
+              src="/images/icon_mmap.svg"
               alt=" "
             />
             </span>
@@ -44,14 +44,14 @@ function Minfo() {
           <Col md={5}>
             <div>
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon_mloby.svg"
+                src="/images/icon_mloby.svg"
                 alt=" "
               />
               Lobby Level
             </div>
             <div>
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon_mcall.svg"
+                src="/images/icon_mcall.svg"
                 alt=" "
               />
               +971 4 550 8111
@@ -60,14 +60,14 @@ function Minfo() {
           <Col md={7}>
             <div>
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon_mmail.svg"
+                src="/images/icon_mmail.svg"
                 alt=" "
               />
               reservations@masterchefdxb.com
             </div>
             <div>
               <img
-                src="https://b2cappassetscdn.theentertainerme.com/website_images/icon_mweb.svg"
+                src="/images/icon_mweb.svg"
                 alt=" "
               />
               www.masterchefdxb.com

@@ -6,14 +6,14 @@ function SmLogin() {
       <div className="social_login">
         <a className="btn btn-block" href="#0">
           <img
-            src="https://b2cappassetscdn.theentertainerme.com/website_images/smi_g.svg"
+            src="/images/smi_g.svg"
             alt=" "
           />
           Continue with Google
         </a>
         <a className="btn btn-block" href="#0">
           <img
-            src="https://b2cappassetscdn.theentertainerme.com/website_images/smi_f.svg"
+            src="/images/smi_f.svg"
             alt=" "
           />
           Continue with Facebook

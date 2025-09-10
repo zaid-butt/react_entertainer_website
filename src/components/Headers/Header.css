@@ -101,7 +101,7 @@ html[lang=ru] .navbar-nav.logreg .nav-item:first-child {
 	border: 0;
     flex: 0 0 auto;
     margin: 0 5px -4px 5px;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow.svg) no-repeat;
+    background: url(/public/images/toplocarrow.svg) no-repeat;
     background-position: right bottom;
     background-size: 15px;
 }
@@ -147,7 +147,7 @@ html[lang=ar] .langdropdown .dropdown-menu-right {
 }
 
 .langdropdown .dropdown-lang.active {
-    background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/region_tick.svg);
+    background-image: url(/public/images/region_tick.svg);
     background-repeat: no-repeat;
     background-position: center right;
     font-weight: 500
@@ -180,11 +180,11 @@ html[lang=ar] .langdropdown .dropdown-menu-right {
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/navbar-toggler-icon.svg) 100%/auto auto no-repeat
+    background: url(/public/images/navbar-toggler-icon.svg) 100%/auto auto no-repeat
 }
 
 html[lang=ar] .navbar-dark .navbar-toggler-icon {
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/navbar-toggler-icon_ar.svg) 100%/auto auto no-repeat
+    background: url(/public/images/navbar-toggler-icon_ar.svg) 100%/auto auto no-repeat
 }
 
 .toprt_downapp {
@@ -279,7 +279,7 @@ header .searchbox .search {
     font-size: 13px;
     color: #fff;
     font-weight: 300;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon1.svg) no-repeat;
+    background: url(/public/images/search_icon1.svg) no-repeat;
     background-position: 8px 10px;
     background-color: #70addb;
     border-color: #70addb
@@ -322,7 +322,7 @@ header .searchbox .search_close svg {
 
 header .searchbox .search {
     color: #696969;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon3.svg) no-repeat;
+    background: url(/public/images/search_icon3.svg) no-repeat;
     background-position: 10px 10px;
     background-color: #fff;
     border-color: #e3e3e3
@@ -345,7 +345,7 @@ header .searchbox .search_close svg {
     width: 17px;
     margin: 0 5px;
     flex: 0 0 auto;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow.svg) no-repeat;
+    background: url(/public/images/toplocarrow.svg) no-repeat;
     background-position: right bottom;
     background-size: 15px
 }
@@ -371,7 +371,7 @@ header .searchbox .search_close svg {
 }
 
 #regions .modal-content {
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/map.svg) no-repeat;
+    background: url(/public/images/map.svg) no-repeat;
     background-size: contain;
     background-position: center;
     background-color: #fff
@@ -416,7 +416,7 @@ header .searchbox .search_close svg {
     height: 22px;
     width: 20px;
     flex: 0 0 auto;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/maps_sprites.svg) no-repeat;
+    background: url(/public/images/maps_sprites.svg) no-repeat;
     background-position: center -6px;
     margin-right: 8px
 }
@@ -438,7 +438,7 @@ header .searchbox .search_close svg {
     display: inline-block;
     height: 18px;
     width: 18px;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/region_tick.svg) no-repeat;
+    background: url(/public/images/region_tick.svg) no-repeat;
     position: absolute;
     top: 12px;
     right: 5px
@@ -768,7 +768,7 @@ header .modal {
 	.toplocflag .locflag::after {
         height: 18px;
         width: 18px;
-        background: url(https://b2cappassetscdn.theentertainerme.com/website_images/toplocarrow2.svg) no-repeat;
+        background: url(/public/images/toplocarrow2.svg) no-repeat;
         background-size: 70%;
         background-position: center bottom
     }

@@ -134,7 +134,7 @@ html[lang="ar"] #footeraccordion .btn {
 	width: 36px;
 	height: 40px;
 	overflow: hidden;
-	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/SMIcons.svg);
+	background-image: url(/public/images/SMIcons.svg);
 	background-repeat: no-repeat;
 }
 .SMIcons li a.SMI_y {

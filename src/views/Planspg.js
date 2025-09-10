@@ -38,7 +38,7 @@ function Plans() {
       billed_annually_text: " billed annually (including VAT)",
       subscribText: "Buy Now",
       subscribClass: "",
-      img: "https://b2cappassetscdn.theentertainerme.com/v7/standard/DXB-Standard-359x404.png",
+      img: "/images/DXB-Standard-359x404.png",
       LearnMoreAbout_text: "Learn more",
       LearnMoreAbout_link: "#0",
       BeneFits: [
@@ -75,7 +75,7 @@ function Plans() {
       billed_annually_text: " billed annually (including VAT)",
       subscribText: "Buy Now",
       subscribClass: "",
-      img: "https://b2cappassetscdn.theentertainerme.com/v7/premium/DXB-Premium--359x404.png",
+      img: "/images/DXB-Premium--359x404.png",
       LearnMoreAbout_text: "Learn more",
       LearnMoreAbout_link: "#0",
       BeneFits: [
@@ -111,7 +111,7 @@ function Plans() {
       billed_annually_text: " billed annually (including VAT)",
       subscribText: "Buy Now",
       subscribClass: "",
-      img: "https://b2cappassetscdn.theentertainerme.com/v7/Global/Global-359x404.png",
+      img: "/images/Global-359x404.png",
       LearnMoreAbout_text: "Learn more",
       LearnMoreAbout_link: "#0",
       BeneFits: [
@@ -147,7 +147,7 @@ function Plans() {
       billed_annually_text: "",
       subscribText: "Active",
       subscribClass: "subscribedProductsBtn",
-      img: "https://b2cappassetscdn.theentertainerme.com/v7/lite/DXB-Lite--359x404.png",
+      img: "/images/DXB-Lite--359x404.png",
       LearnMoreAbout_text: "Learn more",
       LearnMoreAbout_link: "#0",
       BeneFits: [
@@ -186,7 +186,7 @@ function Plans() {
       billed_annually_text: " billed annually (including VAT)",
       subscribText: "Buy Now",
       subscribClass: "",
-      img: "https://b2cappassetscdn.theentertainerme.com/v7/standard/DXB-Standard-359x404.png",
+      img: "/images/DXB-Standard-359x404.png",
       LearnMoreAbout_text: "Learn more",
       LearnMoreAbout_link: "#0",
       BeneFits: [

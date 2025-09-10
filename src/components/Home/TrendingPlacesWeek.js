@@ -40,7 +40,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="FoodDrink">
-                        <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                        <span className="tabimg"><img src="/images/FoodDrink.svg" alt="" /> </span>
                         Food & Drink
                         </Nav.Link>
                     </Nav.Item>
@@ -48,7 +48,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="BeautyFitness">
-                      <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                      <span className="tabimg"><img src="/images/BeautyFitness.svg" alt="" /> </span>
                         Beauty & Fitness
                       </Nav.Link>
                     </Nav.Item>
@@ -56,7 +56,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="AttractionLeisure">
-                      <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                      <span className="tabimg"><img src="/images/AttractionLeisure.svg" alt="" /> </span>
                         Attraction & Leisure
                       </Nav.Link>
                     </Nav.Item>
@@ -64,7 +64,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="FashionRetail">
-                      <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                      <span className="tabimg"><img src="/images/FashionRetail.svg" alt="" /> </span>
                         Fashion & Retail
                       </Nav.Link>
                     </Nav.Item>
@@ -72,7 +72,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="EverydayServices">
-                      <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                      <span className="tabimg"><img src="/images/EverydayServices.svg" alt="" /> </span>
                         Everyday Services
                       </Nav.Link>
                     </Nav.Item>
@@ -80,7 +80,7 @@ function TrendingPlacesWeek() {
                   <SwiperSlide>
                     <Nav.Item>
                       <Nav.Link eventKey="Travel">
-                      <span className="tabimg"><img src="https://b2cappassetscdn.theentertainerme.com/website_images/AttractionLeisure.svg" alt="" /> </span>
+                      <span className="tabimg"><img src="/images/Travel.svg" alt="" /> </span>
                       Travel
                       </Nav.Link>
                     </Nav.Item>

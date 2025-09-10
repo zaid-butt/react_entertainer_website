@@ -47,7 +47,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://s3-us-west-2.amazonaws.com/ent-search-results/cuisine.png"
+                src="/images/cuisine.png"
                 alt="product"
               />
             </div>
@@ -65,7 +65,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://offerengine.theentertainerme.com/pizzolo-x23900457/merchant_primary_logo_%28retina%29_-_merchant202011231304.jpg"
+                src="/images/s_merchant202011231304.jpg"
                 alt="product"
               />
             </div>
@@ -86,7 +86,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://offerengine.theentertainerme.com/pizza-2-go-x122645/merchant_primary_logo_%28retina%29_-_merchant.png"
+                src="/images/s_merchant2.png"
                 alt="product"
               />
             </div>
@@ -108,7 +108,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://offerengine.theentertainerme.com/don-pizza-x23892724/merchant_primary_logo_%28retina%29_-_merchant202002111545.jpg"
+                src="/images/s_merchant202002111545.jpg"
                 alt="product"
               />
             </div>
@@ -130,7 +130,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://offerengine.theentertainerme.com/six-pizza-x23912762/merchant_primary_logo_%28retina%29_-_merchant2021010061347.jpg"
+                src="/images/s_merchant2021010061347.jpg"
                 alt="product"
               />
             </div>
@@ -152,7 +152,7 @@ function Search() {
           <div class="sugges_wrap">
             <div class="imgbox">
               <img
-                src="https://offerengine.theentertainerme.com/pizza-bros-x23899374/merchant_primary_logo_%28retina%29_-_merchant202303231213.jpg"
+                src="/images/s_merchant202303231213.jpg"
                 alt="product"
               />
             </div>

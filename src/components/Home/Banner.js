@@ -12,7 +12,7 @@ function Banner() {
         <img className="d-d" src={t("header_desktop_n")} alt="banner" />
         <img
           className="d-mob"
-          src="https://b2cappassetscdn.theentertainerme.com/Cart2022Header/en/1/header_mobile_n.png"
+          src="/images/header_mobile_n.png"
           alt="banner"
         />
 
@@ -40,7 +40,7 @@ function Banner() {
                   <div className="d-mob formimg">
                     <img
                       loading="lazy"
-                      src="https://b2cappassetscdn.theentertainerme.com/Cart2022Header/en/1/header_mimg_desktop.png"
+                      src="/images/header_mimg_desktop.png"
                       alt="banner_pricetag"
                     />
                   </div>
@@ -94,7 +94,7 @@ function Banner() {
                 <Col md={7} className="banner_pricetag">
                   <img
                     loading="lazy"
-                    src="https://b2cappassetscdn.theentertainerme.com/Cart2022Icons/AED.svg"
+                    src="/images/AED.svg"
                     alt="price img"
                   />
                   <div>

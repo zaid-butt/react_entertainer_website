@@ -47,15 +47,15 @@ function LanguageSwitcher() {
                 </DropdownToggle>
               </div>
               <div className="dropdown-lang" onClick={() => ch_translation("en")}>
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_en.svg" alt=" " />
+                <img src="/images/lang_en.svg" alt=" " />
                 <span>English</span>
               </div>
               <div  className="dropdown-lang" onClick={() => ch_translation("ar")}>
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_ar.svg" alt=" " />
+                <img src="/images/lang_ar.svg" alt=" " />
                 <span>العربيّة</span>
               </div>
               <div className="dropdown-lang" onClick={() => ch_translation("ru")}>
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_ru.svg" alt=" " />
+                <img src="/images/lang_ru.svg" alt=" " />
                 <span>Cyrillic</span>
               </div>
             </div>

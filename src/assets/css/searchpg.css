@@ -72,7 +72,7 @@ html[lang=ar] .SearchTopheader .STH-map {
 	text-align: center;
 	text-decoration: none;
 	border: 2px solid #005CA8;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/search_icon_map.svg");
+	background-image: url("/public/images/search_icon_map.svg");
 	background-size: cover;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -302,7 +302,7 @@ html[lang=ar] #SearchSlider .swiper-button-next {
 	position: absolute;
 	top: 5px;
 	left: -27px;
-	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/icon-tag.svg");
+	content: url("/public/images/icon-tag.svg");
 }
 
 html[lang=ar] .SearchSliderCard .ss-cont_right div::before {
@@ -406,7 +406,7 @@ html[lang=ar] .sfpopup .popup_left {
 	height: auto;
     padding: 10px 10px 10px 35px;
 	color: #696969;
-    background: url(https://b2cappassetscdn.theentertainerme.com/website_images/search_icon3.svg);
+    background: url(/public/images/search_icon3.svg);
 	background-repeat: no-repeat;
     background-position: 10px 11px;
     background-color: transparent !important;

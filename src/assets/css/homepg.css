@@ -184,7 +184,7 @@
 }
 
 #famshar.bg {
-	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/famshar_bg.png);
+	background-image: url(/public/images/famshar_bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -226,7 +226,7 @@
 }
 
 #howork .bg {
-	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/howork_bg.png);
+	background-image: url(/public/images/howork_bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;

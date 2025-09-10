@@ -22,15 +22,15 @@ function Language() {
                 </DropdownToggle>
               </div>
               <a className="dropdown-lang active">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_en.svg" />
+                <img src="/public/images/lang_en.svg" />
                 <span>English</span>
               </a>
               <a className="dropdown-lang">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_ar.svg" />
+                <img src="/public/images/lang_ar.svg" />
                 <span>العربيّة</span>
               </a>
               <a className="dropdown-lang">
-                <img src="https://b2cappassetscdn.theentertainerme.com/website_images/lang_ru.svg" />
+                <img src="/public/images/lang_ru.svg" />
                 <span>Cyrillic</span>
               </a>
             </div>

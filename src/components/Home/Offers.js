@@ -103,7 +103,7 @@ function Offers() {
                   <img
                     className="landing-page-app-btn"
                     loading="lazy"
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/Appstore_btn.svg"
+                    src="/images/Appstore_btn.svg"
                     alt="App Store"
                   />
                 </a>
@@ -114,7 +114,7 @@ function Offers() {
                   <img
                     className="landing-page-app-btn"
                     loading="lazy"
-                    src="https://b2cappassetscdn.theentertainerme.com/website_images/playstore/google_play_new.svg"
+                    src="/images/google_play_new.svg"
                     alt="Google Play"
                   />
                 </a>
@@ -122,7 +122,7 @@ function Offers() {
                   className="offers_explore"
                   href="https://www.theentertainerme.com/en-ae/dubai-n-emirates#entProductSection"
                 >
-                  <img src="https://b2cappassetscdn.theentertainerme.com/website_images/playstore/huawei_btn.svg" alt="offers_explore" />
+                  <img src="/images/huawei_btn.svg" alt="offers_explore" />
                 </a>
                 <a
                   className="btn btn-secondary"
