@@ -12,7 +12,7 @@
   "top_register": "Register",
   "Download_app": "Download app",
   "banner_title_text1": "Buy 1 Get 1 Free ",
-  "header_desktop_n": "https://b2cappassetscdn.theentertainerme.com/Cart2022Header/en/1/header_desktop_n.png",
+  "header_desktop_n": "/images/BannerBG.png",
   "test": "Demo for <1>Phrase blog</1> article. <5/>Created with React, i18next, and Bulma.",
   "testimonial": {
     "what_members_saying": "What our members are saying"
