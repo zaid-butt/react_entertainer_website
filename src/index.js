@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./services/i18n.js";
+import "services/i18n.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./assets/css/all.css";
-import Loadering from "./v1/components/Loadering.js";
+import "assets/css/all.css";
+import Loadering from "./components/Loadering.js";
 
 import SiteindexRoutes from "./routes/siteindexRoutes.js";
 

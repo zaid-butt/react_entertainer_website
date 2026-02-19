@@ -1,8 +1,8 @@
 {
   "ztest": "test ruru",
   "html_lang": "ru",
-  "logo": "https://entcartut.theentertainerme.com/revamp22/images/Logo.svg",
-  "logomob": "https://entcartut.theentertainerme.com/revamp22/images/Logo-mob.svg",
+  "logo": "/images/Logo.svg",
+  "logomob": "/images/Logo-mob.svg",
   "toplink_memberships": "Подписки",
   "toplink_Howitworks": "Как это работает",
   "toplink_BecomePartner": "Стать партнером",
@@ -12,5 +12,5 @@
   "top_register": "Зарегистрироваться",
   "Download_app": "Скачать приложение ",
   "banner_title_text1": "Купи 1 получи 1",
-  "header_desktop_n": "https://b2cappassetscdn.theentertainerme.com/Cart2022Header/en/1/header_desktop_n.png"
+  "header_desktop_n": "/images/BannerBG.png"
 }

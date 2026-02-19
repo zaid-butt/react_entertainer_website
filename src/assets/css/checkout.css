@@ -132,7 +132,7 @@ html[lang=ar] .checkout .table_pad2x {
 	padding-bottom: 18px;
 }
 .checkout input.red_promo_inp2 {
-	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/tick.svg);
+	background-image: url(/public/images/tick.svg);
 	background-repeat: no-repeat;
 	background-position: center right;
 }

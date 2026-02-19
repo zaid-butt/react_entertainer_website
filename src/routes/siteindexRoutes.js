@@ -8,14 +8,14 @@ import {
 import { lang, city } from "../const.js";
  
 // import Ztest from "./views/ztest.js";
-const Loadering = React.lazy(() => import("../v1/components/Loadering.js"));
-const Index = React.lazy(() => import("../v1/views/Home.js"));
-const Signin = React.lazy(() => import("../v1/views/Login.js"));
-const Signup = React.lazy(() => import("../v1/views/Signup.js"));
-const Search = React.lazy(() => import("../v1/views/Search.js"));
-const Outlets = React.lazy(() => import("../v1/views/Outlets.js"));
-const Profile = React.lazy(() => import("../v1/views/Profilepg.js"));
-const Plans = React.lazy(() => import("../v1/views/Planspg.js"));
+const Loadering = React.lazy(() => import("components/Loadering.js"));
+const Index = React.lazy(() => import("views/Home.js"));
+const Signin = React.lazy(() => import("views/Login.js"));
+const Signup = React.lazy(() => import("views/Signup.js"));
+const Search = React.lazy(() => import("views/Search.js"));
+const Outlets = React.lazy(() => import("views/Outlets.js"));
+const Profile = React.lazy(() => import("views/Profilepg.js"));
+const Plans = React.lazy(() => import("views/Planspg.js"));
 
 function siteindex() {
   return (

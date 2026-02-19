@@ -1,8 +1,8 @@
 {
   "ztest": "test arar",
   "html_lang": "ar",
-  "logo": "https://entcartut.theentertainerme.com/revamp22/images/Logo_ar.svg",
-  "logomob": "https://entcartut.theentertainerme.com/revamp22/images/Logo-mob_ar.svg",
+  "logo": "/images/Logo_ar.svg",
+  "logomob": "/images/Logo-mob_ar.svg",
   "toplink_memberships": "أنواع العضويّة",
   "toplink_Howitworks": "كيفيّة عمل التطبيق",
   "toplink_BecomePartner": "الشراكة معنا",
@@ -12,5 +12,5 @@
   "top_register": "التسجيل",
   "Download_app": "تحميل التطبيق ",
   "banner_title_text1": "عروض اشتر 1 و احصل",
-  "header_desktop_n": "https://b2cappassetscdn.theentertainerme.com/Cart2022Header/ar/1/header_desktop_n.png"
+  "header_desktop_n": "/images/BannerBGar.png"
 }

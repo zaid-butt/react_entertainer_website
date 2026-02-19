@@ -190,7 +190,7 @@ label {
 }
 
 .form-tick {
-	background-image: url(https://b2cappassetscdn.theentertainerme.com/website_images/form-tick.svg);
+	background-image: url(/public/images/form-tick.svg);
 	background-repeat: no-repeat;
 	background-position: right center;
 }
@@ -493,7 +493,7 @@ input.wrong {
 
 .tags.tag1 {
 	background: #EAF3FF;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/tag1.svg");
+	background-image: url("/public/images/tag1.svg");
 	background-repeat: no-repeat;
 	background-position: 5px 4px;
 	background-size: 12px;
@@ -501,7 +501,7 @@ input.wrong {
 
 .tags.tag2 {
 	background: #FCF1DD;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/website_images/tag2.svg");
+	background-image: url("/public/images/tag2.svg");
 	background-repeat: no-repeat;
 	background-position: 6px 5px;
 	background-size: 11px;
@@ -509,7 +509,7 @@ input.wrong {
 
 .tags.buy_one_get_one_free {
 	background-color: #EAF3FF;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/mega/outlet_tags/buy_one_get_one_free.png");
+	background-image: url("/public/images/buy_one_get_one_free.png");
 	background-position: 5px 4px;
 	background-size: 12px;
 }
@@ -517,28 +517,28 @@ input.wrong {
 .tags.delivery,
 .tags.delivery_only {
 	background-color: #F1F1F1;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/mega/icons/delivery.png");
+	background-image: url("/public/images/delivery.png");
 	background-position: 4px 3px;
     background-size: 13px;
 }
 
 .tags.percentage_off {
 	background-color: #FCF1DD;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/mega/outlet_tags/25_percent_off.png");
+	background-image: url("/public/images/25_percent_off.png");
 	background-position: 6px 4px;
 	background-size: 11px;
 }
 
 .tags.freemium {
 	background-color: #FCF1DD;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/mega/freemium.png");
+	background-image: url("/public/images/freemium.png");
 	background-position: 5px 4px;
     background-size: 11px;
 }
 
 .tags.takeaway {
 	background-color: #F1F1F1;
-	background-image: url("https://b2cappassetscdn.theentertainerme.com/mega/outlet_tags/takeaways.png");
+	background-image: url("/public/images/takeaways.png");
 	background-position: 7px 4px;
     background-size: 9px;
 }
@@ -623,11 +623,11 @@ input.wrong {
 }
 
 .swiper-button-prev::after {
-	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/swiper-button-prev.svg") !important;
+	content: url("/public/images/swiper-button-prev.svg") !important;
 }
 
 .swiper-button-next::after {
-	content: url("https://b2cappassetscdn.theentertainerme.com/website_images/swiper-button-next.svg") !important;
+	content: url("/public/images/swiper-button-next.svg") !important;
 }
 
 .swiper-button-next.swiper-button-disabled,
