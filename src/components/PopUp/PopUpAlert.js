@@ -27,7 +27,7 @@ function PoUpAlert({ btnType, btnText, btnClass, poupSize, popupClass,  popupTit
       >
         <Modal.Header>
           <Modal.Title><span>{popupTitle}</span>
-          <i class="bi bi-x-lg" onClick={handleClose}></i>
+          <i className="bi bi-x-lg" onClick={handleClose}></i>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>{popupDesc}</Modal.Body>

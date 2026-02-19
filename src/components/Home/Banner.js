@@ -24,7 +24,6 @@ function Banner() {
                   <span className="Enjoytext">Enjoy 7 days a week!</span>
                   <br />
                   <span className="f607 lh60">
-                    {t("")}
                     <Trans i18nKey="banner_title_text1">
                       Buy 1 Get 1 Free
                       <span className="f601 lh60">

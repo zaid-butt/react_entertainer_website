@@ -44,131 +44,131 @@ function Search() {
         <div id="search_suggestion" style={{display: "none"}}>
         <div id="sugges_wrap">
           <div className="sugges_wraptop"><span>Suggestions</span><a href="#0">View all</a></div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/cuisine.png"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   <strong>Pizz</strong>a
                 </div>
                 <p>Cuisines</p>
               </div>
-              {/* <div class="stags"></div>
-              <div class="distance">7.2 km</div> */}
+              {/* <div className="stags"></div>
+              <div className="distance">7.2 km</div> */}
             </div>
           </div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/s_merchant202011231304.jpg"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   <strong>Pizz</strong>olo
                 </div>
                 <p>Hyatt Regency Dubai</p>
               </div>
-              <div class="stags">
-                <span class="tags buy_one_get_one_free">B1G1</span>
-                <span class="tags freemium">lite</span>
+              <div className="stags">
+                <span className="tags buy_one_get_one_free">B1G1</span>
+                <span className="tags freemium">lite</span>
               </div>
-              <div class="distance">7.2 km</div>
+              <div className="distance">7.2 km</div>
             </div>
           </div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/s_merchant2.png"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   <strong>Pizz</strong>a 2 Go
                 </div>
                 <p>Al Karama</p>
               </div>
-              <div class="stags">
-                <span class="tags delivery">Delivery</span>
-                <span class="tags percentage_off">25% off</span>
-                <span class="tags takeaway">Takeaway</span>
+              <div className="stags">
+                <span className="tags delivery">Delivery</span>
+                <span className="tags percentage_off">25% off</span>
+                <span className="tags takeaway">Takeaway</span>
               </div>
-              <div class="distance">7.2 km</div>
+              <div className="distance">7.2 km</div>
             </div>
           </div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/s_merchant202002111545.jpg"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   Don <strong>Pizz</strong>a
                 </div>
                 <p>Manor Hotel</p>
               </div>
-              <div class="stags">
-                <span class="tags buy_one_get_one_free">B1G1</span>
-                <span class="tags delivery">Delivery</span>
-                <span class="tags percentage_off">25% off</span>
+              <div className="stags">
+                <span className="tags buy_one_get_one_free">B1G1</span>
+                <span className="tags delivery">Delivery</span>
+                <span className="tags percentage_off">25% off</span>
               </div>
-              <div class="distance">7.2 km</div>
+              <div className="distance">7.2 km</div>
             </div>
           </div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/s_merchant2021010061347.jpg"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   Six <strong>Pizz</strong>a
                 </div>
                 <p>Barsha Heights</p>
               </div>
-              <div class="stags">
-                <span class="tags delivery_only">Delivery only</span>
-                <span class="tags buy_one_get_one_free">B1G1</span>
-                <span class="tags percentage_off">25% off</span>
+              <div className="stags">
+                <span className="tags delivery_only">Delivery only</span>
+                <span className="tags buy_one_get_one_free">B1G1</span>
+                <span className="tags percentage_off">25% off</span>
               </div>
-              <div class="distance">7.2 km</div>
+              <div className="distance">7.2 km</div>
             </div>
           </div>
-          <div class="sugges_wrap">
-            <div class="imgbox">
+          <div className="sugges_wrap">
+            <div className="imgbox">
               <img
                 src="/images/s_merchant202303231213.jpg"
                 alt="product"
               />
             </div>
-            <div class="content">
-              <div class="title">
+            <div className="content">
+              <div className="title">
                 <div>
                   <strong>Pizz</strong>a Bros
                 </div>
                 <p>Al Karama</p>
               </div>
-              <div class="stags">
-                <span class="tags delivery_only">Delivery only</span>
-                <span class="tags buy_one_get_one_free">B1G1</span>
-                <span class="tags percentage_off">25% off</span>
+              <div className="stags">
+                <span className="tags delivery_only">Delivery only</span>
+                <span className="tags buy_one_get_one_free">B1G1</span>
+                <span className="tags percentage_off">25% off</span>
               </div>
-              <div class="distance">7.2 km</div>
+              <div className="distance">7.2 km</div>
             </div>
           </div>
         </div>

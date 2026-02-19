@@ -1,8 +1,8 @@
-import entoffers_1 from "assets/images/entoffers_1.svg"
-import entoffers_2 from "assets/images/entoffers_2.svg"
-import entertainer_offers from "assets/images/entertainer_offers.webp"
-import entoffers_3 from "assets/images/entoffers_3.svg"
-import entoffers_4 from "assets/images/entoffers_4.svg"
+import entoffers_1 from "assets/images/entoffers_1.svg";
+import entoffers_2 from "assets/images/entoffers_2.svg";
+import entertainer_offers from "assets/images/entertainer_offers.webp";
+import entoffers_3 from "assets/images/entoffers_3.svg";
+import entoffers_4 from "assets/images/entoffers_4.svg";
 // dummy data
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
@@ -21,10 +21,7 @@ function Offers() {
             <div className="col-md-3 col-6">
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
-                  <img
-                    src={entoffers_1}
-                    alt="offer 1"
-                  />
+                  <img src={entoffers_1} alt="offer 1" />
                 </div>
                 <div className="entoffers_cont">
                   <h4>Buy One Get One</h4>
@@ -37,10 +34,7 @@ function Offers() {
               </div>
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
-                  <img
-                    src={entoffers_2}
-                    alt="offer 2"
-                  />
+                  <img src={entoffers_2} alt="offer 2" />
                 </div>
                 <div className="entoffers_cont">
                   <h4>Discount Codes</h4>
@@ -53,18 +47,12 @@ function Offers() {
               </div>
             </div>
             <div className="col-md-5 entoffers_img1">
-              <img
-                src={entertainer_offers}
-                alt="entertainer_offers"
-              />
+              <img src={entertainer_offers} alt="entertainer_offers" />
             </div>
             <div className="col-md-3 offset-1 col-5">
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
-                  <img
-                    src={entoffers_3}
-                    alt="offer 3"
-                  />
+                  <img src={entoffers_3} alt="offer 3" />
                 </div>
                 <div className="entoffers_cont">
                   <h4>% OFF</h4>
@@ -76,10 +64,7 @@ function Offers() {
               </div>
               <div className="entoffers_wrap">
                 <div className="entoffers_img">
-                  <img
-                    src={entoffers_4}
-                    alt="offer 4"
-                  />
+                  <img src={entoffers_4} alt="offer 4" />
                 </div>
                 <div className="entoffers_cont">
                   <h4>Flash offers</h4>
@@ -95,11 +80,7 @@ function Offers() {
           <Row>
             <Col md={12}>
               <div className="home_store_img">
-                <a
-                  className="ios_btn"
-                  href="https://itunes.apple.com/ae/app/the-entertainer/id702813714?mt=8"
-                  style={{ display: "none !important" }}
-                >
+                <a className="ios_btn" href="#0">
                   <img
                     className="landing-page-app-btn"
                     loading="lazy"
@@ -107,10 +88,7 @@ function Offers() {
                     alt="App Store"
                   />
                 </a>
-                <a
-                  className="android_btn"
-                  href="https://play.google.com/store/apps/details?id=com.theentertainerme.entertainer"
-                >
+                <a className="android_btn" href="#0">
                   <img
                     className="landing-page-app-btn"
                     loading="lazy"
@@ -118,16 +96,10 @@ function Offers() {
                     alt="Google Play"
                   />
                 </a>
-                <a
-                  className="offers_explore"
-                  href="https://www.theentertainerme.com/en-ae/dubai-n-emirates#entProductSection"
-                >
+                <a className="offers_explore" href="#0">
                   <img src="/images/huawei_btn.svg" alt="offers_explore" />
                 </a>
-                <a
-                  className="btn btn-secondary"
-                  href="http://awesomesite.loc:8888/en-ae/dubai-n-emirates#entProductSection"
-                >
+                <a className="btn btn-secondary" href="#entProductSection">
                   Explore our memberships
                 </a>
               </div>

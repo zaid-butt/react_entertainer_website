@@ -18,20 +18,20 @@ import {
 function Index() {
 
   const { location, city } = useParams();
-  let lastKnownScrollPosition = 0;
-  document.addEventListener("scroll", (event) => {
-    lastKnownScrollPosition = window.scrollY;
-    let topheader = document.getElementsByTagName("header")[0];
-    if (lastKnownScrollPosition > 75) {
-      window.requestAnimationFrame(() => {
-        topheader.setAttribute("id", "head_white");
-      });
-    } else {
-      window.requestAnimationFrame(() => {
-        topheader.setAttribute("id", "");
-      });
-    }
-  });
+  // let lastKnownScrollPosition = 0;
+  // document.addEventListener("scroll", (event) => {
+  //   lastKnownScrollPosition = window.scrollY;
+  //   let topheader = document.getElementsByTagName("header")[0];
+  //   if (lastKnownScrollPosition > 75) {
+  //     window.requestAnimationFrame(() => {
+  //       topheader.setAttribute("id", "head_white");
+  //     });
+  //   } else {
+  //     window.requestAnimationFrame(() => {
+  //       topheader.setAttribute("id", "zzz");
+  //     });
+  //   }
+  // });
 
   return (
     <>

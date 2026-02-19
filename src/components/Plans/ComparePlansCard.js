@@ -53,7 +53,7 @@ function ComparePlansCard(props) {
             </div>
             <div className="TPP_plugin">
               <hr />
-              <div class="TPP_plugin_devider">OR</div>
+              <div className="TPP_plugin_devider">OR</div>
               <span>3 interest-free payment of AED 138.33</span>
             </div>
           </div>
