@@ -18,24 +18,24 @@ import {
 function Index() {
 
   const { location, city } = useParams();
-  // let lastKnownScrollPosition = 0;
-  // document.addEventListener("scroll", (event) => {
-  //   lastKnownScrollPosition = window.scrollY;
-  //   let topheader = document.getElementsByTagName("header")[0];
-  //   if (lastKnownScrollPosition > 75) {
-  //     window.requestAnimationFrame(() => {
-  //       topheader.setAttribute("id", "head_white");
-  //     });
-  //   } else {
-  //     window.requestAnimationFrame(() => {
-  //       topheader.setAttribute("id", "zzz");
-  //     });
-  //   }
-  // });
+  let lastKnownScrollPosition = 0;
+  document.addEventListener("scroll", (event) => {
+    lastKnownScrollPosition = window.scrollY;
+    let topheader = document.getElementsByTagName("header")[0];
+    if (lastKnownScrollPosition > 75) {
+      window.requestAnimationFrame(() => {
+        topheader.setAttribute("id", "head_white");
+      });
+    } else {
+      window.requestAnimationFrame(() => {
+        topheader.setAttribute("id", "zzz");
+      });
+    }
+  });
 
   return (
     <>
-      <Header onhome="1" />
+      <Header onhome="true" />
       <div className="wrapper">
         <Banner />
         <div id="categories" className="padbot">

@@ -32,7 +32,7 @@ function TopHeader(props) {
 
   return (
     <>
-      <header id={props.onhome === 1 ? "" : "head_white"}>
+      <header id={props.onhome ? "" : "head_white"}>
         <Navbar
           collapseOnSelect
           expand="md"
