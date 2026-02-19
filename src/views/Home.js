@@ -28,7 +28,7 @@ function Index() {
       });
     } else {
       window.requestAnimationFrame(() => {
-        topheader.setAttribute("id", "zzz");
+        topheader.setAttribute("id", "");
       });
     }
   });

@@ -1,6 +1,5 @@
 import React from "react";
 import { useTranslation, Trans } from "react-i18next";
-import { Container, Row, Col, Form, Input } from "reactstrap";
 import "./Banner.css";
 
 function Banner() {
@@ -18,9 +17,9 @@ function Banner() {
 
         <div id="banner_content_wrap">
           <div className="banner_content">
-            <Container>
-              <Row>
-                <Col xs={6} className="banner_content1">
+            <div className="container">
+              <div className="row">
+                <div className="col-6 banner_content1">
                   <span className="Enjoytext">Enjoy 7 days a week!</span>
                   <br />
                   <span className="f607 lh60">
@@ -33,9 +32,9 @@ function Banner() {
                     </Trans>
                   </span>
                   <span className="f607 lh60">discount offers</span>
-                </Col>
+                </div>
 
-                <Col xs={6}>
+                <div className="col-6">
                   <div className="d-mob formimg">
                     <img
                       loading="lazy"
@@ -43,23 +42,23 @@ function Banner() {
                       alt="banner_pricetag"
                     />
                   </div>
-                </Col>
-                <Col md={7} className="banner_content1">
-                  <Form
+                </div>
+                <div className="col-7 banner_content1">
+                  <form
                     className="form-inline"
                     id="startFreeEmail"
                     action="/signin-up-start"
                     method="POST"
                   >
                     <div className="form-group mx-sm-3 mb-2">
-                      <Input
+                      <input
                         type="email"
                         className="form-control"
                         name="email"
                         id="Enteryouremailaddress"
                         autoComplete="off"
                         placeholder="Please enter your email address"
-                      ></Input>
+                      ></input>
                     </div>
                     <button
                       className="btn btn52 btn-light btn-yel"
@@ -68,7 +67,7 @@ function Banner() {
                     >
                       START FOR FREE
                     </button>
-                  </Form>
+                  </form>
 
                   <span className="formtext">
                     You don't need a credit card to sign up
@@ -88,9 +87,9 @@ function Banner() {
                   >
                     Please enter a valid email
                   </p>
-                </Col>
+                </div>
 
-                <Col md={7} className="banner_pricetag">
+                <div className="col-7 banner_pricetag">
                   <img
                     loading="lazy"
                     src="/images/AED.svg"
@@ -100,9 +99,9 @@ function Banner() {
                     <span>AED 1,000+</span>
                     Average member savings.
                   </div>
-                </Col>
-              </Row>
-            </Container>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -5,7 +5,6 @@ import hotels from "assets/images/hotels.svg"
 import top_clubs from "assets/images/top_clubs.svg"
 // dummy data
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ContentLoader from "react-content-loader"
 
@@ -13,9 +12,9 @@ function HomeCategoriesIcons({types}) {
   return (
     <>
       <div id="categories_top" className="padtop">
-        <Container>
-          <Row>
-            <Col>
+        <div className="container">
+          <div className="row">
+            <div className="col">
               <Swiper
                 spaceBetween={30}
                 slidesPerView={3}
@@ -92,9 +91,9 @@ function HomeCategoriesIcons({types}) {
                   </div>
                 </SwiperSlide>
               </Swiper>
-            </Col>
-          </Row>
-        </Container>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
